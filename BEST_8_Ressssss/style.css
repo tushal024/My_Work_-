@@ -1,0 +1,320 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #F8FAFF;
+    overflow-x: hidden;
+}
+header{
+    background-image: url(/Assets/hero_bg_8_1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+ 
+}
+.section_3{
+    background-image: url(/Assets/about_bg_8_1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+#qq{
+    animation: ol;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+header nav ul li  a{
+    position: relative;
+    
+}
+header nav ul li  a:hover{
+    font-weight: bold;
+}
+
+header nav ul li  a::after{
+    content: "      ";
+    position: absolute;
+    background-color: #5074F4;
+    bottom: -3px;
+    left: 0;
+    transition: 1s;
+    height: 2px;
+    width: 0%;
+}
+header nav ul li  a:hover::after{
+    width: 100%;
+}
+#qq1{
+    animation: ol;
+    box-shadow: 0px 0px 20px 1px ;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+#op{
+    animation: my;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+
+
+}
+
+@keyframes my{
+    0%{
+        /* transform: translatey(0px); */
+        transform: scale(1);
+    }
+    50%{
+        /* transform: translatey(30px); */
+        transform: scale(0.9);
+    }
+    100%{
+        /* transform: translatey(0px); */
+        transform: scale(1);
+    }
+}
+
+
+@keyframes ol{
+    0%{
+        transform: translate(0px);
+    }
+    50%{
+        transform: translate(30px);
+    }
+    100%{
+        transform: translate(0px);
+    }
+}
+.section_4{
+    background-image: url(/Assets/why_bg_8.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section_7{
+    background-image: url(/Assets/screenshot_bg_8.png);
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    /* background-position-y:-170px ; */
+    /* object-fit: cover; */
+}
+.logo{
+    animation: log;    
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+@keyframes log{
+    0%{
+        transform: scale(0.9);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(0.9);
+    }
+}
+.jk{
+    animation: logu;    
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: normal; 
+}
+@keyframes logu{
+    0%{
+        transform: scale(0.9);
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0.9);
+    }
+}
+
+
+
+
+.cont:hover{
+    background-color: white;
+    border: 2px solid #5074F4;
+    color: #5074F4;
+}
+.h_ph{
+    animation: my;
+    animation-duration: 2.5s;
+    animation-direction: normal;
+    cursor: pointer;
+    animation-iteration-count: infinite;
+}
+@keyframes my{
+    0%{
+        transform: translate(50px);
+    }
+    50%{
+        transform: translate(0px);
+    }
+    100%{
+        transform: translate(50px);
+    }
+}
+.s_btu{
+    /* color: white; */
+    /* background-color: #5074F4; */
+    background-color: white;
+}
+.gud:hover{
+    border: 1px dashed black;
+}
+.gud img{
+    transition: 1.5s;
+}
+.gud:hover img{
+    transform: rotateY(360deg);
+}
+#cor{
+    cursor: pointer;
+}
+.sr{
+    position: relative;
+}
+
+#cor::after{
+    content: "      ";
+    position: absolute;
+    background-color: #5074F4;
+    bottom: -3px;
+    left: 0;
+    transition: 1s;
+    height: 2px;
+    width: 0%;
+}
+#cor:hover::after{
+    width: 100%;
+}
+.wu{
+    background-color: white;
+    /* transition: 1s; */
+}
+.wu:hover{
+    background-color: #5074F4;
+    color: white;
+}
+.con_1:hover img{
+    transition: 1s;
+}
+.con_1:hover img{
+    transform: rotateY(360deg);
+}
+.con_1 i{
+    transition: 0.9s;
+    cursor: pointer;
+}
+.con_1 i:hover {
+    margin-left: 10px;
+}
+.dh:hover{
+    background-color: white;
+    border: 2px solid #5074F4;
+    color: #5074F4;
+    box-shadow: 0px 0px 10px 4px ;
+}
+.pl{
+    cursor: pointer;
+}
+.pl:hover{
+    /* box-shadow: 0px 0px 10px 4px ; */
+    filter: drop-shadow(0 0 0.75rem black );
+}
+.f_u{
+    animation: ff;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+@keyframes ff{
+    0%{
+        filter: drop-shadow(0 0 0.75rem #5074f4 );
+    }
+    50%{
+        filter: none;
+    }
+    100%{
+        filter: drop-shadow(0 0 0.75rem #5074f4 );
+    }
+}
+.ft i{
+    transition: 1s;
+}
+.ft i:hover{
+    cursor: pointer;
+    /* transform: rotateY(360deg); */
+    /* transform: scale(1.2); */
+    color: #5074F4;
+    background-color: gray;
+}
+.ff p{
+    position: relative;
+    cursor: pointer;
+}
+.ff p::after{
+    content: "      ";
+    position: absolute;
+    background-color: #5074F4;
+    bottom: -3px;
+    left: 0;
+    transition: 1s;
+    height: 2px;
+    width: 0%;
+}
+.ff p:hover::after{
+    width: 100%;
+    /* cursor: pointer; */
+
+}
+.me{
+    animation: mu;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+
+    position: relative;
+
+
+}
+.me::after{
+    content: "      ";
+    position: absolute;
+    background-color: #5074F4;
+    bottom: -3px;
+    left: 0;
+    transition: 1s;
+    height: 2px;
+    width: 0%;
+
+}
+@keyframes mu{
+    0%{
+        color: gray;
+    }
+    50%{
+        color: #5074F4;
+        /* width: 100%; */
+        ::after{
+            width: 100%;
+        }
+        
+    }
+    100%{
+        color: black;
+    }
+}

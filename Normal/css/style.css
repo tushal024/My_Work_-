@@ -1,0 +1,368 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/img/hero_2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-color: rgb(70, 66, 66);
+}
+#link{
+    color: white !important;
+    margin-left: 20px;
+}
+#log{
+    width: 100px;
+
+    height: 50px;
+    border: 2px solid white;
+}
+#ve{
+    font-size: 70px;
+    color: white;
+}
+.box{
+    margin-top: 10%;
+}
+.but{
+    width: 180px;
+
+    height: 50px;
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+}
+.men{
+    width: 100%;
+    height: auto;
+}
+#nk{
+    /* padding-right: 100px; */
+    padding: 70px;
+    
+
+}
+.section_2{
+    width: 100%;
+    height: 1100px;
+    
+    background-color: #90A8AF;
+
+}
+.vh{
+    width: 100%;
+    height: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 1px solid black; */
+    margin-left: 90px;
+}
+.u1{
+    width: 45%;
+    height: 58%;
+    margin-top: 20px;
+    background-image: url(/img/work_1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    margin-right: 20px;
+    border: 1px solid black;
+}
+
+.u2{
+    width: 45%;
+    height: 38%;
+    margin-right: 20px;
+    margin-top: 20px;
+    background-image: url(/img/work_2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    border: 1px solid black;
+}
+.u3{
+    width: 45%;
+    margin-right: 20px;
+    height: 38%;
+    margin-top: 20px;
+    background-image: url(/img/work_3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    /* margin-bottom: ; */
+    border: 1px solid black;
+}
+
+.u4{
+    width: 45%;
+    margin-right: 20px;
+    height: 58%;
+    background-image: url(/img/work_4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    margin-top: 20px;
+    margin-top: -12%;
+    border: 1px solid black;
+}
+#gk{
+    font-size: 40px;
+
+}
+
+.section_4{
+    background-color: #F8F9FA;
+}
+#per{
+    width: 100px;
+    border-radius: 50%;
+}
+#un{
+    background-color: white;
+}
+.section_5{
+    background-color: #20C997;
+
+}
+#nn{
+    font-size: 40px;
+    cursor: pointer;
+}
+#lsbtu{
+    width: 200px;
+    height: 50px;
+    color: white;
+    border: 2px solid white;
+}
+footer{
+    background-color: #333333;
+
+}
+.dark{
+    color: gray;
+}
+.fli{
+    list-style: none;
+    cursor: pointer;
+    color: gray;
+}
+.king{
+    color: gray;
+}
+.st24{
+    color: #20C997;
+}
+#zz{
+    height: 400px;
+    width: 50%;
+    border-radius: 30px;
+}
+#gk{
+    font-size: 70px;
+}
+#tyt{
+    width: 70%;
+    height: 500px;
+    margin-top: 100px;
+}
+#per{
+/* margin-left: 20%; */
+}
+#ddd{
+    width: 400px;
+    margin-left: 30%;
+}
+#llb{
+    animation: fff;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+@keyframes fff{
+    0%{
+        transform: scale(1.1);
+        color: #20C997 !important;
+    }
+    50%{
+        transform: scale(1.5);
+        /* color: #20C997; */
+    }
+    100%{
+        transform: scale(1.1);
+        color: #20C997 !important;
+    }
+}
+#link:hover{
+    color: #20C997 !important;
+    transform: scale(1.2);
+
+}
+#log:hover{
+    transform: scale(1.2);
+    color: #20C997 !important;
+    border: 4px solid #20C997;
+    box-shadow: 0px 0px 7px 3px;
+}
+#ve{
+    transition: 2s;
+}
+.box:hover #ve{
+    transform: rotateY(360deg);
+    color: #20C997;
+
+
+}
+#mmo:hover{
+    transform: scale(1.2);
+    border: 4px solid #20C997;
+    color: #20C997;
+    box-shadow: 0px 0px 7px 3px;
+}
+.men{
+    transition: 2s;
+}
+.men:hover{
+    box-shadow: 0px 0px 7px 10px;
+    transform: scale(0.9);
+}
+#gk{
+    transition: 2s;
+}
+#muni:hover #gk{
+    transform: rotateY(360deg);
+    color: #20C997;
+
+}
+.u1:hover{
+    background-blend-mode: overlay;
+    background-color: rgb(97, 94, 94);
+    box-shadow: 0px 0px 7px 6px;
+}
+.u2:hover{
+    background-blend-mode: overlay;
+    background-color: rgb(97, 94, 94);
+    box-shadow: 0px 0px 7px 6px;
+}
+.u3:hover{
+    background-blend-mode: overlay;
+    background-color: rgb(97, 94, 94);
+    box-shadow: 0px 0px 7px 6px;
+}
+.u4:hover{
+    background-blend-mode: overlay;
+    background-color: rgb(97, 94, 94);
+    box-shadow: 0px 0px 7px 6px;
+}
+#rx:hover #gk{
+    transform: rotateY(360deg);
+    color: #20C997;
+
+}
+
+#lalo{
+    transition: 2s;
+
+}
+#gudi:hover #lalo{
+    transform: rotateY(360deg);
+    color: #20C997;
+   
+
+
+
+}
+#lsbtu:hover{
+    border: 2px solid black;
+    color: black;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 7px 6px;
+}
+#hadd{
+    transition: 2s !important;
+
+}
+#hadd:hover{
+    transform: rotateY(360deg);
+    color: #20C997;
+    transform: scale(1.4);
+    cursor: pointer;
+
+}
+#spav:hover{
+    text-decoration: underline;
+    color: #20C997;
+    cursor: pointer;
+}
+.htad:hover .king{
+    transform: scale(1.4);
+    cursor: pointer;
+}
+.st24{
+    cursor: pointer;
+}
+#arrow{
+    font-size: 40px;
+    cursor: pointer;
+    padding: 5px;
+    position: fixed;
+    color: #d61c2c;
+    right: 0;
+    bottom: 0;
+    border: 2px solid #d61c2c;
+    border-radius: 10px;
+}
+
+
+/* .gt{
+    width: 90px;
+    height: 90px;
+    border: 5px solid #97108c;
+    position: fixed;
+    border-radius: 50%;
+    border-top: none;
+    left: 49%;
+    border-left: none;
+    top: 45%;
+    animation: ok;
+    animation-duration: 1.6s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+@keyframes ok{
+    to{
+      transform: rotate(360deg);
+    }
+} */
+
+/* .loader */
+.main1{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #272c2fa5;
+    position: fixed;
+    z-index: 1;
+    
+}
+.a{
+    width: 180px;
+    height: 180px;
+    /* border: 1px solid black; */
+    border-radius: 50%;
+    
+    background-color: #F1F1F1;
+    box-shadow: 1px 1px 15px 5px #272C2F;
+}

@@ -1,0 +1,479 @@
+@media(max-width:480px){
+    header{
+        width: 80%;
+        height: 50px;
+        margin-left: 30px;
+        margin-top: 40px;
+
+    }
+    .h1{
+        font-size: 60px;
+        margin-top: -400px;
+    }
+    .span1{
+        font-size: 24px;
+        margin-top: -400px;
+    }
+    .bigheader{
+     
+        width: 100%;
+        height: auto;
+    }
+   header nav ul{
+        display: none;
+    }
+    .mm1{
+        /* width: 400px; */
+        /* display: inline-block; */
+        width: 100px;
+        height: 40px;
+        margin-left: 0px;
+        /* display: block; */
+    }
+    .h21{
+        font-size: 20px;
+    }
+    .mo1{
+        font-size: 12px;
+    }
+    .l1{
+        font-size: 12px;
+        margin-left: 2px;
+    }
+    .bt1{
+        width: 50px;
+        height: 40px;
+        font-size: 20px;
+    }
+    .k1{
+        margin-left: 0px;
+        width: 100px;
+    }
+    .k2{
+        width: 100px;
+    }
+    .m1{
+        width: 100%;
+    }
+    .k3{
+        width: 30px;
+    }
+    .k4{
+        display: none;
+    }
+    .k5{
+        width: 20px;
+        /* display: none; */
+    }
+    .h11{
+        font-size: 30px;
+    }
+    .h12{
+        font-size: 20px;
+        margin-top: -110ppx;
+    }
+    .imgg{
+        width: 100%;
+
+    }
+    
+    .rrr{
+        width: 500px;
+        height: 30px;
+        display: block;
+    }
+    .ut1{
+        width: 100%;
+        height: 300px;
+        margin-top: 20px;
+        
+    }
+    .ut2{
+        width: 100%;
+        height: 300px;
+        margin-top: 20px;
+        
+    }
+    .ut3{
+        width: 100%;
+        height: 300px;
+        margin-top: 20px;
+        
+    }
+    .section_3{
+        width: 100%;
+        height: auto;
+        margin-top: 400px;
+
+    }
+    .lol{
+        font-size: 25px;
+    }
+    .lol3{
+        font-size: 15px;
+    }
+    .btt1,.btt2{
+        width: 100%;
+        /* margin-top: 10px; */
+        height: auto;
+    }
+    .bt2{
+        width: 140px;
+        height: 50px;
+
+    }
+    .lol1{
+        font-size: 50px;
+    }
+    .h12{
+        margin-top: -100px;
+    }
+    /* .lol2{
+        font-size: 20px;
+    } */
+    .imgg1{
+        width: 100%;
+        height: auto;
+        margin-top: -100px;
+    }
+    /* .unu{
+        height: 200px;
+    } */
+    footer{
+        margin-top: -400px;
+    }
+    .foot1,.foot3{
+        width: 100%;
+    }
+    .foot2{
+        width: 100%;
+        margin-top: 100px;
+    }
+    .kaka{
+        color: black;
+    }
+}
+
+@media(max-width:720px){
+    header{
+        width: 80%;
+        height: 50px;
+        margin-left: 70px;
+        margin-top: 40px;
+
+    }
+    .h1{
+        font-size: 90px;
+        margin-top: -400px;
+    }
+    .span1{
+        font-size: 30px;
+        margin-top: -400px;
+    }
+    .bigheader{
+        height: auto;
+     
+        width: 100%;
+    }
+   header nav ul{
+        display: none;
+    }
+    .mm1{
+        /* width: 400px; */
+        /* display: inline-block; */
+        width: 150px;
+        height: 40px;
+        margin-left: 0px;
+        /* display: block; */
+    }
+    .h21{
+        font-size: 20px;
+    }
+    .mo1{
+        font-size: 17px;
+    }
+    .l1{
+        font-size: 12px;
+        margin-left: 2px;
+    }
+    .bt1{
+        width: 50px;
+        height: 40px;
+        font-size: 20px;
+    }
+    .k1{
+        margin-left: 0px;
+        width: 100px;
+    }
+    .k2{
+        width: 100px;
+    }
+    .m1{
+        width: 100%;
+    }
+    .k3{
+        width: 30px;
+    }
+    .k4{
+        display: none;
+    }
+    .k5{
+        width: 20px;
+        /* display: none; */
+    }
+    .h11{
+        font-size: 30px;
+    }
+    .h12{
+        font-size: 20px;
+        margin-top: -110ppx;
+    }
+    .imgg{
+        width: 100%;
+
+    }
+    
+    .rrr{
+        width: 500px;
+        height: 30px;
+        display: block;
+    }
+    .ut1{
+        width: 100%;
+        height: 300px;
+        margin-top: 20px;
+        
+    }
+    .ut2{
+        width: 100%;
+        height: 300px;
+        margin-top: 20px;
+        
+    }
+    .ut3{
+        width: 100%;
+        height: 300px;
+        margin-top: 20px;
+        
+    }
+    .section_3{
+        width: 100%;
+        height: auto;
+        margin-top: 400px;
+
+    }
+    .lol{
+        font-size: 25px;
+    }
+    .lol3{
+        font-size: 15px;
+    }
+    .btt1,.btt2{
+        width: 80%;
+        /* margin-top: 10px; */
+        height: auto;
+    }
+    .bt2{
+        width: 140px;
+        height: 50px;
+
+    }
+    .lol1{
+        font-size: 50px;
+    }
+    .h12{
+        margin-top: -100px;
+    }
+    /* .lol2{
+        font-size: 20px;
+    } */
+    .imgg1{
+        width: 100%;
+        height: auto;
+        margin-top: -100px;
+    }
+    /* .unu{
+        height: 200px;
+    } */
+    footer{
+        margin-top: -400px;
+    }
+    .foot1,.foot3{
+        width: 100%;
+        /* height: auto; */
+    }
+    .foot2{
+        width: 100%;
+        margin-top: 130px;
+    }
+    .kaka{
+        color: black;
+    }
+}
+
+
+
+@media(max-width:980px){
+    header{
+        width: 80%;
+        height: 50px;
+        margin-left: 70px;
+        margin-top: 40px;
+
+    }
+    .h1{
+        font-size: 90px;
+        margin-top: -400px;
+    }
+    .span1{
+        font-size: 30px;
+        margin-top: -400px;
+    }
+    .bigheader{
+        height: auto;
+     
+        width: 100%;
+    }
+   header nav ul{
+        display: none;
+    }
+    .mm1{
+        /* width: 400px; */
+        /* display: inline-block; */
+        width: 200px;
+        height: 40px;
+        margin-left: 0px;
+        
+        /* display: block; */
+    }
+    .h21{
+        font-size: 27px;
+    }
+    .mo1{
+        font-size: 17px;
+    }
+    .l1{
+        font-size: 16px;
+        margin-left: 2px;
+    }
+    .bt1{
+        width: 50px;
+        height: 40px;
+        font-size: 20px;
+    }
+    .k1{
+        margin-left: 0px;
+        width: 100px;
+    }
+    .k2{
+        width: 100px;
+    }
+    .m1{
+        width: 100%;
+    }
+    .k3{
+        width: 30px;
+    }
+    .k4{
+        display: none;
+    }
+    .k5{
+        width: 20px;
+        /* display: none; */
+    }
+    .h11{
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+    .h12{
+        font-size: 20px;
+        /* margin-top: -110ppx; */
+        margin-top: 60px;
+    }
+    .imgg{
+        width: 100%;
+
+    }
+    
+    .rrr{
+        width: 500px;
+        height: 30px;
+        display: block;
+    }
+    .ut1{
+        width: 100%;
+        height: 300px;
+        margin-top: 20px;
+        
+    }
+    .ut2{
+        width: 100%;
+        height: 300px;
+        margin-top: 20px;
+        
+    }
+    .ut3{
+        width: 100%;
+        height: 300px;
+        margin-top: 20px;
+        
+    }
+    .section_3{
+        width: 100%;
+        height: auto;
+        margin-top: 400px;
+
+    }
+    .lol{
+        font-size: 25px;
+    }
+    .lol3{
+        font-size: 15px;
+    }
+    .btt1,.btt2{
+        width: 80%;
+        /* margin-top: 10px; */
+        height: auto;
+    }
+    .bt2{
+        width: 140px;
+        height: 50px;
+
+    }
+    .lol1{
+        font-size: 50px;
+    }
+    .h12{
+        margin-top: -100px;
+    }
+    /* .lol2{
+        font-size: 20px;
+    } */
+    .imgg1{
+        width: 100%;
+        height: auto;
+        margin-top: -100px;
+    }
+    /* .unu{
+        height: 200px;
+    } */
+    footer{
+        margin-top: -200px;
+    }
+    .foot1,.foot3{
+        width: 60%;
+        /* height: auto; */
+    }
+    .foot2{
+        width: 60%;
+        margin-top: 130px;
+    }
+    .kaka{
+        color: black;
+    }
+}
+
+
+
+
+

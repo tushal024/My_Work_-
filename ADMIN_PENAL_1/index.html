@@ -1,0 +1,2268 @@
+<!-- https://themesbrand.com/velzon/html/master/index.html
+https://steex-vuetify.vercel.app/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>STEEX</title>
+    <link rel="stylesheet" href="/css/style.css">
+
+
+    
+
+
+
+    <!-- jquery...................................................................... -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+   
+
+    <!-- chart_try............................................................................................. -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+
+    <!-- font awsome................................................ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- remix icon................................................ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+        integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+    <!-- bootstrap............................................... -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+
+
+     
+
+
+    <!-- w3 chart............................. -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script> -->
+
+
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+
+    <link rel="stylesheet" href="css/mini-event-calendar.min.css">
+
+
+    <style>
+        #chartdiv {
+            width: 100%;
+            height: 500px;
+        }
+    </style>
+
+
+
+<!-- <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+    body{
+        background-color: black;
+    }
+    .po{
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: red;
+        position: absolute;
+        box-shadow: 0px 0px 12px 5px white;
+        top: 50%;
+        transition:0.1s ;
+        left: 50%;
+    }
+    .po1{
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: blue;
+        position: absolute;
+        box-shadow: 0px 0px 12px 5px white;
+        top: 30%;
+        transition: 0.2s;
+        left: 20%;
+    }
+
+    .po2{
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background-color: red;
+        position: absolute;
+        box-shadow: 0px 0px 12px 5px white;
+        top: 30%;
+        transition: 0.3s;
+        left: 20%;
+    }
+    .po3{
+        width: 2px;
+        height: 2px;
+        border-radius: 50%;
+        background-color: blue;
+        position: absolute;
+        box-shadow: 0px 0px 12px 5px white;
+        top: 30%;
+        transition: 0.4s;
+        left: 20%;
+    }
+
+    #arrow{
+            font-size: 40px;
+            cursor: pointer;
+            padding: 5px;
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            border: 2px solid black;
+        }
+</style> -->
+
+
+
+    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/map.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/geodata/worldLow.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+
+
+
+    <!-- calendar.......................................... -->
+    <!-- <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.3.1/minty/bootstrap.min.css"> -->
+
+
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script> -->
+
+
+
+
+ <!-- counter up....................................................................... -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+ integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+ crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
+ integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q=="
+ crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+
+<style>
+    #settnh{
+        position: fixed;
+        bottom: 15px;
+        right: 15px;
+        padding: 10px;
+        color: white;
+        animation: rrw;
+        animation-duration: 70s;
+        animation-iteration-count: infinite;
+        background-color: #677BCF;
+        border-radius: 50%;
+    }
+    @keyframes rrw{
+        to{
+            transform: rotate(9000deg);
+        }
+    }
+</style>
+
+</head>
+
+<body>
+
+    <!-- down-arrow.............. -->
+   <div id="arrow"><i class="ri-arrow-up-line fs-3" ></i></div> 
+
+
+
+
+    <i class="fa-solid fa-gear fs-3" id="settnh"></i>
+
+
+    <!-- <i class="fa-solid fa-up-long" id="arrow"></i> -->
+
+
+
+
+
+
+
+
+
+    <div class="po1">
+
+    </div>
+    <div class="po">
+       
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="main">
+        <!-- <aside class="inside">
+            <div class="logii" id="kk">
+                <div class="sublogii">
+                
+                <img src="/img/download.png" alt="" class="img-fluid">
+            </div>
+            </div>
+           
+
+        </aside> -->
+        <aside class="mainside overflow-scroll">
+            <div class="logo">
+                <div class="sublogoo">
+                    <img src="img/logo-light-92a96058.png" alt="" class="img-fluid ww3" id="big_logi">
+                    <img src="/img/download.png" alt="" class="mini_logi img-fluid" id="prabhu">
+                </div>
+
+            </div>
+
+            <div class="d1">
+                <p class="dark ">MENU</p>
+            </div>
+            <div class="d2 dark ">
+                <span><i class="fa-solid fa-gauge fs-5 me-3 un1"></i>
+                    <span><a href="" class="dark anch dhi"> Dashboards</a></span></span>
+
+
+                <span><i class="fa-solid fa-chevron-down  me-3 up"></i></span>
+
+            </div>
+            <div class="d22">
+
+                <li class="dark mt-3 " id="li_1"> <a href="" class="dark anch dhi">Analytics</a></li>
+                <li class="dark mt-3 " id="li_1"> <a href="" class="dark anch dhi">Crm</a></li>
+                <li class="dark mt-3 " id="li_1"> <a href="" class="dark anch dhi">Ecommerce</a></li>
+                <li class="dark mt-3 " id="li_1"> <a href="" class="dark anch dhi">Learning</a></li>
+            </div>
+
+            <div class="dd">
+                <p class="dark ">APPS</p>
+            </div>
+
+            <div class="d3 dark ">
+                <span><i class="fa-regular fa-envelope  me-3 un1"></i> <span> <a href=""
+                            class="dark anch dhi">Email</a></span></span>
+
+
+                <!-- <span><i class="fa-solid fa-chevron-down fs-5 me-3"></i></span> -->
+
+            </div>
+
+
+            <div class="d4 dark">
+                <span><i class="fa-solid fa-dumpster me-3 un1"></i> <span><a href=""
+                            class="dark anch dhi">Ecommerce</a></span></span>
+
+
+                <span><i class="fa-solid fa-chevron-down me-3 up"></i></span>
+
+            </div>
+            <div class="d44">
+
+                <li class="dark mt-3" id="li_1"><a href="" class="dark anch dhi">Analytics</a></li>
+                <li class="dark mt-3" id="li_1"><a href="" class="dark anch dhi">Crm</a></li>
+                <li class="dark mt-3" id="li_1"><a href="" class="dark anch dhi">Ecommerce</a></li>
+                <li class="dark mt-3" id="li_1"><a href="" class="dark anch dhi">Learning</a></li>
+
+            </div>
+
+            <div class="d5 dark ">
+                <span><i class="fa-regular fa-folder-open  me-3 un1"></i> <span> <a href="" class="dark anch dhi">File
+                            Manager</a></span></span>
+
+            </div>
+
+
+            <div class="d6 dark ">
+                <span><i class="fa-solid fa-graduation-cap  me-3 un1"></i> <span><a href=""
+                            class="dark anch dhi">Learning</a></span></span>
+
+
+                <span><i class="fa-solid fa-chevron-down  me-3 up"></i></span>
+
+            </div>
+            <div class="d66">
+
+                <!-- <li class="dark mt-3 fs-5" id="li_1"><a href="" class="dark anch">Courses</a></li> -->
+
+                <div class="d661 dark ">
+                    <span> <span class="">
+                            <li class="axtra"><a href="" class="dark anch dhi ">Courses</a></li>
+                        </span></span>
+
+
+                    <span><i class="fa-solid fa-chevron-down  me-3 up"></i></span>
+
+                </div>
+                <div class="d666 mt-2">
+
+                    <li class="dark  mt-3" id="li_1"><a href="" class="dark anch mt-3 dhi">List View</a></li>
+                    <li class="dark  mt-3" id="li_1"><a href="" class="dark anch dhi">Grid View</a></li>
+                    <li class="dark  mt-3" id="li_1"><a href="" class="dark anch dhi">Category</a></li>
+                    <li class="dark  mt-3" id="li_1"><a href="" class="dark anch dhi">Overview</a></li>
+                    <li class="dark  mt-3" id="li_1"><a href="" class="dark anch dhi">Create Course</a></li>
+
+                </div>
+
+
+                <!-- ............................................................. -->
+                <li class="dark mt-3 " id="li_1"><a href="" class="dark anch dhi">Students</a></li>
+                <li class="dark mt-3 " id="li_1"><a href="" class="dark anch dhi">Instructors</a></li>
+
+            </div>
+
+
+
+            <div class="d7 dark ">
+                <span><i class="fa-regular fa-file-lines  me-3 un1"></i> <span><a href=""
+                            class="dark anch dhi">Invoices</a></span></span>
+
+
+                <span><i class="fa-solid fa-chevron-down  me-3 up"></i></span>
+
+            </div>
+            <div class="d77">
+
+                <li class="dark mt-3 " id="li_1"><a href="" class="dark anch dhi">List View</a></li>
+                <li class="dark mt-3 " id="li_1"><a href="" class="dark anch dhi">List Overview</a></li>
+                <li class="dark mt-3 " id="li_1"><a href="" class="dark anch dhi">Create Invoice</a></li>
+                <!-- <li class="dark mt-3 fs-5" id="li_1"><a href="" class="dark anch">Learning</a></li> -->
+
+            </div>
+
+
+            <div class="d8 dark ">
+                <span><i class="fa-solid fa-ticket  me-3 un1"></i> <span><a href="" class="dark anch dhi">Support
+                            Tickets</a></span></span>
+
+
+                <span><i class="fa-solid fa-chevron-down  me-3 up"></i></span>
+
+            </div>
+            <div class="d88">
+
+                <li class="dark mt-3 " id="li_1"><a href="" class="dark anch dhi">List View</a></li>
+                <li class="dark mt-3 " id="li_1"><a href="" class="dark anch dhi">Overview</a></li>
+                <!-- <li class="dark mt-3 fs-5" id="li_1"><a href="" class="dark anch">Create  Invoice</a></li> -->
+                <!-- <li class="dark mt-3 fs-5" id="li_1"><a href="" class="dark anch">Learning</a></li> -->
+
+            </div>
+
+
+
+            <div class="d9 dark ">
+                <span><i class="fa-solid fa-ticket  me-3 un1"></i> <span><a href="" class="dark anch dhi">Real
+                            Estate</a></span></span>
+
+
+                <span><i class="fa-solid fa-chevron-down  me-3 up"></i></span>
+
+            </div>
+            <div class="d99">
+
+                <li class="dark mt-3 " id="li_1"><a href="" class="dark anch dhi">Listing Grid</a></li>
+                <li class="dark mt-3 " id="li_1"><a href="" class="dark anch dhi">Listing List</a></li>
+                <li class="dark mt-3 " id="li_1"><a href="" class="dark anch dhi">Listing Map</a></li>
+                <li class="dark mt-3 " id="li_1"><a href="" class="dark anch dhi">Property Overview</a></li>
+                <li class="dark mt-3 " id="li_1"><a href="" class="dark anch dhi">Agent</a></li>
+                <li class="dark mt-3 " id="li_1"><a href="" class="dark anch dhi">Agencies</a></li>
+                <li class="dark mt-3 " id="li_1"><a href="" class="dark anch dhi">Add Property</a></li>
+                <li class="dark mt-3 " id="li_1"><a href="" class="dark anch dhi">Earnings</a></li>
+
+            </div>
+
+
+            <div class="d1">
+                <p class="dark ">PAGES</p>
+            </div>
+
+
+            <div class="d10 dark ">
+                <span><i class="fa-regular fa-circle-user  me-3 un1"></i> <span><a href=""
+                            class="dark anch dhi">Authentication</a></span></span>
+
+
+                <span><i class="fa-solid fa-chevron-down  me-3 up"></i></span>
+
+            </div>
+            <div class="d1010">
+
+                <li class="dark mt-3 " id="li_1"><a href="" class="dark anch dhi">Sign In</a></li>
+                <li class="dark mt-3 " id="li_1"><a href="" class="dark anch dhi">Sign Up</a></li>
+                <li class="dark mt-3 " id="li_1"><a href="" class="dark anch dhi">Password Reset</a></li>
+                <li class="dark mt-3 " id="li_1"><a href="" class="dark anch dhi">Password Create</a></li>
+                <li class="dark mt-3 " id="li_1"><a href="" class="dark anch dhi">Lock Screen</a></li>
+                <li class="dark mt-3 " id="li_1"><a href="" class="dark anch dhi">Logout</a></li>
+                <li class="dark mt-3 " id="li_1"><a href="" class="dark anch dhi">Success Message</a></li>
+                <li class="dark mt-3 " id="li_1"><a href="" class="dark anch dhi">Two Step Verification</a></li>
+                <li class="dark mt-3 " id="li_1"><a href="" class="dark anch dhi">Errors</a></li>
+
+            </div>
+
+            <div class="d11 dark ">
+                <span><i class="fa-regular fa-file-lines  me-3 un1"></i> <span><a href=""
+                            class="dark anch dhi">Pages</a></span></span>
+
+
+                <span><i class="fa-solid fa-chevron-down  me-3 up"></i></span>
+
+            </div>
+            <div class="d1111">
+
+                <li class="dark mt-3 " id="li_1"><a href="" class="dark anch dhi">Starter</a></li>
+                <li class="dark mt-3 " id="li_1"><a href="" class="dark anch dhi">Profile</a></li>
+                <li class="dark mt-3 " id="li_1"><a href="" class="dark anch dhi">Profile Settings</a></li>
+                <li class="dark mt-3 " id="li_1"><a href="" class="dark anch dhi">Contacts</a></li>
+                <li class="dark mt-3 " id="li_1"><a href="" class="dark anch dhi">Timeline</a></li>
+                <li class="dark mt-3 " id="li_1"><a href="" class="dark anch dhi">FAQs</a></li>
+                <li class="dark mt-3 " id="li_1"><a href="" class="dark anch dhi">Pricing</a></li>
+                <li class="dark mt-3 " id="li_1"><a href="" class="dark anch dhi">Maintenance</a></li>
+                <li class="dark mt-3 " id="li_1"><a href="" class="dark anch dhi">Coming Soon</a></li>
+                <li class="dark mt-3 " id="li_1"><a href="" class="dark anch dhi">Privacy Policy</a></li>
+                <li class="dark mt-3 " id="li_1"><a href="" class="dark anch dhi">Term & Conditions</a></li>
+                <!-- <li class="dark mt-3 fs-5" id="li_1"><a href="" class="dark anch">Coming Soon</a></li>
+            <li class="dark mt-3 fs-5" id="li_1"><a href="" class="dark anch">Coming Soon</a></li> -->
+
+            </div>
+
+
+            <div class="d1">
+                <p class="dark">
+                    COMPONENTS</p>
+            </div>
+
+            <div class="d12 dark">
+                <span><i class="fa-solid fa-cube me-3 un1"></i> <span><a href="" class="dark anch dhi">Vuetify
+                            UI</a></span></span>
+
+
+                <span><i class="fa-solid fa-chevron-down me-3 up"></i></span>
+
+            </div>
+            <div class="d1212">
+
+                <li class="dark mt-3 " id="li_1"><a href="" class="dark anch dhi">Alerts</a></li>
+                <li class="dark mt-3 " id="li_1"><a href="" class="dark anch dhi">Badges</a></li>
+                <li class="dark mt-3 " id="li_1"><a href="" class="dark anch dhi">Buttons</a></li>
+                <li class="dark mt-3 " id="li_1"><a href="" class="dark anch dhi">Colors</a></li>
+                <li class="dark mt-3 " id="li_1"><a href="" class="dark anch dhi">Cards</a></li>
+                <li class="dark mt-3 " id="li_1"><a href="" class="dark anch dhi">Carousel</a></li>
+                <li class="dark mt-3 " id="li_1"><a href="" class="dark anch dhi">Menu</a></li>
+                <li class="dark mt-3 " id="li_1"><a href="" class="dark anch dhi">Grid</a></li>
+                <li class="dark mt-3 " id="li_1"><a href="" class="dark anch dhi">Images</a></li>
+                <li class="dark mt-3 " id="li_1"><a href="" class="dark anch dhi">Tabs</a></li>
+                <li class="dark mt-3 " id="li_1"><a href="" class="dark anch dhi">Expansion Panels</a></li>
+                <li class="dark mt-3 " id="li_1"><a href="" class="dark anch dhi">Dialogs</a></li>
+                <li class="dark mt-3 " id="li_1"><a href="" class="dark anch dhi">Navigation Drawer</a></li>
+                <li class="dark mt-3 " id="li_1"><a href="" class="dark anch dhi">Progress</a></li>
+                <li class="dark mt-3 " id="li_1"><a href="" class="dark anch dhi">Media</a></li>
+                <li class="dark mt-3 " id="li_1"><a href="" class="dark anch dhi">Embed Video</a></li>
+                <li class="dark mt-3 " id="li_1"><a href="" class="dark anch dhi">Typography</a></li>
+                <li class="dark mt-3 " id="li_1"><a href="" class="dark anch dhi">Lists</a></li>
+                <li class="dark mt-3 " id="li_1"><a href="" class="dark anch dhi">General</a></li>
+                <li class="dark mt-3 " id="li_1"><a href="" class="dark anch dhi">Utilities</a></li>
+                <!-- <li class="dark mt-3 fs-5" id="li_1"><a href="" class="dark anch">Lists</a></li>
+            <li class="dark mt-3 fs-5" id="li_1"><a href="" class="dark anch">Lists</a></li> -->
+
+            </div>
+
+
+        </aside>
+
+        <div class="uuu">
+            <header>
+                <div class="maintoggler">
+                    <!-- <i class="fa-solid fa-bars-staggered text-light fs-2"></i> -->
+                    <!-- <i class="ri-bar-chart-horizontal-fill text-light fs-2"></i> -->
+                    <!-- <i class="ri-bar-chart-horizontal-line  text-light fs-2" id="toto"></i> -->
+                    <!-- <img src="/img/menu.png" alt="" id="toto"> -->
+                    <!-- <img src="/img/menu_1.png" alt="" id="toto"> -->
+                    <!-- <img src="/img/align-center.png" alt="" id="toto"> -->
+                    <i class="fa-solid fa-bars text-light fs-2" id="toto"></i>
+                    <!-- <i class="fa-solid fa-signal" id="toto"></i> -->
+                    <!-- <img src="/img/menu.png" alt="" id="toto1"> -->
+
+                </div>
+                <div class="searchbox">
+                    <div class="sbox">
+                        <div class="sicon">
+                            <i class="fa-solid fa-magnifying-glass fs-5" id="myu"></i>
+
+
+                        </div>
+                        <input type="text" class="form-control intu" placeholder="Search here..." id="zaza">
+                    </div>
+                </div>
+                <div class="mainicon">
+                    <!-- <i class="ri-dropbox-line text-light fs-2"></i> -->
+                    <!-- <i class="fa-solid fa-table-cells-large text-light fs-2"></i> -->
+                    <i class="ri-box-3-line text-light fs-2" id="pointt"></i>
+                    <img src="/img/united-states.png" alt="" class=" bagg">
+                    <img src="/img/shopping-bag.png" class=" bagg">
+                    <img src="/img/zoom.png" alt="" class=" bagg">
+                    <i class="fa-regular fa-moon text-light fs-2" id="pointt"></i>
+                    <img src="/img/notification.png" alt="" class=" bagg">
+                    <img src="/img/user.png" alt="" id="userr" class="poiu">
+
+                </div>
+
+            </header>
+            <div class="mainn mt-4">
+                <div class="section_1 mt-5">
+                    <div class="sen1 rounded-4">
+                        <div class="bv1 text-light ps-3">
+
+                            <i class="fa-solid fa-ellipsis-vertical fs-5" id="dott"></i>
+                            <i class="ri-wallet-line fs-4 p-3 " id="bv1_ico"></i>
+                            <p class="  mt-4 dark">TOTAL REVENUE</p>
+
+
+                            <span class="spir">
+                            <span class="fs-3">$</span>
+                            <h4 class=" counter fs-3" id="cont"> 750</h4> <span class="fs-3">.</span>
+                            <h4 class="counter fs-3" id="cont">36</h4> <span class="fs-3">M</span>
+                            <br>
+
+                        </span>
+
+                            <span class="gret mt-3">+19.07
+                                <i class="ri-arrow-right-up-line  fs-5"></i>
+                                <span class="fs-4">%</span>
+
+                            </span>
+                            <span class="fs ms-2 dark">
+                                than last
+                                week
+                            </span>
+
+                        </div>
+
+                    </div>
+                    <div class="sen1 rounded-4">
+
+                        <div class="bv1 text-light ps-3">
+
+                            <i class="fa-solid fa-ellipsis-vertical fs-5" id="dott"></i>
+                            <!-- <i class="ri-wallet-line fs-4 p-3 " id="bv1_ico"></i> -->
+                            <img src="/img/shopping-bag.png" alt="" class="shoi">
+                            <p class="  mt-3 dark">ORDERS</p>
+                            <span class="spir">
+                            <h4 class=" counter fs-3 " id="cont" > 684</h4> <br>
+                            </span>
+
+                            <span class="gret mt-3">+19.07
+                                <i class="ri-arrow-right-up-line  fs-4"></i>
+                                <span class="fs-4">%</span>
+
+                            </span>
+                            <span class="fs ms-2 dark">
+                                than last
+                                week
+                            </span>
+
+                        </div>
+
+                    </div>
+                    <div class="sen1 rounded-4">
+                        <div class="bv1 text-light ps-3 pt-2">
+
+                            <i class="fa-solid fa-ellipsis-vertical fs-5" id="dott"></i>
+                            <!-- <i class="ri-wallet-line fs-4 p-3 " id="bv1_ico"></i> -->
+                            <i class="ri-eye-line fs-4 p-3" id="bv1_ico"></i>
+
+                            <p class="  mt-4 dark">PRODUCT VIEWS</p>
+                            <span class="spir">
+                            <h4 class=" counter fs-3" id="cont"> 750</h4> <span class="fs-3">.</span>
+                            <h4 class="counter fs-3" id="cont">36</h4> <span class="fs-3">M</span>
+
+                        </span>
+                            <br>
+
+                            <span class="redd mt-5">+19.07
+                                <i class="ri-arrow-right-up-line  fs-5"></i>
+                                <span class="fs-4">%</span>
+
+                            </span>
+                            <span class="fs ms-2 dark">
+                                than last
+                                week
+                            </span>
+
+                        </div>
+
+
+                    </div>
+                    <div class="sen1 rounded-4">
+                        <div class="bv1 text-light ps-3">
+
+                            <i class="fa-solid fa-ellipsis-vertical fs-5" id="dott"></i>
+                            <!-- <i class="ri-wallet-line fs-4 p-3 " id="bv1_ico"></i> -->
+                            <i class="fa-solid fa-users fs-5 p-3" id="shoiu"> </i>
+                            <p class="  mt-3 dark">CUSTOMERS</p>
+                            <span class="spir">                            <h4 class=" counter fs-3" id="cont"> 2482</h4> <span class="fs-3">K</span>
+                        </span>
+
+                            <br>
+
+
+
+                            <span class="gret ">+19.07
+                                <i class="ri-arrow-right-up-line  fs-5"></i>
+                                <span class="fs-3">%</span>
+
+                            </span>
+                            <span class="fs ms-2 dark">
+                                than last
+                                week
+                            </span>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <div class="section_2 mt-4">
+                    <div class="sen_21 rounded-4 ">
+                        <!-- <canvas id="myChart" style="width:90%; height: 80%;" cla></canvas> -->
+                        <div id="chartdiv" style="width: 100%; height: 100%;"></div>
+
+
+                    </div>
+                    <div class="sen_22 rounded-4">
+
+                        <!-- <div id="chartdiv" style="width: 80%; height: 70%;"></div> -->
+                        <canvas id="myChart" style="width:100%; height: 100%;"></canvas>
+
+
+
+
+
+                        <!-- Line Chart -->
+                        <!-- <canvas id="myChart" style="width:100%;max-width:600px"></canvas> -->
+                        <!-- <canvas id="myChart" style="width:100%;max-width:600px"></canvas> -->
+
+                        <!-- End Line Chart -->
+
+
+
+                    </div>
+
+                    <div class="sen_23 rounded-4">
+                        <!-- <div class="g1">
+                    <div class="g11 ">
+                        <h4 class="f_zi">Recent Sales</h4>
+                     
+                    </div>
+                    <div class="g12 ">
+                        <p> View All  <i class="fa-solid fa-greater-than ms-2"></i></p>
+                    </div>
+                </div> -->
+                        <div class="gurr">
+                            <div class="g2">
+                                <div class="my  ">
+                                    <div class="g21 pt-2  mt-2">
+                                        <img src="/img/avatar-1-a2938076.jpg" alt="" class="iop ">
+                                    </div>
+                                    <div class="g22 pt-2 mt-2 text-light">
+                                        <p class="ms-3 fw-bold twz">Bethany Nienow</p>
+                                        <span class=" ms-3" id="mt_m">03 Feb, 2023</span>
+                                    </div>
+                                    <div class="g23  pt-2 mt-2">
+                                        <p class="text-light mt-1 fw-bold">$630.73</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="g2 mt-3">
+                                <div class="my  t_bor ">
+                                    <div class="g21 pt-2  mt-2">
+                                        <img src="/img/avatar-2-26521f4e.jpg" alt="" class="iop ">
+                                    </div>
+                                    <div class="g22 pt-2 mt-2 text-light">
+                                        <p class=" ms-3 fw-bold twz">Sonia Conn</p>
+                                        <span class=" ms-3" id="mt_m">03 Feb, 2023</span>
+                                    </div>
+                                    <div class="g23  pt-2 mt-2">
+                                        <p class="text-light mt-1 fw-bold">$1,452.64</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+
+
+
+                            <div class="g2 mt-3">
+                                <div class="my  t_bor ">
+                                    <div class="g21 pt-2  mt-2">
+                                        <img src="/img/avatar-8-8566178e.jpg" alt="" class="iop ">
+                                    </div>
+                                    <div class="g22 pt-2 mt-2 text-light">
+                                        <p class=" ms-3 fw-bold twz">
+
+
+                                            Cordia Grady</p>
+                                        <span class=" ms-3" id="mt_m">03 Feb, 2023</span>
+                                    </div>
+                                    <div class="g23  pt-2 mt-2">
+                                        <p class="text-light mt-1 fw-bold">$849.05</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <div class="g2 mt-3">
+                                <div class="my  t_bor ">
+                                    <div class="g21 pt-2  mt-2">
+                                        <img src="/img/avatar-4-6ca825f6.jpg" alt="" class="iop ">
+                                    </div>
+                                    <div class="g22 pt-2 mt-2 text-light">
+                                        <p class=" ms-3 fw-bold twz">
+                                            Talon Bradtke</p>
+                                        <span class=" ms-3" id="mt_m">03 Feb, 2023</span>
+                                    </div>
+                                    <div class="g23  pt-2 mt-2">
+                                        <p class="text-light mt-1 fw-bold">$82.14</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="g2 mt-3">
+                                <div class="my  t_bor ">
+                                    <div class="g21 pt-2  mt-2">
+                                        <img src="/img/avatar-7-2e539fe5.jpg" alt="" class="iop ">
+                                    </div>
+                                    <div class="g22 text-light pt-2 mt-2">
+                                        <p class=" ms-3 fw-bold twz">
+
+                                            Hollis Spencer</p>
+                                        <span class=" ms-3" id="mt_m">03 Feb, 2023</span>
+                                    </div>
+                                    <div class="g23  pt-2 mt-2">
+                                        <p class="text-light mt-1 fw-bold">$849.05</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="g2 mt-3">
+                                <div class="my  t_bor ">
+                                    <div class="g21 pt-2  mt-2">
+                                        <img src="/img/avatar-6-f16a7813.jpg" alt="" class="iop ">
+                                    </div>
+                                    <div class="g22 text-light pt-2 mt-2">
+                                        <p class=" ms-3 fw-bold twz">
+
+                                            Ross Zieme</p>
+                                        <span class=" ms-3" id="mt_m">03 Feb, 2023</span>
+                                    </div>
+                                    <div class="g23  pt-2 mt-2">
+                                        <p class="text-light mt-1 fw-bold">$449.05</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="g2 mt-3">
+                                <div class="my  t_bor ">
+                                    <div class="g21 pt-2  mt-2">
+                                        <img src="/img/avatar-2-26521f4e.jpg" alt="" class="iop ">
+                                    </div>
+                                    <div class="g22 pt-2 mt-2 text-light">
+                                        <p class=" ms-3 fw-bold twz">Sonia Conn</p>
+                                        <span class=" ms-3" id="mt_m">03 Feb, 2023</span>
+                                    </div>
+                                    <div class="g23  pt-2 mt-2">
+                                        <p class="text-light mt-1 fw-bold">$1,452.64</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+
+
+
+                            <div class="g2 mt-3">
+                                <div class="my  t_bor ">
+                                    <div class="g21 pt-2  mt-2">
+                                        <img src="/img/avatar-8-8566178e.jpg" alt="" class="iop ">
+                                    </div> 
+                                    <div class="g22 pt-2 mt-2 text-light">
+                                        <p class=" ms-3 fw-bold twz">
+
+
+                                            Cordia Grady</p>
+                                        <span class=" ms-3" id="mt_m">03 Feb, 2023</span>
+                                    </div>
+                                    <div class="g23  pt-2 mt-2">
+                                        <p class="text-light mt-1 fw-bold">$849.05</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <div class="g2 mt-3">
+                                <div class="my  t_bor ">
+                                    <div class="g21 pt-2  mt-2">
+                                        <img src="/img/avatar-4-6ca825f6.jpg" alt="" class="iop ">
+                                    </div>
+                                    <div class="g22 pt-2 mt-2 text-light">
+                                        <p class=" ms-3 fw-bold twz">
+                                            Talon Bradtke</p>
+                                        <span class=" ms-3" id="mt_m">03 Feb, 2023</span>
+                                    </div>
+                                    <div class="g23  pt-2 mt-2">
+                                        <p class="text-light mt-1 fw-bold">$82.14</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="g2 mt-3">
+                                <div class="my  t_bor ">
+                                    <div class="g21 pt-2  mt-2">
+                                        <img src="/img/avatar-7-2e539fe5.jpg" alt="" class="iop ">
+                                    </div>
+                                    <div class="g22 text-light pt-2 mt-2">
+                                        <p class=" ms-3 fw-bold twz">
+
+                                            Hollis Spencer</p>
+                                        <span class=" ms-3" id="mt_m">03 Feb, 2023</span>
+                                    </div>
+                                    <div class="g23  pt-2 mt-2">
+                                        <p class="text-light mt-1 fw-bold">$849.05</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="g2 mt-3">
+                                <div class="my  t_bor ">
+                                    <div class="g21 pt-2  mt-2">
+                                        <img src="/img/avatar-6-f16a7813.jpg" alt="" class="iop ">
+                                    </div>
+                                    <div class="g22 text-light pt-2 mt-2">
+                                        <p class=" ms-3 fw-bold twz">
+
+                                            Ross Zieme</p>
+                                        <span class=" ms-3" id="mt_m">03 Feb, 2023</span>
+                                    </div>
+                                    <div class="g23  pt-2 mt-2">
+                                        <p class="text-light mt-1 fw-bold">$449.05</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+
+
+
+
+
+                    </div>
+                </div>
+
+                <div class="section_3 mt-4">
+                    <div class="se_1 rounded-4">
+                        <table class="table ">
+                            <tr class="text-light ">
+                                <th class="pt-3 pb-4">Order Date</th>
+                                <th class="pt-3 pb-4">Order Id</th>
+                                <th class="pt-3 pb-4">Shop</th>
+                                <th class="pt-3 pb-4">Customers</th>
+                                <th class="pt-3 pb-4">Products</th>
+                                <th class="pt-3 pb-4">Amount</th>
+                                <th class="pt-3 pb-4">Status</th>
+                                <th class="pt-3 pb-4">Rating</th>
+                            </tr>
+
+                            <tr class="text-center " id="maj">
+                                <td class="text-light pt-3">30 Jan, 2023</td>
+                                <td class="bll pt-3">#TBS250009</td>
+                                <td class="pt-3"><img src="/img/enary.png" alt="" class="t_img"></td>
+                                <td class="text-light pt-3">Ayaan Bowen</td>
+                                <td class="text-light pt-3">Bike Accessories</td>
+                                <td class="text-light pt-3">$215.00</td>
+                                <td class="pt-3">
+                                    <p class="outf ">Out of Delivery</p>
+                                </td>
+                                <td class="text-light pt-3"> <i class="fa-regular fa-star gold"></i> 4.9</td>
+                            </tr>
+
+
+
+                            <tr class="text-center">
+                                <td class="text-light pt-3">19 Jan, 2023</td>
+                                <td class="bll pt-3">#TBS250007</td>
+                                <td class="pt-3"><img src="/img/chin.png" alt="" class="t_img"></td>
+                                <td class="text-light pt-3">Vihan Hudda</td>
+                                <td class="text-light pt-3">Bags and Wallets </td>
+                                <td class="text-light pt-3">$330.00</td>
+                                <td class="pt-3">
+                                    <p class="outd ">Delivered</p>
+                                </td>
+                                <td class="text-light pt-3"> <i class="fa-regular fa-star gold"></i> 4.7</td>
+                            </tr>
+
+
+
+                            <tr class="text-center">
+                                <td class="text-light pt-3">16 Jan, 2023</td>
+                                <td class="bll pt-3">#TBS250006</td>
+                                <td class="pt-3"><img src="/img/chi_1.png" alt="" class="t_img"></td>
+                                <td class="text-light pt-3">Dharoyar Bowen</td>
+                                <td class="text-light pt-3">Bike Accessories</td>
+                                <td class="text-light pt-3">$754.11</td>
+                                <td class="pt-3">
+                                    <p class="outp ">Pending</p>
+                                </td>
+                                <td class="text-light pt-3"> <i class="fa-regular fa-star gold"></i> 4.6</td>
+                            </tr>
+                            <tr class="text-center">
+                                <td class="text-light pt-3">25 Jan, 2023</td>
+                                <td class="bll pt-3">#TBS250008</td>
+                                <td class="pt-3"><img src="/img/roj.png" alt="" class="t_img"></td>
+                                <td class="text-light pt-3">Prezy Mark</td>
+                                <td class="text-light pt-3">Furniture</td>
+                                <td class="text-light pt-3">$199.00</td>
+                                <td class="pt-3">
+                                    <p class="outsh ">Shipping</p>
+                                </td>
+                                <td class="text-light pt-3"> <i class="fa-regular fa-star gold"></i> 4.9</td>
+                            </tr>
+
+
+                            <tr class="text-center">
+                                <td class="text-light pt-3">14 Feb, 2023</td>
+                                <td class="bll pt-3">#TBS250010</td>
+                                <td class="pt-3"><img src="/img/raba.png" alt="" class="t_img"></td>
+                                <td class="text-light pt-3">Jansh Brown</td>
+                                <td class="text-light pt-3">Kitchen Storage</td>
+                                <td class="text-light pt-3">$149.00</td>
+                                <td class="pt-3">
+                                    <p class="outp"> Pending</p>
+                                </td>
+                                <td class="text-light pt-3"> <i class="fa-regular fa-star gold"></i> 4.2</td>
+                            </tr>
+
+
+
+
+
+
+                            <!-- <tr class="text-center">
+                                <td class="text-light pt-3">15 Feb, 2023 </td>
+                                <td class="bll pt-3">#TBS250011</td>
+                                <td class="pt-3"><img src="/img/melo.png" alt="" class="t_img"></td>
+                                <td class="text-light pt-3">Alex Smith</td>
+                                <td class="text-light pt-3">Clothes</td>
+                                <td class="text-light pt-3">$109.00</td>
+                                <td class="pt-3">
+                                    <p class="outsh ">New</p>
+                                </td>
+                                <td class="text-light pt-3"> <i class="fa-regular fa-star gold"></i> 4.1</td>
+                            </tr> -->
+
+
+
+
+
+
+                        </table>
+
+                        <div class="pagi d-flex justify-content-between align-items-center">
+                            <div>
+                                <h6 class="text-secondary ms-3">Showing 3 of 28 Resulte</h6>
+                            </div>
+                            <div>
+                            <nav aria-label="...">
+                                <ul class="pagination">
+                                    <li class="page-item disabled bg-secodary" id="ox">
+                                        <a class="page-link" id="next">Previous</a>
+                                    </li>
+                                    <li class="page-item ms-2"><a class="page-link text-secondary" href="#" id="next">1</a></li>
+                                    <li class="page-item active" aria-current="page">
+                                        <a class="page-link ms-2" href="#" id="next1">2</a>
+                                    </li>
+                                    <li class="page-item ms-2"><a class="page-link text-light" href="#" id="next">3</a></li>
+                                    <li class="page-item " >
+                                        <a class="page-link ms-2 text-light" href="#" id="next">Next</a>
+                                    </li>
+                                </ul>
+                            </nav></div>
+                        </div>
+
+
+
+                    </div>
+                    <div class="se_2 rounded-4">
+
+                        <div class="box_2">
+                            <div class="tus text-light">
+                                <div class="tus_">
+                                    <p class="fs-5 ms-1 mt-3">Popular Products</p>
+
+                                </div>
+                                <div class="tus__ text-light">
+                                    <div class="dropdown">
+                                        <button class="btn btn-none fs-5 text-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                          Price
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-dark">
+                                          <li><a class="dropdown-item active" href="#">200 To 400</a></li>
+                                          <li><a class="dropdown-item" href="#">400 to 600</a></li>
+                                          <li><a class="dropdown-item" href="#">600 to 800</a></li>
+                                          <!-- <li><hr class="dropdown-divider"></li> -->
+                                          <li><a class="dropdown-item" href="#">800 to 1000</a></li>
+                                        </ul>
+                                      </div>
+                                    <!-- <p class="fs-5 me-3 mt-3">Price</p> -->
+                                </div>
+
+                            </div>
+                            <!-- ........................................................ -->
+                            <div class="tus_1 mt-2">
+                                <div class="tus11">
+                                    <img src="img/tt.png" alt="" class="un_img">
+                                </div>
+                                <div class="tus12">
+                                    <p class="text-light fw-bold mt-2">Craft Women Black Sling Bag</p>
+                                    <p class="text-secondary " id="kkko"><i class="fa-regular fa-star"></i> <span>487
+                                        </span>
+                                        <span><i class="fa-solid fa-cart-shopping"></i></span> <span> 936</span>
+
+
+                                    </p>
+
+
+                                </div>
+                                <div class="tus13 pt-3">
+                                    <span class="bllf fw-bold">$15.99
+
+                                    </span>
+                                    <span><i class="fa-solid fa-arrow-right p-2 ms-2  " id="nkm"></i></span>
+
+                                </div>
+                            </div>
+
+
+                            <!-- ................................................... -->
+                            <div class="tus_1 mt-2">
+                                <div class="tus11">
+                                    <img src="img/bgb.png" alt="" class="un_img">
+                                </div>
+                                <div class="tus12">
+                                    <p class="text-light fw-bold mt-2">Unique Men's Wrist Watch</p>
+                                    <p class="text-secondary " id="kkko"><i class="fa-regular fa-star"></i> <span>487
+                                        </span>
+                                        <span><i class="fa-solid fa-cart-shopping"></i></span> <span> 936</span>
+
+
+                                    </p>
+
+
+                                </div>
+                                <div class="tus13 pt-3">
+                                    <span class="bllf fw-bold">$84.99
+
+
+                                    </span>
+                                    <span><i class="fa-solid fa-arrow-right p-2 ms-2  " id="nkm"></i></span>
+
+                                </div>
+                            </div>
+
+
+                            <!-- ................................................... -->
+                            <div class="tus_1 mt-2">
+                                <div class="tus11">
+                                    <img src="img/wat.png" alt="" class="un_img">
+                                </div>
+                                <div class="tus12">
+                                    <p class="text-light fw-bold mt-2">Twiala Floral Dress</p>
+                                    <p class="text-secondary " id="kkko"><i class="fa-regular fa-star"></i> <span>487
+                                        </span>
+                                        <span><i class="fa-solid fa-cart-shopping"></i></span> <span> 936</span>
+
+
+                                    </p>
+
+
+                                </div>
+                                <div class="tus13 pt-3">
+                                    <span class="bllf fw-bold">$49.99
+
+                                    </span>
+                                    <span><i class="fa-solid fa-arrow-right p-2 ms-2  " id="nkm"></i></span>
+
+                                </div>
+                            </div>
+
+
+                            <!-- ................................................... -->
+                            <div class="tus_1 mt-2">
+                                <div class="tus11">
+                                    <img src="img/hag.png" alt="" class="un_img">
+                                </div>
+                                <div class="tus12">
+                                    <p class="text-light fw-bold mt-2">Tokyo Bomber Jacket</p>
+                                    <p class="text-secondary " id="kkko"><i class="fa-regular fa-star"></i> <span>487
+                                        </span>
+                                        <span><i class="fa-solid fa-cart-shopping"></i></span> <span> 936</span>
+
+
+                                    </p>
+
+
+                                </div>
+                                <div class="tus13 pt-3">
+                                    <span class="bllf fw-bold">$45.89
+
+                                    </span>
+                                    <span><i class="fa-solid fa-arrow-right p-2 ms-2  " id="nkm"></i></span>
+
+                                </div>
+                            </div>
+
+
+                            <!-- ................................................... -->
+                            <div class="tus_1 mt-2">
+                                <div class="tus11">
+                                    <img src="img/bil.png" alt="" class="un_img">
+                                </div>
+                                <div class="tus12">
+                                    <p class="text-light fw-bold mt-2">Aster Dress 2XL / Royal Blue</p>
+                                    <p class="text-secondary " id="kkko"><i class="fa-regular fa-star"></i> <span>487
+                                        </span>
+                                        <span><i class="fa-solid fa-cart-shopping"></i></span> <span> 936</span>
+
+
+                                    </p>
+
+
+                                </div>
+                                <div class="tus13 pt-3">
+                                    <span class="bllf fw-bold">$74.63
+
+                                    </span>
+                                    <span><i class="fa-solid fa-arrow-right p-2 ms-2  " id="nkm"></i></span>
+
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="section_4 mt-4">
+                    <div class="seu_1 rounded-4">
+                        <!-- <div id="myChart" style="width:100%; max-width:600px; height:500px;"></div> -->
+                        <div id="chartContainer" style="height: 97%; width: 97%;" class="graphh ">
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="seu_2 rounded-4">
+                        <div class="cyc">
+                            <div class="cyc1">
+                                <div class="ccc">
+                                    <p class="mt-3 text-light ms-3">Order Status</p>
+
+                                </div>
+                                <div class="ccc1">
+                                    <i class="fa-solid fa-ellipsis-vertical text-light me-3"></i>
+                                </div>
+
+                            </div>
+                            <div class="cyc2">
+                                <div class="cv1">
+                                    <div class="omm text-light ps-3 pt-2">
+                                        <p>New</p>
+
+                                    </div>
+                                    <div class="omm1 text-light ps-3 pt-2">
+                                        <p>307
+                                        </p>
+
+                                    </div>
+                                </div>
+
+
+                                <div class="cv1">
+                                    <div class="omm text-light ps-3 pt-2">
+                                        <p>Pending</p>
+
+                                    </div>
+                                    <div class="omm1 text-light ps-3 pt-2">
+                                        <p>177
+
+                                        </p>
+
+                                    </div>
+                                </div>
+
+                                <div class="cv1">
+                                    <div class="omm text-light ps-3 pt-2">
+                                        <p>Reject</p>
+
+                                    </div>
+                                    <div class="omm1 text-light ps-3 pt-2">
+                                        <p>96
+                                        </p>
+
+                                    </div>
+                                </div>
+
+                                <div class="cv1">
+                                    <div class="omm text-light ps-3 pt-2">
+                                        <p>Returns</p>
+
+                                    </div>
+                                    <div class="omm1 text-light ps-3 pt-2">
+                                        <p>150
+                                        </p>
+
+                                    </div>
+                                </div>
+
+                                <div class="cv1">
+                                    <div class="omm text-light ps-3 pt-2">
+                                        <p>Dispatched
+                                        </p>
+
+                                    </div>
+                                    <div class="omm1 text-light ps-3 pt-2">
+                                        <p>
+                                            661
+
+                                        </p>
+
+                                    </div>
+                                </div>
+
+                                <div class="cv1">
+                                    <div class="omm text-light ps-3 pt-2">
+                                        <p>Delivered</p>
+
+                                    </div>
+                                    <div class="omm1 text-light ps-3 pt-2">
+                                        <p>985
+                                        </p>
+
+                                    </div>
+                                </div>
+
+                                <div class="cv1">
+                                    <div class="omm text-light ps-3 pt-2">
+                                        <p>New</p>
+
+                                    </div>
+                                    <div class="omm1 text-light ps-3 pt-2">
+                                        <p>307
+                                        </p>
+
+                                    </div>
+                                </div>
+
+                                <div class="cv1">
+                                    <div class="omm text-light ps-3 pt-2">
+                                        <p>Cancelled
+                                        </p>
+
+                                    </div>
+                                    <div class="omm1 text-light ps-3 pt-2">
+                                        <p>58
+                                        </p>
+
+                                    </div>
+                                </div>
+
+                                <div class="cv1">
+                                    <div class="omm text-light ps-3 pt-2">
+                                        <p>New</p>
+
+                                    </div>
+                                    <div class="omm1 text-light ps-3 pt-2">
+                                        <p>307
+                                        </p>
+
+                                    </div>
+                                </div>
+
+                                <div class="cv1">
+                                    <div class="omm text-light ps-3 pt-2">
+                                        <p>New</p>
+
+                                    </div>
+                                    <div class="omm1 text-light ps-3 pt-2">
+                                        <p>307
+                                        </p>
+
+                                    </div>
+                                </div>
+                                <div class="cv1">
+                                    <div class="omm text-light ps-3 pt-2">
+                                        <p>New</p>
+
+                                    </div>
+                                    <div class="omm1 text-light ps-3 pt-2">
+                                        <p>307
+                                        </p>
+
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                            <div class="cyc3">
+                                <div class="gyu">
+                                    <div class="progress" style="height: 10px; background-color: rgb(77, 73, 73);">
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                            role="progressbar" aria-label="Animated striped example" aria-valuenow="75"
+                                            aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                                    </div>
+
+                                </div>
+
+                                <div class="gyu">
+                                    <div class="progress" style="height: 10px; background-color: rgb(77, 73, 73);">
+                                        <div id="pro_1" class="progress-bar progress-bar-striped progress-bar-animated"
+                                            role="progressbar" aria-label="Animated striped example" aria-valuenow="40"
+                                            aria-valuemin="0" aria-valuemax="100" style="width: 40%"></div>
+                                    </div>
+
+                                </div>
+
+                                <div class="gyu">
+                                    <div class="progress" style="height: 10px; background-color: rgb(77, 73, 73);">
+                                        <div id="pro_2" class="progress-bar progress-bar-striped progress-bar-animated"
+                                            role="progressbar" aria-label="Animated striped example" aria-valuenow="10"
+                                            aria-valuemin="0" aria-valuemax="100" style="width: 10%"></div>
+                                    </div>
+
+                                </div>
+
+                                <div class="gyu">
+                                    <div class="progress" style="height: 10px; background-color: rgb(77, 73, 73);">
+                                        <div id="pro_3" class="progress-bar progress-bar-striped progress-bar-animated"
+                                            role="progressbar" aria-label="Animated striped example" aria-valuenow="19"
+                                            aria-valuemin="0" aria-valuemax="100" style="width: 19%"></div>
+                                    </div>
+
+                                </div>
+
+                                <div class="gyu">
+                                    <div class="progress" style="height: 10px; background-color: rgb(77, 73, 73);">
+                                        <div id="pro_4" class="progress-bar progress-bar-striped progress-bar-animated"
+                                            role="progressbar" aria-label="Animated striped example" aria-valuenow="80"
+                                            aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
+                                    </div>
+
+                                </div>
+
+                                <div class="gyu">
+                                    <div class="progress" style="height: 10px; background-color: rgb(77, 73, 73);">
+                                        <div id="pro_5" class="progress-bar progress-bar-striped progress-bar-animated"
+                                            role="progressbar" aria-label="Animated striped example" aria-valuenow="90"
+                                            aria-valuemin="0" aria-valuemax="100" style="width: 90%"></div>
+                                    </div>
+
+                                </div>
+
+                                <div class="gyu">
+                                    <div class="progress" style="height: 10px; background-color: rgb(77, 73, 73);">
+                                        <div id="pro_1" class="progress-bar progress-bar-striped progress-bar-animated"
+                                            role="progressbar" aria-label="Animated striped example" aria-valuenow="46"
+                                            aria-valuemin="0" aria-valuemax="100" style="width: 46%"></div>
+                                    </div>
+
+                                </div>
+
+
+
+                                <div class="gyu">
+                                    <div class="progress" style="height: 10px; background-color: rgb(77, 73, 73);">
+                                        <div id="pro_2" class="progress-bar progress-bar-striped progress-bar-animated"
+                                            role="progressbar" aria-label="Animated striped example" aria-valuenow="10"
+                                            aria-valuemin="0" aria-valuemax="100" style="width: 9%"></div>
+                                    </div>
+
+                                </div>
+
+                                <div class="gyu">
+                                    <div class="progress" style="height: 10px; background-color: rgb(77, 73, 73);">
+                                        <div id="pro_3" class="progress-bar progress-bar-striped progress-bar-animated"
+                                            role="progressbar" aria-label="Animated striped example" aria-valuenow="50"
+                                            aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+
+
+
+
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="seu_3 rounded-4">
+
+
+                        <div class="c_box">
+                            <div class="c1 text-light pt-3">
+                                <div class="cc1">
+                                    <p>Insight</p>
+
+
+                                </div>
+                                <div class="cc2">
+                                    <div class="dropdown">
+                                        <button class="btn btn-none  text-light  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                          This Month
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-dark">
+                                          <li><a class="dropdown-item active" href="#">This Month</a></li>
+                                          <!-- <li><a class="dropdown-item" href="#">This Month</a></li> -->
+                                          <li><a class="dropdown-item" href="#">Last Month</a></li>
+                                          <!-- <li><hr class="dropdown-divider"></li>
+                                          <li><a class="dropdown-item" href="#">Separated link</a></li> -->
+                                        </ul>
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="c2 text-light pt-2 ps-3 rounded">
+                                <i class="fa-regular fa-pen-to-square " id="blll"></i>
+                                <span class="ms-3"> The recognition that one has a mental illness</span>
+
+                            </div>
+
+
+
+                            <div class="c2 text-light pt-2 ps-3 rounded">
+                                <i class="fa-regular fa-pen-to-square " id="blll"></i>
+                                <span class="ms-3"> Review market characteristics and trends</span>
+
+                            </div>
+
+
+                            <div class="c2 text-light pt-2 ps-3 rounded">
+                                <i class="fa-regular fa-pen-to-square " id="blll"></i>
+                                <span class="ms-3"> Digital analytics data including site analytics</span>
+
+                            </div>
+
+                            <div class="c2 text-light pt-2 ps-3 rounded">
+                                <i class="fa-regular fa-pen-to-square " id="blll"></i>
+                                <span class="ms-3"> Check uikings theme and give customer support</span>
+
+                            </div>
+
+                            <div class="c2 text-light pt-2 ps-3 rounded">
+                                <i class="fa-regular fa-pen-to-square " id="blll"></i>
+                                <span class="ms-3">
+                                    Success stories and case studies</span>
+
+                            </div>
+
+                            <div class="c2 text-light pt-2 ps-3 rounded">
+                                <i class="fa-regular fa-pen-to-square " id="blll"></i>
+                                <span class="ms-3">
+                                    Preferences & purchase activity</span>
+
+                            </div>
+
+                            <div class="c2 text-light pt-2 ps-3 rounded">
+                                <i class="fa-regular fa-pen-to-square " id="blll"></i>
+                                <span class="ms-3"> The recognition that one has a mental illness</span>
+
+                            </div>
+
+
+
+                            <div class="c2 text-light pt-2 ps-3 rounded">
+                                <i class="fa-regular fa-pen-to-square " id="blll"></i>
+                                <span class="ms-3"> The recognition that one has a mental illness</span>
+
+                            </div>
+
+
+                            <div class="c2 text-light pt-2 ps-3 rounded">
+                                <i class="fa-regular fa-pen-to-square " id="blll"></i>
+                                <span class="ms-3"> The recognition that one has a mental illness</span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="createe mt-4">
+                    <div class="dhii_1 rounded-4">
+                        <div class="gudd  rounded-4">
+                            <div class="soi1 text-light d-flex align-items-center justify-content-between">
+                                <p class="fs-5 ms-4  mt-2 pt-3">Top Cities Selling Product</p>
+                                <i class="fa-solid fa-ellipsis-vertical fs-4 me-4"></i>
+                            </div>
+
+
+
+                            <div class="icodo text-center">
+                            <img src="/img/location-pin.png" alt="" class="mt-5" id="dandi">
+                            <p class="fs-3 text-light mt-4">1,456</p>
+                            <p class="text-light fs-5" id="mjk">San Francisco</p>
+                            </div>
+                            <div class="untu">
+                                <div class="ss">
+                                    <div class="ggg">
+                                        <p>
+                                            San Francisco
+                                            
+                                            </p>
+                                    </div>
+                                    <div class="ggg">
+                                        <p>Los Angeles</p>
+
+                                    </div>
+                                    <div class="ggg">
+                                        <p>
+                                            San Diego
+
+                                        </p>
+                                    </div>
+
+                                </div>
+                                <div class="ss1">
+                                    <div class="ggg">
+                                        <p>1,456
+                                        </p>
+
+                                    </div>
+                                    <div class="ggg">
+                                        <p>1,123</p>
+                                    </div>
+                                    <div class="ggg">
+                                        <p>1,026
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="ss2">
+                                    <div class="ggg">
+
+
+
+
+
+
+
+ 
+                                        <div class="progress" style="height: 20%;" role="progressbar" aria-label="Animated striped example" aria-valuenow="46" aria-valuemin="0" aria-valuemax="100">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated pro_333" style="width: 46%"></div>
+                                          </div>
+                                    
+                                    </div>
+                                    <div class="ggg">
+
+                                       
+
+                                        <div class="progress" style="height: 20%;" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%"></div>
+                                          </div>
+                                        
+                                    </div>
+                                    <div class="ggg">
+
+                                        <div class="progress" style="height: 20%;" role="progressbar" aria-label="Animated striped example" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated pro_331" style="width: 80%"></div>
+                                          </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                       
+
+                    </div>
+                    <div class="dhii_2 rounded-4">
+                        <div class="bbc text-light pt-3">
+                            <p class=" mt-2 fs-5 ms-4  ">Our Schedules</p>
+                            <p>
+                              
+                                <i class="fa-regular fa-calendar-check fs-3 m me-3"></i>
+                            </p>
+
+                        </div>
+
+                        <div id="calendar" style="width: 100%; height: 90%;"></div>
+                        <div class="myy">
+                            
+                        </div>
+                    </div>
+                    <div class="dhii_3 rounded-4">
+
+                        <div class="soci rounded-4">
+                            <div class="soi1 text-light d-flex align-items-center justify-content-between">
+                                <p class="fs-5 ms-4  mt-2 pt-3">Social Source</p>
+                                <i class="fa-solid fa-ellipsis-vertical fs-4 me-4"></i>
+                            </div>
+                            
+                            <div class="soi2 text-center pt-3">
+                                <i class="fa-brands fa-facebook fsss"></i> <br>
+                                <div class="cut">
+                                <h5 class="text-light fs-3 mt-3" id="inl">Facebook - <h6 class="teee fs-3" id="inl">125
+                                        sales</span></span>
+
+
+
+                                    </div>
+                                    <br>
+                                    <div class="cu">
+                                        <p class="text-light" id="fgg">Maecenas nec odio et ante tincidunt 
+                                             tempus.<br> Donec vitae sapien ut libero 
+                                            venenatis <br> faucibus tincidunt.</p>
+                                            
+
+                                            <button class="btn" id="nop_bt">Learn more ></button>
+
+                                        </div>
+
+                            </div>
+                            <div class="soi3">
+
+                                <div class="vf">
+                                    <i class="fa-brands fa-facebook fs-1 " id="coy"></i> 
+                                    <p class="text-light fs-5">Facebook</p>
+                                    <p class="" id="mhh">125 sales</p>
+                                    <!-- <i class="fa-brands fa-facebook-f " id="coy"></i> -->
+                                    <br>
+
+                                </div>
+                                <div class="vf">
+                                    <!-- <i class="fa-brands fa-facebook fs-1 " id="coy"></i>  -->
+                                    <i class="fa-brands fa-twitter fs-1" id="coy1"></i>
+                                    <p class="text-light fs-5">Twitter</p>
+                                    <p class="" id="mhh">112 sales</p>
+                                </div>
+                                <div class="vf">
+                                    <!-- <i class="fa-brands fa-facebook fs-1 " id="coy"></i>  -->
+                                    <i class="fa-brands fa-instagram fs-1 inff" id="coy2" ></i>
+                                    <p class="text-light fs-5">Instagram</p>
+                                    <p class="" id="mhh">104 sales</p>
+                                </div>
+                               
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                  
+
+
+
+
+                </div>
+                <center>
+                    <h4 class="htad ms-5 text-light mt-4"> ~ Create By <span class="st24"><i
+                                class="fa-solid fa-crown king ms-2 me-2"></i> TUSHAL SHEKH ~</span></h4>
+                </center>
+
+</body>
+
+
+</script>
+
+<!-- chart_Double...................................................... -->
+
+<script type="text/javascript">
+    window.onload = function () {
+        var chart = new CanvasJS.Chart("chartContainer", {
+            title: {
+
+            },
+
+            data: [
+                {
+
+                    type: "column",
+                    name: "First Quarter",
+                    showInLegend: true,
+                    dataPoints: [
+                        { label: "banana", y: 58 },
+                        { label: "orange", y: 69 },
+                        { label: "apple", y: 80 },
+                        { label: "mango", y: 74 },
+                        { label: "grape", y: 64 }
+                    ]
+                },
+
+                {
+
+                    type: "column",
+                    name: "Second Quarter",
+                    showInLegend: true,
+                    dataPoints: [
+                        { label: "banana", y: 63 },
+                        { label: "orange", y: 73 },
+                        { label: "apple", y: 88 },
+                        { label: "mango", y: 77 },
+                        { label: "grape", y: 60 }
+                    ]
+                }
+            ],
+
+            axisY: {
+                prefix: "$",
+                suffix: "K"
+            }
+        });
+
+        chart.render();
+    }
+</script>
+
+<script type="text/javascript" src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
+<script>
+    $(document).ready(function () {
+      
+    })
+</script>
+
+
+
+
+<script>
+    $(document).ready(function () {
+
+      
+
+
+
+
+        $(".d2").click(function () 
+        {
+            $(".d22").slideToggle()
+
+        })
+
+        $(".d4").click(function () {
+            $(".d44").slideToggle()
+        })
+
+        $(".d6").click(function () {
+            $(".d66").slideToggle()
+        })
+
+
+        $(".d661").click(function () {
+            $(".d666").slideToggle()
+        })
+
+        $(".d7").click(function () {
+            $(".d77").slideToggle()
+        })
+
+
+        $(".d8").click(function () {
+            $(".d88").slideToggle()
+        })
+
+        $(".d9").click(function () {
+            $(".d99").slideToggle()
+        })
+
+
+        $(".d10").click(function () {
+            $(".d1010").slideToggle()
+        })
+
+        $(".d11").click(function () {
+            $(".d1111").slideToggle()
+        })
+
+        $(".d12").click(function () {
+            $(".d1212").slideToggle()
+        })
+
+
+
+        $("#toto").click(function () {
+            $(".mainside").toggleClass("new_mainside");
+            $(".un1").toggleClass("icoco")
+            $(".up").toggle()
+            $(".d1").toggle()
+            $(".dd").toggle()
+            $("header").toggleClass("new_header")
+            $(".mainn").toggleClass("new_mainn")
+            $(".dhi").toggle()
+            $(".mini_logi").toggle()
+            $("#big_logi").toggle()
+            $(".logo").toggleClass("logo_sizee")
+            $("#toto1").toggle()
+
+        })
+
+
+
+
+    })</script>
+<script>
+    $('.counter').counterUp({
+        delay: 10,
+        time: 2000
+    });
+</script>
+
+<!-- scroll-down.......... -->
+<script>
+    $(document).ready(function(){
+        $("#arrow").click(function(){
+            $("html,body").animate({scrollTop:0})
+        })
+
+
+        $(window).scroll(function(){
+            if($(this).scrollTop()>50)
+            {
+                $("#arrow").slideDown();
+            }
+            else
+            {
+                $("#arrow").slideUp();
+            }
+        })
+    })
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+
+
+
+<script type="text/javascript">
+    window.onload = function () {
+        var chart = new CanvasJS.Chart("chartContainer", {
+            theme: "dark1",
+            backgroundColor: "#131212",
+            title: {
+
+                text: ""
+            },
+
+            data: [  //array of dataSeries     
+                { //dataSeries - first quarter
+                    /*** Change type "column" to "bar", "area", "line" or "pie"***/
+                    type: "column",
+                    name: "First Quarter",
+                    showInLegend: true,
+                    dataPoints: [
+                        { label: "banana", y: 58 },
+                        { label: "orange", y: 69 },
+                        { label: "apple", y: 80 },
+                        { label: "mango", y: 74 },
+                        { label: "grape", y: 64 }
+                    ]
+                },
+
+                { //dataSeries - second quarter
+
+                    type: "column",
+                    name: "Second Quarter",
+                    showInLegend: true,
+                    dataPoints: [
+                        { label: "banana", y: 63 },
+                        { label: "orange", y: 73 },
+                        { label: "apple", y: 88 },
+                        { label: "mango", y: 77 },
+                        { label: "grape", y: 60 }
+                    ]
+                }
+            ],
+            /** Set axisY properties here*/
+            axisY: {
+                prefix: "$",
+                suffix: "K"
+            }
+        });
+
+        chart.render();
+    }
+</script>
+
+
+
+<!-- line graph.......................................................................... -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+
+
+<!-- <script>
+                    const xValues = [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000];
+
+                    new Chart("myChart", {
+                        type: "line",
+                        data: {
+                            labels: xValues,
+                            datasets: [{
+                                data: [860, 1140, 1060, 1060, 1070, 1110, 1330, 2210, 7830, 2478],
+                                borderColor: "red",
+                                fill: false
+                            }, {
+                                data: [1600, 1700, 1700, 1900, 2000, 2700, 4000, 5000, 6000, 7000],
+                                borderColor: "green",
+                                fill: false
+                            }, {
+                                data: [300, 700, 2000, 5000, 6000, 4000, 2000, 1000, 200, 100],
+                                borderColor: "blue",
+                                fill: false
+                            }]
+                        },
+                        options: {
+                            legend: { display: false }
+                        }
+                    });
+                </script>
+
+ -->
+
+
+
+
+
+
+
+
+<!-- arrow chart...... -->
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+
+
+
+
+
+
+
+
+
+<!-- map............................................... -->
+
+
+<script>
+    am5.ready(function () {
+
+        // Create root element
+        // https://www.amcharts.com/docs/v5/getting-started/#Root_element
+        var root = am5.Root.new("chartdiv");
+
+
+        // Set themes
+        // https://www.amcharts.com/docs/v5/concepts/themes/
+        root.setThemes([
+            am5themes_Animated.new(root)
+        ]);
+
+
+        // Create the map chart
+        // https://www.amcharts.com/docs/v5/charts/map-chart/
+        var chart = root.container.children.push(am5map.MapChart.new(root, {
+            panX: "translateX",
+            backgroundColor: "black",
+            panY: "translateY",
+            projection: am5map.geoMercator()
+        }));
+
+
+        // Create main polygon series for countries
+        // https://www.amcharts.com/docs/v5/charts/map-chart/map-polygon-series/
+        var polygonSeries = chart.series.push(am5map.MapPolygonSeries.new(root, {
+            geoJSON: am5geodata_worldLow,
+            exclude: ["AQ"]
+        }));
+
+        polygonSeries.mapPolygons.template.setAll({
+            tooltipText: "{name}",
+            toggleKey: "active",
+            interactive: true
+        });
+
+        polygonSeries.mapPolygons.template.states.create("hover", {
+            fill: root.interfaceColors.get("primaryButtonHover")
+        });
+
+        polygonSeries.mapPolygons.template.states.create("active", {
+            fill: root.interfaceColors.get("primaryButtonHover")
+        });
+
+        var previousPolygon;
+
+        polygonSeries.mapPolygons.template.on("active", function (active, target) {
+            if (previousPolygon && previousPolygon != target) {
+                previousPolygon.set("active", false);
+            }
+            if (target.get("active")) {
+                polygonSeries.zoomToDataItem(target.dataItem);
+            }
+            else {
+                chart.goHome();
+            }
+            previousPolygon = target;
+        });
+
+
+        // Add zoom control
+        // https://www.amcharts.com/docs/v5/charts/map-chart/map-pan-zoom/#Zoom_control
+        chart.set("zoomControl", am5map.ZoomControl.new(root, {}));
+
+
+        // Set clicking on "water" to zoom out
+        chart.chartContainer.get("background").events.on("click", function () {
+            chart.goHome();
+        })
+
+
+        // Make stuff animate on load
+        chart.appear(1000, 100);
+
+    }); // end am5.ready()
+</script>
+
+
+
+
+<!-- mini graphhhhhhhhh colon............................................. -->
+
+<script src="./node_modules/chart.js/dist/Chart.min.js"></script>
+
+
+<script>
+    (function () {
+        // INITIALIZATION OF CHARTJS
+        // =======================================================
+        document.querySelectorAll('.js-chart').forEach(item => {
+            HSCore.components.HSChartJS.init(item)
+        })
+    });
+</script>
+
+
+<script>
+    const xValuesd = [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000];
+
+    new Chart("myChart", {
+        type: "line",
+        data: {
+            labels: xValuesd,
+            datasets: [{
+                data: [860, 1140, 1060, 1060, 1070, 1110, 1330, 2210, 7830, 2478],
+                borderColor: "red",
+                fill: false
+            }, {
+                data: [1600, 1700, 1700, 1900, 2000, 2700, 4000, 5000, 6000, 7000],
+                borderColor: "green",
+                fill: false
+            }, {
+                data: [300, 700, 2000, 5000, 6000, 4000, 2000, 1000, 200, 100],
+                borderColor: "blue",
+                fill: false
+            }]
+        },
+        options: {
+            legend: { display: false }
+        }
+    });
+</script>
+<!-- calendar.................................. -->
+<script>
+    var db_events = [
+        {
+            title: "Board members meeting.",
+            date: 1532381440036,
+            link: "events.com/ev2"
+        },
+        {
+            title: "Delaware branch opening.",
+            date: 1532467961534,
+            link: "events.com/ev1"
+        },
+        {
+            title: "An important event.",
+            date: 1532554405128,
+            link: "events.com/ev1"
+        }
+    ];
+
+    $(document).ready(function () {
+        $("#calendar").MEC({
+            calendar_link: "example.com/myCalendar",
+            events: db_events
+        });
+
+        //if you don't have events, use
+        $("#calendar2").MEC();
+    });
+</script>
+
+<script src="/js/mini-event-calendar.js"></script>
+
+<script>
+    const xValues = ["Italy", "France", "Spain", "USA", "Argentina"];
+    const yValues = [28, 32, 40, 29, 25];
+    const barColors = ["red", "green", "#677BDC", "orange", "brown"];
+
+
+
+    new Chart("myChart", {
+        type: "bar",
+        data: {
+            labels: xValues,
+            datasets: [{
+                backgroundColor: barColors,
+                data: yValues
+            }]
+        },
+        options: {
+            legend: { display: false },
+            title: {
+                display: true,
+
+            }
+        }
+    });
+</script>
+
+
+
+
+
+
+<!-- pointer...................................................... -->
+
+   <!-- top bot............................................. -->
+   <!-- <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+   
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script> -->
+   
+   
+
+<!-- <script>
+    $(document).mousemove(function(t){
+        $(".po").eq(0).css({left:t.clientX,top:t.clientY})
+    })
+
+
+    $(document).mousemove(function(t){
+        $(".po1").eq(0).css({left:t.clientX,top:t.clientY})
+    })
+
+    $(document).mousemove(function(t){
+        $(".po2").eq(0).css({left:t.clientX,top:t.clientY})
+    })
+
+
+    $(document).mousemove(function(t){
+        $(".po3").eq(0).css({left:t.clientX,top:t.clientY})
+    })
+</script>
+
+<script>
+    $(document).ready(function(){
+        $("#arrow").click(function(){
+            $("html,body").animate({scrollTop:0})
+        })
+
+
+        $(window).scroll(function(){
+            if($(this).scrollTop()>20)
+            {
+                $("#arrow").slideDown();
+            }
+            else
+            {
+                $("#arrow").slideUp();
+            }
+        })
+    })
+</script> -->
+
+
+
+</html>

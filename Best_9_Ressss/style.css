@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+header{
+    background-image: url(/assets/ii.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section_t{
+    background-image: url(/assets/shape-bg1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.sectionn{
+    background-image: url(/assets/konnn.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section_dh{
+    background-image: url(/assets/bgggg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section_for{
+    background-image: url(/assets/form_bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.formm{
+    box-shadow: 0px 0px 10px 1px gray;
+}
+footer{
+    background-image: url(/assets/footer-bg3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

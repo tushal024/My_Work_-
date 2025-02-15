@@ -1,0 +1,1124 @@
+<!-- https://www.portotheme.com/wordpress/porto/shop20/ -->
+
+<!-- add extra..... -->
+<!-- https://www.portotheme.com/wordpress/porto/shop36/ -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTO</title>
+    <!-- <link rel="stylesheet" href="/assets/css/"> -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+
+    <!-- bootstrap................. -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+
+    <!-- jquery........................ -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+
+    <!-- fontawsome......................... -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- owl................... -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"
+        integrity="sha512-9CWGXFSJ+/X0LWzSRCZFsOPhSfm6jbnL+Mpqo0o8Ke2SYr8rCTqb4/wGm+9n13HtDE1NQpAEOrMecDZw4FXQGg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css"
+        integrity="sha512-X/RSQYxFb/tvuz6aNRTfKXDnQzmnzoawgEQ4X8nZNftzs8KFFH23p/BA6D2k0QCM4R0sY1DEy9MIY9b3fwi+bg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css"
+        integrity="sha512-f28cvdA4Bq3dC9X9wNmSx21rjWI+5piIW/uoc2LuQ67asKxfQjUow2MkcCNcfJiaLrHcGbed1wzYe3dlY4w9gA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+        <!-- foncy box................... -->
+        <link rel="stylesheet" href="/fancy/jquery.fancybox.css">
+        <link rel="stylesheet" href="/fancy/jquery.fancybox.min.css">
+
+
+
+
+
+
+        <!-- wow..................... -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+
+
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+
+
+        <style>
+            html,
+            body {
+              position: relative;
+              height: 100%;
+              z-index: -1;
+            }
+        
+            body {
+              /* background: #eee; */
+              font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+              font-size: 14px;
+              color: #000;
+              margin: 0;
+              padding: 0;
+              position: relative;
+            }
+        
+            .swiper {
+              width: 100%;
+              height: 100%;
+              border: none;
+              /* display: none; */
+              /* z-index: -1; */
+            }
+        
+            .swiper-slide {
+              text-align: center;
+              font-size: 18px;
+              background: #fff;
+              width: 100%;
+              height: 550px;
+              display: flex;
+              
+              justify-content: center;
+              align-items: center;
+            }
+        
+            .swiper-slide img {
+              display: block;
+              
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+
+
+            .mainu {
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #EEEEEE;
+            z-index: 1;
+            position: absolute;
+            top: 0;
+            left: 0;
+
+        }
+        .loader{
+            width: 50px;
+            height: 50px;
+            border: 5px solid black;
+            border-radius: 50%;
+            border-top-color: transparent;
+            animation: lll;
+            animation-duration: 1s;
+            /* z-index: 1; */
+            background-color: transparent;
+            animation-direction: normal;
+            animation-iteration-count: infinite;
+        }
+
+
+          </style>
+
+
+</head>
+
+<body>
+
+
+
+    
+
+
+<!-- loader................................. -->
+
+    <!-- <div class="mainu">
+       
+        <img src="https://i.pinimg.com/originals/3d/6a/a9/3d6aa9082f3c9e285df9970dc7b762ac.gif" alt="" style="z-index: 1;">
+
+    </div> -->
+
+
+
+    <!-- <i class="fa-solid fa-up-long" id="arrow"></i> -->
+    <i class="fa-solid fa-angles-up" id="arrow"></i>
+
+    <header>
+        <div class="sm_header wow animate__animated animate__fadeInDown">
+
+            <div class="hh1">
+
+
+                <div class="mm">
+
+                    <div class="hy text-light">
+                        <marquee behavior="" direction="">
+                        <i class="fa-solid fa-truck-fast"></i> <span class="ms-2">Free Shipping on Orders Over
+                            $99</span>
+                        </marquee>
+
+
+                    </div>
+                    <div class="hy text-light">
+
+                        <marquee behavior="" direction="">
+                        <i class="fa-solid fa-indian-rupee-sign"></i> <span class="ms-2">Up to 40% OFF on Selected
+                            Items</span>
+                            </marquee>
+                    </div>
+
+                    <div class="hy text-light">
+
+                        <marquee behavior="" direction="">
+                        <i class="fa-solid fa-podcast"></i> <span class="ms-2">100% Secure Payment</span>
+
+                        </marquee>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="hh2">
+                <div class="hhh">
+
+                    <div class="ko">
+                        <input type="search " class="ser" placeholder="SEARCH HERE...">
+
+                        <i class="fa-solid fa-magnifying-glass iuu fs-5 "></i>
+
+
+                    </div>
+                    <div class="ko1">
+                        <nav>
+                            <ul>
+                                <li><a href="">USD <i class="fa-solid fa-chevron-down"></i></a></li>
+                                <li><a href="">ENG <i class="fa-solid fa-chevron-down"></i></a></li>
+                                <li><a href="">ABOOUT US</a></li>
+                                <li><a href="">CONTACT US</a></li>
+                                <li><a href="">LOG IN</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="ko2">
+                        <i class="fa-regular fa-user fs-4"></i>
+                        <i class="fa-regular fa-heart fs-4"></i>
+                        <i class="fa-solid fa-basket-shopping fs-4"></i>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="hh3">
+                <div class="boo">
+
+                    <div class="cc">
+                        <nav>
+                            <ul>
+                                <li><a href="">HOME <i class="fa-solid fa-chevron-down"></i></a></li>
+                                <li><a href=""> CATEGORIES <i class="fa-solid fa-chevron-down"></i></a></li>
+                                <li><a href="">PRODUCTS</a></li>
+                                <li><a href=""> FEATURES</a></li>
+                                <!-- <li><a href="">LOG IN</a></li> -->
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="cc1">
+                        <img src="/img/.png" alt="" class="logh">
+                    </div>
+                    <div class="cc2">
+                        <nav>
+                            <ul>
+                                <li><a href="">BLOG <i class="fa-solid fa-chevron-down"></i></a></li>
+                                <li><a href="">ABOOUT US</a></li>logo_ecomblack_lg
+                                <li><a href="">ELEMENTS <i class="fa-solid fa-chevron-down"></i></a></li>
+                                <li><a href="">BUY PROTO!</a></li>
+                                <!-- <li><a href="">LOG IN</a></li> -->
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="swiper mySwiper wow animate__animated animate__zoomIn">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" style="">
+                <img src="/img/op_1.png" alt="" >
+              </div>
+              <div class="swiper-slide" style="">
+                <img src="/img/op_2.png" alt="">
+
+              </div>
+              <div class="swiper-slide" style="">
+                <img src="/img/op_3.png" alt="">
+
+              </div>
+             
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+
+      
+<br><br><br>
+
+
+<div class="line">
+<div class="container">
+    <div class="row">
+        <div class="col wow animate__animated animate__zoomIn">
+            <div class="im">
+                <img src="/img/sofau.jpg" alt="" class="img-fluid furr" >
+            </div>
+            <div class="textt">
+                <h3 class="fs-5 fw-bold">Furniture</h3>
+                <p class="mj"> 1 PRODUCT</p>
+            </div>
+        </div>
+        <div class="col wow animate__animated animate__zoomIn">
+            <div class="im">
+                <img src="/img/sport.jpg" alt="" class="img-fluid furr" >
+                <!-- <img src="/img/smartphone.jpg" alt="" class="img-fluid furr" > -->
+            
+            </div>
+            <div class="textt">
+                <h3 class="fs-5 fw-bold">Sports</h3>
+                <p class="mj"> 2 PRODUCT</p>
+            </div>
+        </div>
+        <div class="col wow animate__animated animate__zoomIn">
+            <div class="im">
+                <img src="/img/toy.jpg" alt="" class="img-fluid furr" >
+            </div>
+            <div class="textt">
+                <h3 class="fs-5 fw-bold">Toys</h3>
+                <p class="mj"> 4 PRODUCT</p>
+            </div>
+        </div>
+        <div class="col wow animate__animated animate__zoomIn">
+            <div class="im">
+                <img src="/img/cameras.jpg" alt="" class="img-fluid furr" >
+            </div>
+            <div class="textt">
+                <h3 class="fs-5 fw-bold">cameras</h3>
+                <p class="mj"> 5 PRODUCT</p>
+            </div>
+        </div>
+        <div class="col wow animate__animated animate__zoomIn">
+            <div class="im">
+                <img src="/img/game.jpg" alt="" class="img-fluid furr" >
+            </div>
+            <div class="textt">
+                <h3 class="fs-5 fw-bold">Gamimg</h3>
+                <p class="mj"> 2 PRODUCT</p>
+            </div>
+        </div>
+        <div class="col wow animate__animated animate__zoomIn">
+            <div class="im">
+                <img src="/img/headphone.jpg" alt="" class="img-fluid furr" >
+            </div>
+            <div class="textt">
+                <h3 class="fs-5 fw-bold">Headphone</h3>
+                <p class="mj"> 1 PRODUCT</p>
+            </div>
+        </div>
+       
+    </div>
+</div>
+</div>
+
+        <div class="side ">
+            <div class="u text-center">
+                <i class="fa-solid fa-cart-shopping fs-5"></i>
+                <p class="fw-bold">Buy Now</p>
+            </div>
+
+
+            <div class="u text-center">
+                <!-- <i class="fa-solid fa-cart-shopping fs-5"></i> -->
+                <i class="fa-solid fa-circle-dot fs-5"></i>
+                <p class="fw-bold">Prebuilts</p>
+            </div>
+
+
+            <div class="u text-center">
+                <!-- <i class="fa-solid fa-cart-shopping fs-5"></i> -->
+                <i class="fa-solid fa-gears fs-5"></i>
+                <p class="fw-bold">Setting</p>
+            </div>
+
+            <div class="u text-center">
+                <!-- <i class="fa-solid fa-cart-shopping fs-5"></i> -->
+                <i class="fa-solid fa-route fs-5"></i>
+                <p class="fw-bold">Location</p>
+            </div>
+        </div>
+
+
+
+        <div class="container mt-4">
+            <div class="box d-flex">
+                <div class="b wow animate__animated animate__slideInRight"></div>
+                <div class="b1 wow animate__animated animate__slideInLeft">
+                    <div class="bb">
+                        <center>
+                            <h5 class="w-100 text-light fw-bold mt-3 mb-3">FIND A PRODUCT</h5>
+                            <div class="dropdown mt-4">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                    data-bs-toggle="dropdown">
+                                    <span class="text-secondary"> Select A Categories </span>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">Accessories</a></li>
+                                    <li><a class="dropdown-item" href="#">Watch</a></li>
+                                    <li><a class="dropdown-item" href="#">Caps</a></li>
+
+                                    <li><a class="dropdown-item" href="#">Shose</a></li>
+                                    <li><a class="dropdown-item" href="#">Toys</a></li>
+                               
+                                    <li><a class="dropdown-item" href="#">Decore</a></li>
+                               
+                                </ul>
+                            </div>
+                          <div class="dropdown mt-4">
+                                <button class="btn btn-secondary dropdown-toggle ha" type="button"
+                                    id="dropdownMenuButton1" data-bs-toggle="dropdown">
+                                    <span class="text-secondary"> By Brand </span>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">Diesel</a></li>
+                                    <li><a class="dropdown-item" href="#">Adidas</a></li>
+                                    <li><a class="dropdown-item" href="#">Calvin</a></li>
+                                </ul>
+                            </div>
+                        </center>
+                    </div>
+                    <div class="bb1">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+
+
+
+
+    <div class="section_1">
+
+
+        <!-- add fancy box....................... -->
+
+
+        <!-- <a data-fancybox="gallery" href="big_1.jpg">
+            <img src="small_1.jpg" />
+          </a>
+          
+          <a data-fancybox="gallery" href="big_2.jpg">
+            <img src="small_2.jpg" />
+          </a> -->
+
+
+        <div class="container">
+            <div class="heading text-center  mb-5">
+                <h4 class="fw-bold fs-3">FEATURED CATEGORIES</h4>
+            </div>
+
+            <div class="m_box">
+                <div class="mm wow animate__animated animate__zoomIn"></div>
+                <div class="mm1 wow animate__animated animate__zoomIn"></div>
+                <div class="mm2 wow animate__animated animate__zoomIn"></div>
+                <div class="mm3 wow animate__animated animate__zoomIn"></div>
+                <div class="mm4 wow animate__animated animate__zoomIn"></div>
+                <div class="mm5 wow animate__animated animate__zoomIn"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section_2 mt-5 mb-5 pt-5 pb-5 ">
+        <div class="container">
+
+
+            <div class="heading text-center  mb-5">
+                <h4 class="fw-bold fs-3">
+                    FEATURED PRODUCTS
+                </h4>
+            </div>
+            <div class="owl-carousel owl-theme ">
+
+                <div class="item ms-5 wow animate__animated animate__zoomIn ">
+                    <div class="card bgc">
+                        <img src="/img/watch.jpg" alt="" class="card-img-top">
+
+                        <div class="card-body text-center">
+                            <div class="card-title">
+                                <span class="fsr">WATCH,TOY,BEAUTY</span>
+                                <p>WATCH</p>
+                            </div>
+                            <div class="card-text">
+
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star text-secondary"></i>
+
+                                <p class="fs-5 fw-bold">$120.00</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+                <div class="item ms-5 wow animate__animated animate__zoomIn">
+                    <div class="card bgc">
+                        <img src="/img/chair.jpg" alt="" class="card-img-top">
+
+                        <div class="card-body text-center">
+                            <div class="card-title">
+                                <span class="fsr">WATCH,TOY,BEAUTY</span>
+                                <p>WATCH</p>
+                            </div>
+                            <div class="card-text">
+
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star text-secondary"></i>
+
+                                <p class="fs-5 fw-bold">$120.00</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="item ms-5 wow animate__animated animate__zoomIn">
+                    <div class="card bgc">
+                        <img src="/img/ligg.jpg" alt="" class="card-img-top">
+
+                        <div class="card-body text-center">
+                            <div class="card-title">
+                                <span class="fsr">WATCH,TOY,BEAUTY</span>
+                                <p>WATCH</p>
+                            </div>
+                            <div class="card-text">
+
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star text-secondary"></i>
+
+                                <p class="fs-5 fw-bold">$120.00</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="item ms-5 wow animate__animated animate__zoomIn">
+                    <div class="card bgc">
+                        <img src="/img/chy.jpg" alt="" class="card-img-top">
+
+                        <div class="card-body text-center">
+                            <div class="card-title">
+                                <span class="fsr">WATCH,TOY,BEAUTY</span>
+                                <p>WATCH</p>
+                            </div>
+                            <div class="card-text">
+
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star text-secondary"></i>
+
+                                <p class="fs-5 fw-bold">$120.00</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="item ms-5 wow animate__animated animate__zoomIn">
+                    <div class="card bgc">
+                        <img src="/img/soff.jpg" alt="" class="card-img-top">
+
+                        <div class="card-body text-center">
+                            <div class="card-title">
+                                <span class="fsr">WATCH,TOY,BEAUTY</span>
+                                <p>WATCH</p>
+                            </div>
+                            <div class="card-text">
+
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star text-secondary"></i>
+
+                                <p class="fs-5 fw-bold">$120.00</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+                <div class="item ms-5 wow animate__animated animate__zoomIn">
+                    <div class="card bgc">
+                        <img src="/img/watch.jpg" alt="" class="card-img-top">
+
+                        <div class="card-body text-center">
+                            <div class="card-title">
+                                <span class="fsr">WATCH,TOY,BEAUTY</span>
+                                <p>WATCH</p>
+                            </div>
+                            <div class="card-text">
+
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star text-secondary"></i>
+
+                                <p class="fs-5 fw-bold">$120.00</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+                <div class="item ms-5 wow animate__animated animate__zoomIn">
+                    <div class="card bgc">
+                        <img src="/img/chair.jpg" alt="" class="card-img-top">
+
+                        <div class="card-body text-center">
+                            <div class="card-title">
+                                <span class="fsr">WATCH,TOY,BEAUTY</span>
+                                <p>WATCH</p>
+                            </div>
+                            <div class="card-text">
+
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star text-secondary"></i>
+
+                                <p class="fs-5 fw-bold">$120.00</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="item ms-5 wow animate__animated animate__zoomIn">
+                    <div class="card bgc">
+                        <img src="/img/ligg.jpg" alt="" class="card-img-top">
+
+                        <div class="card-body text-center">
+                            <div class="card-title">
+                                <span class="fsr">WATCH,TOY,BEAUTY</span>
+                                <p>WATCH</p>
+                            </div>
+                            <div class="card-text">
+
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star text-secondary"></i>
+
+                                <p class="fs-5 fw-bold">$120.00</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="item ms-5 wow animate__animated animate__zoomIn">
+                    <div class="card bgc">
+                        <img src="/img/chy.jpg" alt="" class="card-img-top">
+
+                        <div class="card-body text-center">
+                            <div class="card-title">
+                                <span class="fsr">WATCH,TOY,BEAUTY</span>
+                                <p>WATCH</p>
+                            </div>
+                            <div class="card-text">
+
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star text-secondary"></i>
+
+                                <p class="fs-5 fw-bold">$120.00</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="item ms-5 wow animate__animated animate__zoomIn">
+                    <div class="card bgc">
+                        <img src="/img/soff.jpg" alt="" class="card-img-top">
+
+                        <div class="card-body text-center">
+                            <div class="card-title">
+                                <span class="fsr">WATCH,TOY,BEAUTY</span>
+                                <p>WATCH</p>
+                            </div>
+                            <div class="card-text">
+
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star text-secondary"></i>
+
+                                <p class="fs-5 fw-bold">$120.00</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="item ms-5 wow animate__animated animate__zoomIn">
+                    <div class="card bgc">
+                        <img src="/img/watch.jpg" alt="" class="card-img-top">
+
+                        <div class="card-body text-center">
+                            <div class="card-title">
+                                <span class="fsr">WATCH,TOY,BEAUTY</span>
+                                <p>WATCH</p>
+                            </div>
+                            <div class="card-text">
+
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star text-secondary"></i>
+
+                                <p class="fs-5 fw-bold">$120.00</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+                <div class="item ms-5 wow animate__animated animate__zoomIn">
+                    <div class="card bgc">
+                        <img src="/img/chair.jpg" alt="" class="card-img-top">
+
+                        <div class="card-body text-center">
+                            <div class="card-title">
+                                <span class="fsr">WATCH,TOY,BEAUTY</span>
+                                <p>WATCH</p>
+                            </div>
+                            <div class="card-text">
+
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star text-secondary"></i>
+
+                                <p class="fs-5 fw-bold">$120.00</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="item ms-5 wow animate__animated animate__zoomIn">
+                    <div class="card bgc">
+                        <img src="/img/ligg.jpg" alt="" class="card-img-top">
+
+                        <div class="card-body text-center">
+                            <div class="card-title">
+                                <span class="fsr">WATCH,TOY,BEAUTY</span>
+                                <p>WATCH</p>
+                            </div>
+                            <div class="card-text">
+
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star text-secondary"></i>
+
+                                <p class="fs-5 fw-bold">$120.00</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="item ms-5 wow animate__animated animate__zoomIn">
+                    <div class="card bgc">
+                        <img src="/img/chy.jpg" alt="" class="card-img-top">
+
+                        <div class="card-body text-center">
+                            <div class="card-title">
+                                <span class="fsr">WATCH,TOY,BEAUTY</span>
+                                <p>WATCH</p>
+                            </div>
+                            <div class="card-text">
+
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star text-secondary"></i>
+
+                                <p class="fs-5 fw-bold">$120.00</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="item ms-5 wow animate__animated animate__zoomIn">
+                    <div class="card bgc">
+                        <img src="/img/soff.jpg" alt="" class="card-img-top">
+
+                        <div class="card-body text-center">
+                            <div class="card-title">
+                                <span class="fsr">WATCH,TOY,BEAUTY</span>
+                                <p>WATCH</p>
+                            </div>
+                            <div class="card-text">
+
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star text-secondary"></i>
+
+                                <p class="fs-5 fw-bold">$120.00</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="section_3">
+        <div class="container">
+            <center>
+
+                <h5 class="w-100  fw-bold mt-3 mb-3">OFFERS AND DEALS</h5>
+            </center>
+
+
+            <div class="p_box">
+                <div class="co wow animate__animated animate__slideInRight">
+
+                </div>
+                <div class="co1 wow animate__animated animate__slideInLeft"></div>
+                <div class="co2 text-center pt-5 mt-4 wow animate__animated animate__zoomIn">
+                    <h5 class="fw-bold  fs-3">Subscribe To Our Newsletter</h5>
+                    <p class="fs-4 ">Get all the latest information on events, sales and offers.</p>
+
+
+
+
+                    <div class="input-group flex-nowrap inu">
+                        <span class="input-group-text bre" id="addon-wrapping">SUBSCRIBE</span>
+                        <input type="text" class=" nz" placeholder="Username" aria-label="Username"
+                            aria-describedby="addon-wrapping">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section_w mt-5 pt-5 mb-5 pb-5">
+        <div class="container">
+
+
+
+            <div class="row" id="soo">
+
+                <div class="col wow animate__animated animate__zoomInDown">
+                    <img src="/img/l_1.png" alt="" class="wq">
+
+                </div>
+                <div class="col wow animate__animated animate__zoomInDown">
+                    <img src="/img/l_2.png" alt="">
+
+                </div>
+                <div class="col wow animate__animated animate__zoomInDown">
+                    <img src="/img/l_3.png" alt="">
+                </div>
+                <div class="col wow animate__animated animate__zoomInDown">
+                    <img src="/img/l_4.png" alt="">
+                </div>
+                <div class="col wow animate__animated animate__zoomInDown">
+                    <img src="/img/l_5.png" alt="">
+                </div>
+                <div class="col wow animate__animated animate__zoomInDown">
+
+                    <img src="/img/l_6.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section_l">
+        <div class="containe text-center">
+            <h4 class="fw-bold fs-3">FEATURED CATEGORIES</h4>
+            <p>@portoecommerce</p>
+
+
+            <div class="lastt">
+
+                <img src="/img/d_1.jpg" alt="" class="wow animate__animated animate__flipInY">
+                <img src="/img/d_2.jpg" alt="" class="wow animate__animated animate__flipInY">
+                <img src="/img/d_3.jpg" alt="" class="wow animate__animated animate__flipInY">
+                <img src="/img/d_4.jpg" alt="" class="wow animate__animated animate__flipInY">
+                <img src="/img/d_5.jpg" alt="" class="wow animate__animated animate__flipInY">
+                <img src="/img/d_7.jpg" alt="" class="wow animate__animated animate__flipInY">
+                <img src="/img/d_8.jpg" alt="" class="wow animate__animated animate__flipInY">
+                <img src="/img/d_9.jpg" alt="" class="wow animate__animated animate__flipInY">
+                <img src="/img/d_10.jpg" alt=""class="wow animate__animated animate__flipInY">
+                <!-- <img src="/img/d_1.jpg" alt=""> -->
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <footer class=" pt-5 pb-4 wow animate__animated animate__zoomIn">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-3">
+                    <img src="/img/f_logo.png" alt="" class="dev">
+                </div>
+                <div class="col-5">
+
+                    <ul>
+                        <li>
+                            About Us
+                        </li>
+                        <li>Blog
+                        </li>
+                        <li>Order Tracking
+                        </li>
+                        <li>
+                            Contact Us</li>
+                    </ul>
+                </div>
+                <div class="col-4 text-light">
+                    <p class="jok">QUESTIONS?</p>
+
+                    <span class="fs-3 fw-bold">1-888-123-456
+
+                    </span>
+
+
+
+                    <i class="fa-brands fa-facebook-f ms-5 fs-5" id="momo"></i>
+                    <i class="fa-brands fa-x-twitter fs-5 ms-3"  id="momo"></i>
+                    <i class="fa-brands fa-instagram fs-5 ms-3"  id="momo"></i>
+                </div>
+            </div>
+
+          
+            <div class="row bbu">
+                <div class="col">
+
+
+
+
+                    <div class="col text-start text-light mt-5 wow animate__animated animate__zoomInDown" >
+                        <h4 class="htad ms-5"> ~ Create By <span class="st24"><i class="fa-solid fa-crown king ms-2 me-2"></i> TUSHAL SHEKH ~</span></h4>
+        </div>
+
+
+
+
+                </div>
+                <div class="col text-end mt-5">
+                    <img src="/img/last.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+</body>
+
+
+<!-- owl................... -->
+
+<script>
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 0,
+        nav: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 3
+            },
+            1000: {
+                items: 5
+            }
+        }
+    })
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+        type: "progressbar",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+
+
+<!-- loader................... -->
+<script>
+    $(window).on("load",function(){
+        $(".mainu").fadeOut(5000)
+        // $(".swiper").fadeIn(5000)
+    })
+
+</script>
+
+
+<!-- wow.............................. -->
+<script src="js/wow.min.js"></script>
+<script>
+new WOW().init();
+</script>
+
+<script>
+    $(document).ready(function(){
+        $("#arrow").click(function(){
+            $("html,body").animate({scrollTop:0})   
+        })
+
+
+        $(window).scroll(function(){
+            if($(this).scrollTop()>20)
+            {
+                $("#arrow").slideDown();
+            }
+            else
+            {
+                $("#arrow").slideUp();
+            }
+        })
+    })
+</script>
+
+
+
+<!-- fancy box -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+<link href="/path/to/jquery.fancybox.min.css" rel="stylesheet" />
+<script src="/path/to/jquery.fancybox.min.js"></script>
+
+
+<script src="/fancy/jquery.fancybox.js"></script>
+<script src="/fancy/jquery.fancybox.min.js"></script>
+
+
+</html>

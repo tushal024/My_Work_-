@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery_Theme</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="main">
+    <button class="new_btu">Remove</button>
+
+    <div class="container">
+        <center><h1 class="" id="text">Select Your Theme</h1></center>
+        <div class="row ms-5 ps-5" id="nk">
+            <!-- <div class="row">
+                <div class=" text-center col border border-1 border-dark">
+                    <h1>Select Your Theme</h1>
+                </div>
+            </div> -->
+        
+        <div class="col-3 border border-1 border-dark ms-4 mt-4" id="theme1">
+            <center>
+            <button id="btu_1">Apply</button>
+            </center>
+        </div>
+        <div class="col-3 border border-1 border-dark ms-4 mt-4" id="theme2">
+            <center>
+            <button id="btu_2">Apply</button>
+            </center>
+        </div>
+        <div class="col-3 border border-1 border-dark ms-4 mt-4" id="theme3">
+            <center>
+            <button id="btu_3">Apply</button>
+            </center>
+        </div>
+        <div class="col-3 border border-1 border-dark ms-4 mt-4" id="theme4">
+            <center>
+            <button id="btu_4">Apply</button>
+            </center>
+        </div>
+        <div class="col-3 border border-1 border-dark ms-4 mt-4" id="theme5">
+            <center>
+            <button id="btu_5">Apply</button>
+            </center>
+        </div>
+        <div class="col-3 border border-1 border-dark ms-4 mt-4" id="theme6">
+            <center>
+            <button id="btu_6">Apply</button>
+            </center>
+        </div>
+    </div>
+    </div>    
+</div>
+</body>
+<script>
+   $(document).ready(function(){
+    $("#btu_1").click(function(){
+      $(".main").removeClass();
+        $("body").addClass("tm1");
+        // $("#text").fadeOut();
+        $("#theme6,#theme5,#theme4,#theme3,#theme2").hide(1000);
+        $("#theme1").addClass("t1");
+        $("#btu_1").fadeOut();
+        $(".new_btu").show();
+
+    })
+    $(".new_btu").click(function(){
+        $("body").removeClass("tm1");
+        $("html,body").addClass("main");
+        $("#theme6,#theme5,#theme4,#theme3,#theme2").show(1000);
+        $("#theme1").removeClass("t1");
+        $("#btu_1").fadeIn();
+        $(".new_btu").hide();
+
+    })
+
+
+
+    // .............2.............
+
+
+    $("#btu_2").click(function(){
+        $(".main").removeClass();
+        $("body").addClass("tm2");
+        $("#theme6,#theme5,#theme4,#theme3,#theme1").hide(1000);
+        $("#theme2").addClass("t2");
+        $("#btu_2").fadeOut();
+        $(".new_btu").show();
+
+    })
+    $(".new_btu").click(function(){
+        $("body").removeClass("tm2");
+        $("html,body").addClass("main");
+        $("#theme6,#theme5,#theme4,#theme3,#theme1").show(1000);
+        $("#theme2").removeClass("t2");
+        $("#btu_2").fadeIn();
+        $(".new_btu").hide();
+
+    })
+
+    // .............3.............
+
+
+    $("#btu_3").click(function(){
+        $(".main").removeClass();
+        $("body").addClass("tm3");
+        $("#theme6,#theme5,#theme4,#theme2,#theme1").hide(1000);
+        $("#theme3").addClass("t3");
+        $("#btu_3").fadeOut();
+        $(".new_btu").show();
+
+    })
+    $(".new_btu").click(function(){
+        $("body").removeClass("tm3");
+        $("html,body").addClass("main");
+        $("#theme6,#theme5,#theme4,#theme2,#theme1").show(1000);
+        $("#theme3").removeClass("t3");
+        $("#btu_3").fadeIn();
+        $(".new_btu").hide();
+
+    })
+
+
+    // .............4.............
+
+
+    $("#btu_4").click(function(){
+        $(".main").removeClass();
+        $("body").addClass("tm4");
+        $("#theme6,#theme5,#theme3,#theme2,#theme1").hide(1000);
+        $("#theme4").addClass("t4");
+        $("#btu_4").fadeOut();
+        $(".new_btu").show();
+
+    })
+    $(".new_btu").click(function(){
+        $("body").removeClass("tm4");
+        $("html,body").addClass("main");
+        $("#theme6,#theme5,#theme3,#theme2,#theme1").show(1000);
+        $("#theme4").removeClass("t4");
+        $("#btu_4").fadeIn();
+        $(".new_btu").hide();
+
+    })
+
+
+    // .............5.............
+
+
+    $("#btu_5").click(function(){
+        $(".main").removeClass();
+        $("body").addClass("tm5");
+        $("#theme6,#theme3,#theme4,#theme2,#theme1").hide(1000);
+        $("#theme5").addClass("t5");
+        $("#btu_5").fadeOut();
+        $(".new_btu").show();
+
+    })
+    $(".new_btu").click(function(){
+        $("body").removeClass("tm5");
+        $("html,body").addClass("main");
+        $("#theme6,#theme3,#theme4,#theme2,#theme1").show(1000);
+        $("#theme5").removeClass("t5");
+        $("#btu_5").fadeIn();
+        $(".new_btu").hide();
+
+    })
+
+
+
+    // .............6.............
+
+
+    $("#btu_6").click(function(){
+        $(".main").removeClass();
+        $("body").addClass("tm6");
+        $("#theme3,#theme5,#theme4,#theme2,#theme1").hide(1000);
+        $("#theme6").addClass("t6");
+        $("#btu_6").fadeOut();
+        $(".new_btu").show();
+
+    })
+    $(".new_btu").click(function(){
+        $("body").removeClass("tm6");
+        $("#theme3,#theme5,#theme4,#theme2,#theme1").show(1000);
+        $("#theme6").removeClass("t6");
+        $("#btu_6").fadeIn();
+        $("html,body").addClass("main");
+        $(".new_btu").hide();
+
+    })
+   })
+</script>
+</html>

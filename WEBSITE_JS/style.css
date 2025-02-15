@@ -1,0 +1,156 @@
+*{
+    
+}
+
+
+ #main {
+
+            width: 1000px;
+            height: auto;
+            /* margin-top: 70px; */
+            /* border: 1px solid black; */
+            border-radius: 10px;
+            margin: auto;
+
+    /* color: ; */
+           
+        }
+
+        #im {
+            width: 100%;
+            /* margin-top: 90px; */
+            height: 100%;
+
+        }
+
+.sen11_1{
+    background-image: url(Assets/p1.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+
+
+.sen11_2{
+    background-image: url(Assets/p2.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+.sen11_3{
+    background-image: url(Assets/p3.webp);
+    background-position: center;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sen11_4{
+    background-image: url(Assets/p4.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    background-size: cover;
+}
+.sen11_5{
+    background-image: url(Assets/p5.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    background-size: cover;
+}
+
+
+.sen11_6{
+    background-image: url(Assets/p6.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    background-size: cover;
+}
+.sen11_7{
+    background-image: url(Assets/p7.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    background-size: cover;
+}
+.sen11_8{
+    background-image: url(Assets/p8.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    background-size: cover;
+}
+
+.sen11_9{
+    background-image: url(Assets/p9.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    background-size: cover;
+}
+/* .sen51{
+    background-image: url(/Assets/round2.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+
+
+.s_h1:hover{
+    cursor: pointer;
+}
+
+
+
+#Register{
+    display: none;
+}
+
+#vc{
+    border: 1px solid black;
+    width: 50px;
+    text-align: center;
+    display: inline-block;
+}
+.aq{
+    /* display: flex; */
+}
+.ff{
+    width: 100%;
+    display: flex;
+}
+
+.ddd{
+    width: 30px;
+    border: 1px solid black;
+    display: inline-block;
+}
+
+.tollyy{
+    position: relative;
+    margin-top: 0px;
+    height: 60px;
+    /* z-index: -1; */
+}
+#toll{
+    position: absolute;
+    top: 10px;
+    padding: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 20%;
+    /* background-color: #FFD91C; */
+    /* left:  */
+    color: #FF7043;
+    /* right: 10px; */
+    /* left: 1px; */
+    left:24px;
+    /* z-index: 1; */
+}

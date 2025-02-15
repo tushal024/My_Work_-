@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+     <!-- tailwindcss.................................. -->
+     <script src="https://cdn.tailwindcss.com"></script>
+     <!-- CSS......................................... -->
+     <link rel="stylesheet" href="style.css">
+     <!-- remix icon................................. -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" integrity="sha512-HXXR0l2yMwHDrDyxJbrMD9eLvPe3z3qL3PPeozNTsiHJEENxx8DH2CxmV05iwG0dwoz5n4gQZQyYLUNt1Wdgfg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <!-- font-awesome........................................... -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="shortcut icon" href="Assets/fc_logo.png" type="image/x-icon">
+    <!-- sweetalert................ -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+ 
+</head>
+<body>
+    <a href="add_to_cart.html" style="text-decoration: underline; color: blue;"></a>
+
+    
+    <!-- <button ></button> -->
+    
+    <header class="w-[100%] h-[auto]   border-sky-500">
+        <div class="hh1 w-[100%] h-[70px]  border-sky-500 flex justify-between">
+    
+            <div class="s_h1 w-[15%] h-[100%]  border-sky-500 flex justify-center items-center ">
+            <a href="index.html"><img src="Assets/fc_logo.png" alt=""></a>    
+            </div>
+            <div class="s_h2 relative  w-[30%] h-[100%]  border-sky-500  flex justify-center items-center">
+                <input type="text" name="" id="" placeholder="    Search for Categroy, Brand or Product" class="border-2  border-gray-300  rounded-[6px] w-[90%] h-[60%]  border-gray-300">
+                <i class="ri-search-line absolute right-[10%] text-[26px] text-[#F49A32]"></i>
+    
+            </div>
+            <div class="s_h3  w-[40%] h-[100%]  border-sky-500  ">
+                <ul class=" w-[100%] h-[100%] flex justify-between items-center">
+                    <li><a href=""> <i class="ri-map-pin-line text-[20px] me-[0px]"></i> Select location</a></li>
+                    <li><a href=""> Stores & Preschools</a></li>
+                    <li><a href=""> Support</a></li>
+                    <li><a href="" > Track Order</a></li>
+                    <li><a href="log_sign.html" class=""> Login/Signup</a></li>
+    
+                </ul>
+            </div>
+            <div class="s_h4 w-[10%] h-[100%]  border-sky-500 flex justify-center items-center">
+                <a href="single_product.html" class="tollyy">
+              <img src="Assets/shopping.png" alt="" class="tollyy"> <span class="text-[20px] font-[600] ms-[10px]" ><h2 id="toll"></h2>   </span>
+            </a>
+            </div>
+    
+        </div>
+        <div class="hh2 w-[100%] h-[70px] bg-[#FFD91C] flex justify-center items-center  border-sky-500">
+            <div class="s_h_01 w-[80%] ms-[4%] h-[100%]  border-gray-300">
+                <ul class="w-[100%] h-[100%] flex justify-between items-center">
+                    <li><a href="">ALL CATEGORIES</a></li>
+                    <li><a href="product.html">BOY FASHION</a></li>
+                    <li><a href="">GIRL FASHION</a></li>
+                    <li><a href="">Footwear</a></li>
+                    <li><a href="">Toys</a></li>
+                    <li><a href="">Diapering</a></li>
+                    <li><a href="">Gear</a></li>
+                    <li><a href="">Feeding</a></li>
+                    <li><a href="">Bath</a></li>
+                    <li><a href="">Nursery</a></li>
+                    <li><a href="">Moms</a></li>
+                    <li><a href="">Health</a></li>
+                    <li><a href="">Boutiques</a></li>
+                    
+                </ul>
+            </div>
+            <div class="s_h_02 w-[15%] h-[100%]      border-gray-300 flex justify-center  gap-[20px]   items-center">
+                <img src="Assets/club_logo.png" alt="" class="w-[30%] h-[40%]">
+                <button class="text-[white] bg-[#009EDD] border-none text-[20px]  font-[500]   h-[100%] w-[40%]"> Carter's</button>
+            </div>
+            
+        </div>
+       
+    
+    
+    </header>
+    
+<!-- <a href="index.html">HOME</a> -->
+    <!-- <a href="product.html" class="ms-[50px]">PRODUCT PAGE</a>
+<a href="add_to_cart.html" class="ms-[50px]">ADD TO CART</a> -->
+      
+<div id="box1">
+    <!-- <div class="my w-[80%] h-[auto] mt-[2%]  ms-[10%] flex mt-[5%]" >
+        <div class="my1 flex flex-col justify-center relative items-center w-[40%] h-[600px] "
+        >
+            <i class="fa-regular fa-heart absolute top-[10px] right-[10px] text-[30px]"></i>
+            <img class="w-[90%] h-[80%] mt-[-70px]" src="https://cdn.fcglcdn.com/brainbees/images/products/583x720/18137799a.webp" alt="">
+            <button class="w-[70%] h-[50px] text-[20px] 
+            text-[white] rounded-[10px] mb-[3%] bg-[#FF7043]">ADD TO CART</button>
+        </div>
+        <div class="my2 pt-[3%] w-[60%] h-[600px] p-[10px] text-[gray]" style="">
+            <p class=" text-[20px]">
+                Babyhug Disney Single Jersey Knit Full Sleeves Shirt With Winnie & Friends Print & Pocket Detailing - White
+            </p>
+
+            <p class="text-[20px] font-[600] mt-[3%] text-[black] "> $ 414 MRP  <span class="text-[20px] text-[#35AC4C] ms-[2%]  ">17% OFF</span> </p>
+
+            <p class="mt-[2%] " style="opacity: 0.4;">MRP incl. all taxes</p>
+            <hr class="mt-[4%]">
+
+            <p class="text-[#00A0DC] font-[600] text-[18px]   ">Get Free Shipping with  <span>
+                <img src="https://cdn.fcglcdn.com/brainbees/images/m/newclub.png" class="inline-block ms-[1%] h-[20px]"  alt=""></span>
+            <span class="text-[#FF7043] text-[17px] ms-[55%]">Join Now  
+                <i class="fa-solid fa-chevron-right"></i> </span>
+            
+            
+            </p>
+
+
+            <p class="text-[18px] mt-[4%] ">Shipping Cost  <span class="text-[#35AC4C] text-[18px]">  $ 00</span>  
+                 <span class="ms-[7%]">Earn club cash    </span>  
+                 <span class="text-[black] text-[18px]">  $ 05</span> 
+                 <i class="ri-error-warning-line text-[24px] ms-[1%] text-[#009EDC]"></i></p>
+
+                 <div class="mr w-[56%] rounded-[6px] flex justify-between items-center pe-[5%]
+                  mt-[3%] h-[40px] bg-[#F5F5F5]">
+                    <div class="mr1  h-[100%] w-[] flex justify-center items-center">
+                        <p class="text-[#009FDB] font-[600] text-[18px] ms-[20px]   ">Club Benefits</p>
+                    </div>
+                    <div class="mr2 h-[100%] w-[] flex justify-center items-center">
+                        <div class="imh me-[10px]">
+                            <img src="https://cdn.fcglcdn.com/brainbees/images/m/delivecccry.png" alt="">
+
+                        </div>
+                        <div class="imh1">
+                            <p>Lower Shipping Barrier</p>
+                        </div>
+
+                    </div>
+                 </div>
+                 <hr class="mt-[4%]">
+                 <p class="text-[23px] font-[600] text-[black]"> Size  
+                    <span class="text-[#FF7043] text-[17px] ms-[82%] text-[20px] font-[600] ">Size Help 
+                   </span>
+                
+                   </p>
+
+                   <div class="ss w-[90%] h-[50px]  flex mt-[4%]">
+                    <div class="s1 rounded-[10px] h-[35px] pt-[2px] w-[110px] text-[black] text-center" style="border: 1px solid black;">9-12M</div>
+                    <div class="s1 rounded-[10px] h-[35px] pt-[2px] w-[110px] text-[black] ms-[10px] text-center" style="border: 1px solid black; opacity: 0.6;">9-12M</div>
+                    <div class="s1 rounded-[10px] h-[35px] pt-[2px] w-[110px] text-[black] ms-[10px] text-center" style="border: 1px solid black; opacity: 0.6;">12-18M</div>
+                    <div class="s1 rounded-[10px] h-[35px] pt-[2px] w-[110px] text-[black] ms-[10px] text-center" style="border: 1px solid black; ">18-24M</div>
+                    <div class="s1 rounded-[10px] h-[35px] pt-[2px] w-[110px] text-[#FF7043] ms-[10px] text-center" style="border: 1px solid #FF7043;">2-4Y</div>
+                    <div class="s1 rounded-[10px] h-[35px] pt-[2px] w-[110px] text-[black] ms-[10px] text-center" style="border: 1px solid black;">4-6Y</div>
+                   </div>
+
+        </div>
+
+
+    </div> -->
+</div>
+<img src="Assets/ft_tex.png" alt="" class="ms-[34%] mb-[-144px]">
+<footer class="w-[100%] ps-[2.5%] pe-[2.5%] h-[auto] bg-[#D9F3F4] mt-[100px]">
+
+    <div class="ft1 w-[100%] h-[540px] flex items-center pt-[100px]">
+        <div class="ft11 w-[20%] h-[100%] flex  flex-col items-start justify-between" >
+            <h4 class=" block w-[80%]" style="border-bottom: 1px solid rgba(128, 128, 128, 0.5);" >CATEGORIES</h4>
+            <hr>
+            <a href="">Clothing & Fashion</a>
+            <a href="">Toys</a>
+            <a href="">Books & CDs</a>
+            <a href="">School Supplies</a>
+            <a href="">Birthday Party Supplies</a>
+            <a href="">Baby Diapering</a>
+            <a href="">Feeding & Nursing</a>
+            <a href="">Bath & Skin Care</a>
+            <a href="">Health & Safety</a>
+            <a href="">Baby Gear</a>
+            <a href="">Nursery</a>
+            <a href="">Moms & Maternity</a>
+            <a href="">Gifts</a>
+            <a href="">Preschool Admissions</a>
+        </div>
+        
+        <div class="ft11 w-[20%]  h-[100%] flex  flex-col items-start justify-between" >
+            <h4 class=" block w-[80%]" style="border-bottom: 1px solid rgba(128, 128, 128, 0.5);">FIRSTCRY PARENTING</h4>
+           
+
+            <a href="">Clothing & Fashion</a>
+            
+            <a href="">Toys</a>
+            <a href="">Books & CDs</a>
+            <a href="">School Supplies</a>
+            <a href="">Birthday Party Supplies</a>
+            <a href="">Baby Diapering</a>
+            <a href="">Feeding & Nursing</a>
+            <a href="">Bath & Skin Care</a>
+            <a href="">Health & Safety</a>
+            <a href="">Baby Gear</a>
+            <a href="">Nursery</a>
+            <a href="">Moms & Maternity</a>
+            <a href="">Gifts</a>
+            <a href="">Preschool Admissions</a>
+        </div>
+    
+
+        <div class="ft11 w-[20%]  h-[100%] flex  flex-col items-start justify-between" >
+            <h4  class=" block w-[80%]" style="border-bottom: 1px solid rgba(128, 128, 128, 0.5);">SHIPPING & POLICIES</h4>
+            <hr>
+            <a href="">Clothing & Fashion
+            </a>
+            <a href="">Toys</a>
+            <a href="">Books & CDs</a>
+            <a href="">School Supplies</a>
+            <a href="">Birthday Party Supplies</a>
+            <a href="">Baby Diapering</a>
+            <a href="">Feeding & Nursing</a>
+            <a href="">Bath & Skin Care</a>
+            <a href="">Health & Safety</a>
+            <a href="">Baby Gear</a>
+            <a href="">Nursery</a>
+            <a href="">Moms & Maternity</a>
+            <a href="">Gifts</a>
+            <a href="">Preschool Admissions</a>
+        </div>
+         <div class="ft11 w-[20%]  h-[100%] flex  flex-col items-start justify-between" >
+            <h4  class=" block w-[80%]" style="border-bottom: 1px solid rgba(128, 128, 128, 0.5);">OUR APPS</h4>
+            <hr>
+            <a href="">Clothing & Fashion
+            </a>
+            <a href="">Toys</a>
+            <a href="">Books & CDs</a>
+            <a href="">School Supplies</a>
+            <a href="">Birthday Party Supplies</a>
+            <a href="">Baby Diapering</a>
+            <a href="">Feeding & Nursing</a>
+            <a href="">Bath & Skin Care</a>
+            <a href="">Health & Safety</a>
+            <a href="">Baby Gear</a>
+            <a href="">Nursery</a>
+            <a href="">Moms & Maternity</a>
+            <a href="">Gifts</a>
+            <a href="">Preschool Admissions</a>
+        </div>
+        
+        <div>
+            <!-- <img src="https://cdn.fcglcdn.com/brainbees/images/fcintellitots_franchise_footer_banner.webp" alt=""> -->
+             <img src="Assets/ft.png" alt="">
+        </div>
+
+
+    </div>
+
+
+
+    <div class="ft2 flex justify-center items-center w-[100%] h-[60px]">
+
+<p class="text-center ">~Create By <span class="text-[#FF8125] text-[20px]"> TUSHAL SHEKH  </span>~</p>
+
+    </div>
+
+
+
+</footer>
+
+
+<script src="tolly.js"></script>
+
+<script src="single_product.js">
+
+</script>    
+<!-- <script src="product.js"></script> -->
+</body>
+</html>

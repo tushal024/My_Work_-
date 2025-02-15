@@ -1,0 +1,388 @@
+@media(max-width:480px){
+  
+    .sub{
+        width: 100%;
+        height: 100px;
+        position: relative;
+    }
+    header{
+        width: 100%;
+        height: auto;
+    }
+    .section_1{
+        width: 100%;
+
+
+    }
+    .logo{
+        margin-left: 47%;
+    }
+    .sub1 nav{
+        width: 100%;
+        display: none;
+    }
+    .sub1 nav ul{
+        width: 100%;
+    }
+    .menu{
+        margin-bottom: 20px;
+        position: absolute;
+        top: -10px;
+        /* margin-right: 20%; */
+        margin-left: -20%;
+    }
+    .sub1 nav ul li{
+        font-size: 10px;
+    }
+    .jj1{
+        font-size: 50px;
+    }
+    .sen1{
+        margin-left: 13%;
+    }
+    .section_2{
+        /* flex-direction: column; */
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+        width: 100%;
+        display: block;
+    }
+    .sen11{
+        width: 100%;
+        margin-left: -100px;
+
+    }
+    .sen22{
+        width: 100%;
+
+        /* flex-direction: column; */
+
+    }
+    .section_3{
+        height: auto;
+    }
+    .section_3{
+        margin-top: 400px;
+    }
+    .sen32,.sen33,.sen34{
+        width: 100%;
+    }
+    .sen411{
+        width: 100%;
+    }
+    .sen412{
+        width: 100%;
+    }
+    .sen4122{
+        width: 100%;
+    }
+    .sen4{
+        width: 100%;
+    }
+    .section_5{
+        margin-top: 1200px;
+        height: auto;
+    }
+    .sen511{
+        width: 100%;
+        height: auto;
+    }
+    .sen5112{
+        width: 100%;
+        height: auto;
+    }
+    .sen999{
+        width: 100%;
+        height: auto;
+        margin-top: 100px;
+    }
+    .sen9991{
+        width: 100%;
+        height: auto;
+        margin-top: 100px;
+    }
+    .sen555{
+        width: 100%;
+        height: auto;
+        margin-top: 100px;
+    }
+    .sen5551{
+        width: 100%;
+        height: auto;
+        margin-top: 100px;
+    }
+    .sen52{
+        margin-top: 100px;
+    }
+    .lalu{
+        font-size: 36px;
+    }
+    .lalu1{
+        font-size: 16px;
+    }
+    .ft1,.ft2,.ft2,.ft3,.ft4{
+        width: 100%;
+    }
+}
+
+
+@media(max-width:720px){
+  
+    .sub{
+        width: 100%;
+        height: 100px;
+        position: relative;
+    }
+    header{
+        width: 100%;
+        height: auto;
+    }
+    .section_1{
+        width: 100%;
+
+
+    }
+    .logo{
+        margin-left: 47%;
+    }
+    .sub1 nav{
+        width: 100%;
+        display: none;
+    }
+    .sub1 nav ul{
+        width: 100%;
+    }
+    .menu{
+        margin-bottom: 20px;
+        position: absolute;
+        top: -10px;
+        /* margin-right: 20%; */
+        margin-left: -20%;
+    }
+    .sub1 nav ul li{
+        font-size: 10px;
+    }
+    .jj1{
+        font-size: 50px;
+    }
+    .sen1{
+        margin-left: 13%;
+    }
+    .section_2{
+        /* flex-direction: column; */
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+        width: 100%;
+        display: block;
+    }
+    .sen11{
+        width: 100%;
+        margin-left: -100px;
+
+    }
+    .sen22{
+        width: 100%;
+
+        /* flex-direction: column; */
+
+    }
+    .section_3{
+        height: auto;
+    }
+    .section_3{
+        margin-top: 400px;
+    }
+    .sen32,.sen33,.sen34{
+        width: 100%;
+    }
+    .sen411{
+        width: 100%;
+    }
+    .sen412{
+        width: 100%;
+    }
+    .sen4122{
+        width: 100%;
+    }
+    .sen4{
+        width: 100%;
+    }
+    .section_5{
+        margin-top: 1200px;
+        height: auto;
+    }
+    .sen511{
+        width: 100%;
+        height: auto;
+    }
+    .sen5112{
+        width: 100%;
+        height: auto;
+    }
+    .sen999{
+        width: 100%;
+        height: auto;
+        margin-top: 100px;
+    }
+    .sen9991{
+        width: 100%;
+        height: auto;
+        margin-top: 100px;
+    }
+    .sen555{
+        width: 100%;
+        height: auto;
+        margin-top: 100px;
+    }
+    .sen5551{
+        width: 100%;
+        height: auto;
+        margin-top: 100px;
+    }
+    .sen52{
+        margin-top: 100px;
+    }
+    .lalu{
+        font-size: 36px;
+    }
+    .lalu1{
+        font-size: 16px;
+    }
+    .ft1,.ft2,.ft2,.ft3,.ft4{
+        width: 100%;
+    }
+}
+
+
+@media(max-width:980px){
+  
+    .sub{
+        width: 100%;
+        height: 100px;
+        position: relative;
+    }
+    header{
+        width: 100%;
+        height: auto;
+    }
+    .section_1{
+        width: 100%;
+
+
+    }
+    .logo{
+        /* margin-left: 47%; */
+    }
+    .sub1 nav{
+        width: 100%;
+        /* display: none; */
+    }
+    .sub1 nav ul{
+        width: 100%;
+    }
+    .menu{
+        margin-bottom: 20px;
+        position: absolute;
+        top: -10px;
+        /* margin-right: 20%; */
+        margin-left: -20%;
+    }
+    .sub1 nav ul li{
+        font-size: 10px;
+    }
+    .jj2{
+        margin-right: 24%;
+    }
+    .jj1{
+        font-size: 50px;
+    }
+    .sen1{
+        margin-left: 13%;
+    }
+    .section_2{
+        /* flex-direction: column; */
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+        width: 100%;
+        display: block;
+    }
+    .sen11{
+        width: 100%;
+        margin-left: -200px;
+
+    }
+    .sen22{
+        width: 100%;
+
+        /* flex-direction: column; */
+
+    }
+    .section_3{
+        height: auto;
+    }
+    .section_3{
+        margin-top: 400px;
+    }
+    .sen32,.sen33,.sen34{
+        width: 100%;
+    }
+    .sen411{
+        width: 100%;
+    }
+    .sen412{
+        width: 100%;
+    }
+    .sen4122{
+        width: 100%;
+    }
+    .sen4{
+        width: 100%;
+    }
+    .section_5{
+        margin-top: 1200px;
+        height: auto;
+    }
+    .sen511{
+        width: 100%;
+        height: auto;
+    }
+    .sen5112{
+        width: 100%;
+        height: auto;
+    }
+    .sen999{
+        width: 100%;
+        height: auto;
+        margin-top: 100px;
+    }
+    .sen9991{
+        width: 100%;
+        height: auto;
+        margin-top: 100px;
+    }
+    .sen555{
+        width: 100%;
+        height: auto;
+        margin-top: 100px;
+    }
+    .sen5551{
+        width: 100%;
+        height: auto;
+        margin-top: 100px;
+    }
+    .sen52{
+        margin-top: 100px;
+    }
+    .lalu{
+        font-size: 36px;
+    }
+    .lalu1{
+        font-size: 16px;
+    }
+    .foot{
+        width: 100%;
+    }
+    /* .ft1,.ft2,.ft2,.ft3,.ft4{
+        width: 1%;
+    } */
+}

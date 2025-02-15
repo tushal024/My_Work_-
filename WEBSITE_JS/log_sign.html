@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Register</title>
+    <link rel="shortcut icon" href="Assets/fc_logo.png" type="image/x-icon">
+
+    <!-- tailwindcss.................................. -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- CSS......................................... -->
+    <link rel="stylesheet" href="style.css">
+    <!-- remix icon................................. -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" integrity="sha512-HXXR0l2yMwHDrDyxJbrMD9eLvPe3z3qL3PPeozNTsiHJEENxx8DH2CxmV05iwG0dwoz5n4gQZQyYLUNt1Wdgfg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- font-awesome........................................... -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+
+    <style>
+        input{
+            padding-left: 10px;
+
+        }
+
+        #regg,#llg{
+            cursor: pointer;
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    
+    <header class="w-[100%] h-[auto]   border-sky-500">
+        <div class="hh1 w-[100%] h-[70px]  border-sky-500 flex justify-between">
+    
+            <div class="s_h1 w-[15%] h-[100%]  border-sky-500 flex justify-center items-center ">
+            <a href="index.html"><img src="Assets/fc_logo.png" alt=""></a>    
+            </div>
+            <div class="s_h2 relative  w-[30%] h-[100%]  border-sky-500  flex justify-center items-center">
+                <input type="text" name="" id="" placeholder="    Search for Categroy, Brand or Product" class="border-2  border-gray-300  rounded-[6px] w-[90%] h-[60%]  border-gray-300">
+                <i class="ri-search-line absolute right-[10%] text-[26px] text-[#F49A32]"></i>
+    
+            </div>
+            <div class="s_h3  w-[40%] h-[100%]  border-sky-500  ">
+                <ul class=" w-[100%] h-[100%] flex justify-between items-center">
+                    <li><a href=""> <i class="ri-map-pin-line text-[20px] me-[0px]"></i> Select location</a></li>
+                    <li><a href=""> Stores & Preschools</a></li>
+                    <li><a href=""> Support</a></li>
+                    <li><a href="" > Track Order</a></li>
+                    <li><a href="log_sign.html" class=""> Login/Signup</a></li>
+    
+                </ul>
+            </div>
+            <div class="s_h4 w-[10%] h-[100%]  border-sky-500 flex justify-center items-center">
+                <a href="single_product.html" class="tollyy">
+              <img src="Assets/shopping.png" alt="" class="tollyy"> <span class="text-[20px] font-[600] ms-[10px]" ><h2 id="toll"></h2>   </span>
+            </a>
+            </div>
+    
+        </div>
+        <div class="hh2 w-[100%] h-[70px] bg-[#FFD91C] flex justify-center items-center  border-sky-500">
+            <div class="s_h_01 w-[80%] ms-[4%] h-[100%]  border-gray-300">
+                <ul class="w-[100%] h-[100%] flex justify-between items-center">
+                    <li><a href="">ALL CATEGORIES</a></li>
+                    <li><a href="product.html">BOY FASHION</a></li>
+                    <li><a href="">GIRL FASHION</a></li>
+                    <li><a href="">Footwear</a></li>
+                    <li><a href="">Toys</a></li>
+                    <li><a href="">Diapering</a></li>
+                    <li><a href="">Gear</a></li>
+                    <li><a href="">Feeding</a></li>
+                    <li><a href="">Bath</a></li>
+                    <li><a href="">Nursery</a></li>
+                    <li><a href="">Moms</a></li>
+                    <li><a href="">Health</a></li>
+                    <li><a href="">Boutiques</a></li>
+                    
+                </ul>
+            </div>
+            <div class="s_h_02 w-[15%] h-[100%]      border-gray-300 flex justify-center  gap-[20px]   items-center">
+                <img src="Assets/club_logo.png" alt="" class="w-[30%] h-[40%]">
+                <button class="text-[white] bg-[#009EDD] border-none text-[20px]  font-[500]   h-[100%] w-[40%]"> Carter's</button>
+            </div>
+            
+        </div>
+       
+    
+    
+    </header>
+    
+    
+
+    <div id="forr" class="w-[50%] ms-[25%] mt-[1%]" style="border: 1px solid rgb(171, 164, 164);">
+        <div id="fr w-[100%] h-[auto]">
+            <img src="https://cdn.fcglcdn.com/brainbees/images/m/login_revamp_banner_mobile.jpg" alt="" class="w-[100%]">
+        </div>
+        <div id="fr1 " class="p-[20px]">
+
+            <!-- login form..................................... -->
+            <form action=""   id="loginPage" class="w-[100%]">
+
+            <h2 class="text-[32px] text-center mt-[10px] mb-[40px] font-[00px]">Log In/Register</h2>
+
+            <label for="" class="text-[20px] font-[400] ms-[5px] ">Enter your Email-Id*</label> <br>
+            <input type="text" name="" class="border-2  ps-[15px] rounded-[10px] mb-[15px] w-[100%] mt-[10px] h-[50px] text-[20px] " 
+             id="emm" placeholder="Enter Your Email-Id">
+             <p id="EmailloginText"></p>
+
+            <label for="" class="text-[20px] font-[400] ms-[5px] ">Enter your Password*</label> <br>
+            <input type="password" name="" class="border-2  ps-[15px] rounded-[10px] w-[100%] 
+            mt-[5px] h-[50px] text-[20px] " 
+             id="pss" placeholder="Enter Your Password">
+            
+            <p class="ms-[5px] mt-[10px]" id="PasswrdloginText">
+
+            </p>
+
+            
+            <input type="submit" name="" value="CONTINUE" id="" 
+            class="w-[50%] ms-[25%] h-[50px] text-[20px] 
+            text-[white] rounded-[10px] bg-[#FF7043]">
+            <p class="text-center mt-[20px] text-[18px]">New to FirstCry?
+                <span class="text-[blue]" id="regg"> Register Here  </span>  </p>
+        </form>
+            <!-- Register form..................................... -->
+            <form action=""   id="Register" class="w-[100%]">
+
+                <h2 class="text-[32px] text-center mt-[10px] mb-[40px] font-[00px]">Register</h2>
+                <label for="" class="text-[20px] font-[400] ms-[5px] ">Enter your Name*</label> <br>
+                <input type="text" name="" class="border-2   ps-[15px] rounded-[10px] mb-[15px] w-[100%] mt-[10px] h-[50px] text-[20px] " 
+                 id="user" placeholder="Enter Your Name">
+
+                 <p id="userText"></p>
+
+                
+                <label for="" class="text-[20px] font-[400] ms-[5px] ">Enter your Email-Id*</label> <br>
+                <input type="text" name="" 
+                class="border-2  ps-[15px] rounded-[10px] mb-[15px] w-[100%] 
+                mt-[10px] h-[50px] text-[20px] "  id="e1"
+                 placeholder="Enter Your Mobilenumber Or Email-Id">
+
+
+                <p id="Email" class="ms-[10px] mt-[-10px] text-[red]"></p>
+
+
+                <label for="" class="text-[20px] font-[400] ms-[5px] ">Enter your Password*</label> <br>
+                <input type="password" name="" class="border-2   ps-[15px] rounded-[10px] w-[100%] mt-[5px] h-[50px] text-[20px] " 
+                 id="p1" placeholder="Enter Your Password">
+
+                
+                <p class="ms-[5px] mt-[10px]" id="Passwrd"></p>
+    
+    
+                <input type="submit" name="" value="CONTINUE" id="" class="w-[50%] ms-[25%] h-[50px] text-[20px] text-[white] rounded-[10px] bg-[#FF7043]">
+    
+    
+                <p class="text-center mt-[20px] text-[18px]">New to FirstCry?<span class="text-[blue]" id="llg"> LogIn Here  </span>  </p>
+            </form>
+    
+
+
+        </div>
+        <div id="fr2" class="text-center">
+
+            
+        <p class=""> <span class="" style="vertical-align: middle; height: 1px; width: 20%; background: black; display: inline-block;"></span>
+            
+           <span class="text-[gray] text-[20px]"> Or log-In with </span>
+            <span class="" style="vertical-align: middle; height: 1px; width: 20%; background: black; display: inline-block;"></span> </p>
+
+            <div class="ij flex justify-between items-center w-[15%] ms-[42.5%] mt-[30px] h-[50px]">
+
+            <img src="https://cdn.fcglcdn.com/brainbees/images/m/loginrev_google.jpg" alt="" class="h-[100%]" style="cursor: pointer;">
+            <img src="https://cdn.fcglcdn.com/brainbees/images/m/loginrev_fb.png" alt="" class="h-[100%]" style="cursor: pointer;">
+        </div>
+
+
+        <p class="mt-[50px]">
+
+            By continuing, you agree to FirstCry's <span class="text-[blue]"> Terms of Use </span> <br>
+and   <span class="text-[blue]">Privacy Policy  </span>
+        </p>
+
+        </div>
+
+
+        <div id="ans"></div>
+    </div>
+
+</body>
+<script>
+
+   $(document).ready(function(){
+    $("#regg").click(function(){
+        $("#loginPage").hide()
+        $("#Register").show()
+    })
+    $("#llg").click(function(){
+        $("#Register").hide()
+        $("#loginPage").show()
+    })
+    
+   })
+</script>
+<!-- <script src="log.js"></script> -->
+ <script src="log_sign.js"></script>
+ <script src="tolly.js"></script>
+<!-- <script src="old_login.js"></script> -->
+</html>

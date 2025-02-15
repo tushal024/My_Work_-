@@ -1,0 +1,231 @@
+@media(max-width:480px){
+    header{
+        width: 100%;
+        height: auto;
+    }
+    .a1{
+        display: none;
+    }
+    .box{
+        width: 100%;
+        margin-top: 20%;
+       
+        
+        
+    }
+    .h{
+        font-size: 40px;
+    }
+    .section_1{
+        width: 100%;
+        height: auto;
+    }
+    .sen{
+        width: 100%;
+
+    }
+    .sen1{
+        width: 100%;
+
+    }
+    .ss{
+        width: 100%;
+    }
+    .s1{
+        padding-left: 8%;
+        margin-bottom: 150px;
+    }
+    .s2,.s3,.s4,.s5,.s6,.s7{
+        width: 100%;
+        margin-top: 20px;
+
+    }
+    .section_3{
+        height: auto;
+        width: 100%;
+        margin-top: 1200px;
+    }
+
+    .cc{
+        width: 100%;
+    }
+    .c1{
+        padding: 10px;
+    }
+    .c2,.c3,.c4{
+        width: 100%;
+        margin-bottom: 30px;
+        padding: 10px;
+    }
+
+    .zz2{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .sb{
+        width: 100%;
+
+    }
+    .sb1{
+        margin-bottom: 50px;
+    }
+    .sb2,.sb3{
+        width: 100%;
+    }
+    .section_5{
+        height: auto;
+        margin-top: 200px;
+    }
+    .sen7{
+        width: 100%;
+
+    }
+    .section_6{
+        height: auto;
+        padding-bottom: 50px;
+    }
+    .bt2{
+        margin-top: 40px;
+    }
+    .foot{
+        width: 100%;
+    }
+    .ft,.ft1,.ft2,.ft3,.ft4{
+        width: 100%;
+        padding-left: 20px;
+    }
+
+}
+
+@media(max-width:720px){
+    header{
+        width: 100%;
+        height: auto;
+    }
+    .a1{
+        display: none;
+    }
+    .box{
+        width: 100%;
+        margin-top: 20%;
+        margin-left: 70px;
+    }
+    .h{
+        font-size: 40px;
+    }
+    .section_1{
+        width: 100%;
+        height: auto;
+    }
+    .sen{
+        width: 100%;
+
+    }
+    .sen1{
+        width: 100%;
+
+    }
+    .ss{
+        width: 100%;
+    }
+    .s1{
+        padding-left: 8%;
+        margin-bottom: 150px;
+    }
+    .s2,.s3,.s4,.s5,.s6,.s7{
+        width: 100%;
+        margin-top: 20px;
+
+    }
+    .section_3{
+        height: auto;
+        width: 100%;
+        margin-top: 1200px;
+    }
+
+    .cc{
+        width: 100%;
+    }
+    .c1{
+        padding: 10px;
+    }
+    .c2,.c3,.c4{
+        width: 100%;
+        margin-bottom: 30px;
+        padding: 10px;
+    }
+
+    .zz2{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .sb{
+        width: 100%;
+
+    }
+    .sb1{
+        margin-bottom: 50px;
+    }
+    .sb2,.sb3{
+        width: 100%;
+    }
+    .section_5{
+        height: auto;
+        margin-top: 200px;
+    }
+    .sen7{
+        width: 100%;
+
+    }
+    .section_6{
+        height: auto;
+        padding-bottom: 50px;
+    }
+    .bt2{
+        margin-top: 40px;
+    }
+    .foot{
+        width: 100%;
+    }
+    .ft,.ft1,.ft2,.ft3,.ft4{
+        width: 100%;
+        padding-left: 20px;
+    }
+
+    .tr11{
+        /* margin-top: 90px; */
+        margin-bottom: 50px;
+    }
+}
+
+@media(max-width:980px){
+    header{
+        height: auto;
+    }
+    .box{
+        width: 80%;
+        margin-top: 200px;
+    }
+    .ss{
+        width: 100%;
+        padding: 20px;
+    }
+    .cc{
+        width: 100%;
+        padding: 20px;
+    }
+    .sb{
+        width: 100%;
+        /* padding: 20px; */
+    }
+    .sb3{
+        padding: 20px;
+    }
+    .df{
+        margin-top: 0px;
+    }
+    .foot{
+        width: 100%;
+        padding: 20px;
+    }
+}

@@ -1,0 +1,33 @@
+@media(max-width:576px){
+
+.btb1{
+    display: none;
+}
+.btb2{
+    /* display: none; */
+    margin-left: 170px;
+}
+
+
+#corr{
+    display: none;
+
+}
+
+#corr{
+    display: none;
+}
+
+#un{
+    display: none;
+}
+#jjck{
+    /* display: none; */
+    color: transparent;
+    border: none;
+}
+#bank{
+    border: none;
+}
+
+}

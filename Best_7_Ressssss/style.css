@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    
+}
+body{
+    /* overflow-y: 
+    hidden; */
+    overflow-x: hidden;
+}
+.n2{
+    z-index: 1;
+}
+.big{
+    z-index: -1;
+    background: lin;
+}
+.btu_color{
+    /* background: linear-gradient(to right,#8507ED,#632893,#D722FA); */
+    background: -webkit-linear-gradient(0deg, #3530d4, #66278d 100%);
+}
+.gd{
+    box-shadow: 0px 0px 20px 0.5px;
+}
+.su{
+    filter: drop-shadow(0 0 .90rem white);
+}
+.dv{
+    /* box-shadow: 0px 0px 10px 1px rgba(255, 255, 255, 0.34); */
+    border: 1px solid rgba(128, 128, 128, 0.312);
+}
+
+.section_6{
+    /* background-image: url(/assets/bggg.png); */
+    background-position: start;
+    background-repeat: no-repeat;
+}
+.rot{
+    z-index: -1;
+    animation: rou;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+
+}
+@keyframes rou{
+    0%{
+        transform: rotate(-1500deg);
+    }
+}
+.section_t{
+    /* background-image: url(/assets/bg_t.png); */
+    background-position: end;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-Y: -50px;
+    
+}
+
+.section_gud{
+    background-image: url(/assets/bg_sl.png);
+    background-position: center;
+}
+.section_bi{
+  
+}
+.section_bi{
+    overflow: hidden;
+}
+.ko{
+    cursor: pointer;
+}
+nav ul li{
+    position: relative;
+}
+nav ul li a::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    transition:1s;
+    background-color: #3530d4;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+#chh:hover{
+    box-shadow: 0px 0px 10px 4px white;
+    transform: scale(0.9);
+}
+.lov{
+    animation: gudii;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+@keyframes gudii{
+    0%{
+        transform: scale(0.9);
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0.9);
+    }
+}
+
+#chh1:hover{
+    box-shadow: 0px 0px 10px 4px gray;
+    transform: scale(0.9);
+}
+.upo{
+    animation: h_pic;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+@keyframes h_pic{
+    0%{
+        transform: scale(0.9);
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0.9);
+    }
+
+}
+.gd:hover{
+    box-shadow: 0px 0px 10px 3px black;
+}
+.gsd:hover{
+    box-shadow: 0px 0px 10px 3px black;
+}
+.how{
+    cursor: pointer;
+    animation: h_pic;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    
+}
+.s2{
+    overflow: hidden;
+}
+.dv:hover{
+    box-shadow: 0px 0px 10px 3px white;
+    cursor: pointer;
+}
+.dv:hover img{
+    transform: scale(0.9);
+}
+.di img{
+    transition: 1s;
+}
+.di:hover .unq{
+    /* transform:scale(0.9); */
+    transform: rotateY(360deg);
+
+
+    /* box-shadow: 0px 0px 10px 3px black; */
+}
+.di{
+    cursor: pointer;
+}
+.liop:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: black;
+}
+.ffc{
+    transition: 2s;
+}
+.sachii:hover i{
+    cursor: pointer;
+    transform: rotateY(360deg);
+
+}
+.delhi{
+    cursor: pointer;
+    animation: h_pic;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+.fottu:hover{
+    box-shadow: 0px 0px 10px 5px;
+}
+.benam{
+    cursor: pointer;
+    animation: h_pic;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+.iouc{
+    transition: 2s;
+}
+.iouc:hover{
+    cursor: pointer;
+    /* transform: rotateY(360deg); */
+    transform: scale(1.2);
+    background-color: black;
+
+}
+.cgtu:hover{
+    cursor: pointer;
+    color: white;
+}
+.ft2{
+    cursor: pointer;
+}
+
+
+
+#arrow{
+    font-size: 40px;
+    cursor: pointer;
+    padding: 5px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    color: #6052EF;
+    /* border: 2px solid black; */
+}
+

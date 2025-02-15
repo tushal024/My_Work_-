@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js" integrity="sha512-fHXRw0CXruAoINU11+hgqYvY/PcsOWzmj0QmcSOtjlJcqITbPyypc8cYpidjPurWpCnlB8VKfRwx6PIpASCUkQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+</head>
+<body>
+    <!-- <h1 class="counter">560</h1> -->
+
+
+
+    <div class="c0 wow animate_animated animate_fadeInUp">
+        <div class="d">
+            <div id="counter"><span> 5000</span></div>
+            <br>
+            <span>Clients</span>
+        </div>
+        <div class="d1 wow animate_animated animate_fadeInUp">
+            <div id="counter2">0</div>
+            <br>
+            <span>Projects</span>
+        </div>
+        <div class="d2 wow animate_animated animate_fadeInUp">
+            <div id="counter3">0</div>
+            <br>
+            <span>Years</span>
+        </div>
+    </div>
+
+
+
+</body>
+<script>
+$(document).ready(function () {
+    let counter = 5000;
+
+    setInterval(function () {
+        counter--;
+
+        $("#counter").text(counter);
+    }, 100);
+});
+
+</script>
+
+<script>
+$(document).ready(function () {
+    let counter = 10000;
+    setInterval(function () {
+        counter--;
+        $("#counter2").text(counter);
+    }, 100);
+});
+</script>
+
+<script>
+$(document).ready(function () {
+    let counter = 264;
+    setInterval(function () {
+        counter--;
+        $("#counter3").text(counter);
+    }, 100);
+});
+</script>
+
+
+
+
+</html>

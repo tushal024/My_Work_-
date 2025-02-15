@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FirstCry</title>
+
+    <link rel="shortcut icon" href="Assets/fc_logo.png" type="image/x-icon">
+    <!-- tailwindcss.................................. -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- CSS......................................... -->
+    <link rel="stylesheet" href="style.css">
+    <!-- remix icon................................. -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" integrity="sha512-HXXR0l2yMwHDrDyxJbrMD9eLvPe3z3qL3PPeozNTsiHJEENxx8DH2CxmV05iwG0dwoz5n4gQZQyYLUNt1Wdgfg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- font-awesome........................................... -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- sweetalert................ -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
+
+
+    <!-- jquery.................. -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+
+    <style>
+          #arrow{
+            font-size: 40px;
+            cursor: pointer;
+            padding: 5px;
+            position: fixed;
+            right: 10px;
+            bottom: 10px;
+            /* border: 2px solid black; */
+            opacity: 0.7;
+        }
+
+
+        .main {
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: skyblue;
+            z-index: 1;
+
+        }
+        .loader{
+            width: 50px;
+            z-index: 1;
+            height: 50px;
+            border: 5px solid black;
+            border-radius: 50%;
+            border-top-color: transparent;
+            animation: lll;
+            animation-duration: 1s;
+            background-color: transparent;
+            animation-direction: normal;
+            animation-iteration-count: infinite;
+        }
+        @keyframes lll{
+            to{
+                transform: rotate(360deg);
+            }
+        }
+
+
+#toll{
+    /* background-color: orangered; */
+    color: orangered;
+    font-weight: bold;
+    
+    /* color: white;
+    border-radius: 50%;
+    padding: 4px; */
+
+}
+
+
+    </style>
+
+</head>
+<body>
+
+
+    <div class="main">
+        <div class="loader">
+        </div>
+    </div>
+    
+    <i class="fa-solid fa-up-long" id="arrow"></i>
+    
+    <header class="w-[100%] h-[auto]   border-sky-500">
+        <div class="hh1 w-[100%] h-[70px]  border-sky-500 flex justify-between">
+    
+            <div class="s_h1 w-[15%] h-[100%]  border-sky-500 flex justify-center items-center ">
+            <a href="index.html"><img src="Assets/fc_logo.png" alt=""></a>    
+            </div>
+            <div class="s_h2 relative  w-[30%] h-[100%]  border-sky-500  flex justify-center items-center">
+                <input type="text" name="" id="" placeholder="    Search for Categroy, Brand or Product" class="border-2  border-gray-300  rounded-[6px] w-[90%] h-[60%]  border-gray-300">
+                <i class="ri-search-line absolute right-[10%] text-[26px] text-[#F49A32]"></i>
+    
+            </div>
+            <div class="s_h3  w-[40%] h-[100%]  border-sky-500  ">
+                <ul class=" w-[100%] h-[100%] flex justify-between items-center">
+                    <li><a href=""> <i class="ri-map-pin-line text-[20px] me-[0px]"></i> Select location</a></li>
+                    <li><a href=""> Stores & Preschools</a></li>
+                    <li><a href=""> Support</a></li>
+                    <li><a href="" > Track Order</a></li>
+                    <li><a href="log_sign.html" class=""> Login/Signup</a></li>
+    
+                </ul>
+            </div>
+            <div class="s_h4 w-[10%] h-[100%]  border-sky-500 flex justify-center items-center">
+                <a href="add_to_cart.html" class="tollyy">
+              <img src="Assets/shopping.png" alt="" class="tollyy"> <span class="text-[20px] font-[600] ms-[10px]" ><h2 id="toll"></h2>   </span>
+            </a>
+            </div>
+    
+        </div>
+        <div class="hh2 w-[100%] h-[70px] bg-[#FFD91C] flex justify-center items-center  border-sky-500">
+            <div class="s_h_01 w-[80%] ms-[4%] h-[100%]  border-gray-300">
+                <ul class="w-[100%] h-[100%] flex justify-between items-center">
+                    <li><a href="">ALL CATEGORIES</a></li>
+                    <li><a href="product.html">BOY FASHION</a></li>
+                    <li><a href="">GIRL FASHION</a></li>
+                    <li><a href="">Footwear</a></li>
+                    <li><a href="">Toys</a></li>
+                    <li><a href="">Diapering</a></li>
+                    <li><a href="">Gear</a></li>
+                    <li><a href="">Feeding</a></li>
+                    <li><a href="">Bath</a></li>
+                    <li><a href="">Nursery</a></li>
+                    <li><a href="">Moms</a></li>
+                    <li><a href="">Health</a></li>
+                    <li><a href="">Boutiques</a></li>
+                    
+                </ul>
+            </div>
+            <div class="s_h_02 w-[15%] h-[100%]      border-gray-300 flex justify-center  gap-[20px]   items-center">
+                <img src="Assets/club_logo.png" alt="" class="w-[30%] h-[40%]">
+                <button class="text-[white] bg-[#009EDD] border-none text-[20px]  font-[500]   h-[100%] w-[40%]"> Carter's</button>
+            </div>
+            
+        </div>
+       
+        <div class="hh3 w-[100%] h-[auto] relative border-sky-500 pt-[10px] pb-[10px]">
+            <!-- <h1 class="text-[300px] text-center">SLIDER</h1> -->
+    
+            <div id="main" class="border-2  border-gray-300 bg-[gray]">
+                <div id="im">
+        
+                </div>
+            </div>
+           
+             
+                <button onclick="prev()" class="absolute text-[30px] text-[#575757]   top-[40%] left-[5%]   "><i class="fa-solid fa-chevron-left"></i></button>
+                <button onclick="next()" class="absolute text-[30px]  text-[#575757] top-[40%] right-[5%]"><i class="fa-solid fa-chevron-right"></i></button>
+            
+    
+        </div>
+    </header>
+    
+
+
+
+<!-- settime.................. -->
+    <!-- <div id="stime" style="display: non;">
+
+<img src="https://cdn.cdnparenting.com/brainbees/community/memoryimages/1727946880932-1727946881_1.webp" alt="">
+</div> -->
+<!-- <h3 style="font-weight: bold; margin-bottom: 5px;"></h3> -->
+
+<!-- section_1....................................................... -->
+<div class="section_1 w-[100%] h-[auto] bg-[#EEEEEE] border-2 border-gray-300">
+    <div class="sen1 w-[100%] h-[100px] text-center">
+        <h4 class="font-[500] text-[32px]">PREMIUM BOUTIQUES</h4>
+    </div>
+    <div class="sen11 w-[95%] ms-[2.5%]  h-[] flex justify-between items-center flex-wrap	 ">
+        <div class="sen11_1 w-[32%] h-[500px] border-2 border-gray-300  mt-[2%]">
+
+        </div>
+        <div class="sen11_2  w-[32%] h-[500px] border-2 border-gray-300 mt-[2%]"></div>
+        <div class="sen11_3  w-[32%] h-[500px] border-2 border-gray-300 mt-[2%]"></div>
+        <div class="sen11_4  w-[32%] h-[500px] border-2 border-gray-300 mt-[2%]"></div>
+        <div class="sen11_5  w-[32%] h-[500px] border-2 border-gray-300 mt-[2%]"></div>
+        <div class="sen11_6  w-[32%] h-[500px] border-2 border-gray-300 mt-[2%]"></div>
+        <div class="sen11_7  w-[32%] h-[500px] border-2 border-gray-300 mt-[2%]"></div>
+        <div class="sen11_8  w-[32%] h-[500px] border-2 border-gray-300 mt-[2%]"></div>
+        <div class="sen11_9  w-[32%] h-[500px] border-2 border-gray-300 mt-[2%]"></div>
+
+    </div>
+
+</div>
+
+
+<!-- section_2................................................................ -->
+
+<div class="section_2 w-[100%] h-[auto] mt-[60px]">
+<div class="sen2 w-[100%] h-[50%]">
+    <img src="Assets/ff_1.avif" alt="">
+</div>
+<div class="sen21 w-[100%] h-[50%]">
+    <img src="Assets/ff_2.avif" alt="">
+</div>
+</div>
+
+
+
+
+<!-- section_3................................................................ -->
+
+<div class="section_3 w-[100%] h-[auto] mt-[60px]">
+    <div class="sen3 w-[100%] h-[]">
+        <img src="Assets/sen3.avif" alt="" class="w-[100%] h-[]">
+    </div>
+    <div class="sen31 w-[100%] h-[auto]">
+        <div class="sen311 w-[100%] h-[auto]  border-gray-300 flex justify-between items-center">
+            <div class="sen33  ">
+                <img src="Assets/u1.avif" alt="">
+
+            </div>
+
+            <div class="sen33  ">
+                <img src="Assets/u2.avif" alt="">
+
+            </div>
+
+            <div class="sen33  ">
+                <img src="Assets/u3.avif" alt="">
+
+            </div>
+            <div class="sen33  ">
+                <img src="Assets/u4.avif" alt="">
+
+            </div>
+            <div class="sen33  ">
+                <img src="Assets/u5.avif" alt="">
+
+            </div>
+            <div class="sen33  ">
+                <img src="Assets/u6.avif" alt="">
+
+            </div>
+
+
+
+
+
+
+        </div>
+        <div class="sen312 w-[100%] h-[500px]  border-gray-300 flex justify-between items-center " >
+
+        <div class="sen33  ">
+            <img src="Assets/u7.avif" alt="">
+
+        </div>
+        <div class="sen33  ">
+            <img src="Assets/u8.avif" alt="">
+
+        </div>
+        <div class="sen33  ">
+            <img src="Assets/u9.avif" alt="">
+
+        </div>
+        <div class="sen33  ">
+            <img src="Assets/u10.avif" alt="">
+
+        </div>
+        <div class="sen33  ">
+            <img src="Assets/u11.avif" alt="">
+
+        </div>
+        <div class="sen33  ">
+            <img src="Assets/u12.avif" alt="">
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- section_4................................................................ -->
+
+<div class="section_4 w-[100%] h-[auto] mt-[-60px]">
+    <div class="sem4 w-[100%] h-[auto]">
+        <img src="Assets/serr.avif" alt="">
+    </div>
+    <div class="sen41 w-[100%] h-[auto]">
+        <img src="Assets/serr1.avif" alt="">
+    </div>
+    <div class="sen42 w-[100%] h-[auto]">
+        <img src="Assets/serr2.avif" alt="">
+    </div>
+</div>
+
+
+<!-- section_5................................................................ -->
+
+<div class="section_5 w-[100%] h-[auto]">
+    <div class="sen5 w-[100%] h-[auto]">
+        <img src="Assets/round1.avif" alt="">
+    </div>
+    <div class="sen51 w-[100%] h-[auto] flex justify-between items-center">
+        
+            <div class="r1">
+                <img src="Assets/round2.avif" alt="">
+            </div>
+
+          
+    
+            <div class="r1">
+                <img src="Assets/r2.avif" alt="">
+            </div>
+    
+            <div class="r1">
+                <img src="Assets/r3.avif" alt="">
+            </div>
+            <div class="r1">
+                <img src="Assets/r4.avif" alt="">
+            </div>
+            <div class="r1">
+                <img src="Assets/r5.avif" alt="">
+            </div>
+            <div class="r1">
+                <img src="Assets/r6.avif" alt="">
+            </div>
+            <div class="r1">
+                <img src="Assets/r7.avif" alt="">
+            </div>
+           
+    
+    </div>
+</div>
+
+<!-- section_6................................................................ -->
+
+<div class="section_6 w-[100%] h-[auto]  ">
+    <div class="sen6 w-[100%] h-[auto]">
+        <img src="Assets/dh1.avif" alt="">
+    </div>
+    <div class="sen66 w-[100%] h-[auto] flex justify-between items-center">
+        <div class="sen61">
+            <img src="Assets/dh2.avif" alt="">
+
+        </div>
+        <div class="sen62">
+            <img src="Assets/dh3.avif" alt="">
+
+        </div>
+    </div>
+</div>
+
+
+<!-- section_7................................................................ -->
+
+<div class="section_7 w-[100%] h-[auto]">
+    <div class="sen7  w-[100%] h-[auto]">
+        <img src="Assets/bb1.avif" alt="">
+    </div>
+    <div class="sen71 w-[100%] h-[auto] flex justify-between items-center">
+
+        <div class="sen88">
+            <img src="Assets/bb2.avif" alt="">
+        </div>
+
+        <div class="sen88">
+            <img src="Assets/bb3.avif" alt="">
+        </div>
+
+        <div class="sen88">
+            <img src="Assets/bb4.avif" alt="">
+        </div>
+
+        <div class="sen88">
+            <img src="Assets/bb5.avif" alt="">
+        </div>
+
+        <div class="sen88">
+            <img src="Assets/bb6.avif" alt="">
+        </div>
+
+        <div class="sen88">
+            <img src="Assets/bb7.avif" alt="">
+        </div>
+
+        <div class="sen88">
+            <img src="Assets/bb8.avif" alt="">
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!-- section_8................................................................ -->
+
+<div class="section_8 w-[100%] h-[auto]">
+    <div class="sen8  w-[100%] h-[auto]">
+        <img src="Assets/o1.avif" alt="">
+    </div>
+    <div class="sen81 w-[100%] h-[auto] flex justify-between items-center">
+
+        <div class="sen88">
+            <img src="Assets/o2.avif" alt="">
+        </div>
+
+        <div class="sen88">
+            <img src="Assets/o3.avif" alt="">
+        </div>
+
+        <div class="sen88">
+            <img src="Assets/o4.avif" alt="">
+        </div>
+
+        <div class="sen88">
+            <img src="Assets/o5.avif" alt="">
+        </div>
+
+        <div class="sen88">
+            <img src="Assets/o6.avif" alt="">
+        </div>
+
+        <div class="sen88">
+            <img src="Assets/o7.avif" alt="">
+        </div>
+
+        <div class="sen88">
+            <img src="Assets/o8.avif" alt="">
+        </div>
+
+       
+
+
+    </div>
+</div>
+
+
+<!-- section_9................................................................ --> 
+
+
+<div class="section_9 w-[100%] h-[auto]">
+    <div class="sen09 w-[100%] h-[auto]">
+        <img src="Assets/g11.avif" alt="">
+    </div>
+    <div class="sen9 w-[100%] h-[auto]">
+        <img src="Assets/g1.avif" alt="">
+    </div>
+</div>
+
+<!-- section_10................................................................ --> 
+ <div class="section_10 w-[100%] h-[auto]">
+    <div class="sen100 w-[100%] h-[auto]">
+<img src="Assets/k1.avif" alt="">
+    </div>
+    <div class="sen101 w-[100%] h-[auto]">
+        <div class="sen111 w-[100%] h-[auto] flex justify-center items-center">
+            
+
+            <div class="z1">
+                <img src="Assets/k3.avif" alt="">
+            </div>
+            <div class="z1">
+                <img src="Assets/k4.avif" alt="">
+            </div>
+            
+            <div class="z1">
+                <img src="Assets/k5.avif" alt="">
+            </div>
+            <div class="z1">
+                <img src="Assets/k6.avif" alt="">
+            </div>
+            <div class="z1">
+                <img src="Assets/k7.avif" alt="">
+            </div>
+
+            <div class="z1">
+                <img src="Assets/k8.avif" alt="">
+            </div>
+            
+            
+        </div>
+        <div class="sen112 w-[100%] h-[auto]  flex justify-center items-center">
+
+            
+            <div class="z1">
+                <img src="Assets/kkk.avif" alt="">
+            </div>
+            <div class="z1">
+                <img src="Assets/k9.avif" alt="">
+            </div>
+            
+            <div class="z1">
+                <img src="Assets/k10.avif" alt="">
+            </div>
+            <div class="z1">
+                <img src="Assets/k11.avif" alt="">
+            </div>
+            <div class="z1">
+                <img src="Assets/k12.avif" alt="">
+            </div>
+
+            <div class="z1">
+                <img src="Assets/k13.avif" alt="">
+            </div>
+            
+        </div>
+    </div>
+ </div>
+
+<!-- section_11................................................................ --> 
+<div class="section_11 w-[100%] h-[auto]">
+    <img src="/Assets/opp.webp" alt="" class="w-[95%] ms-[2.5%] h-[auto]">
+</div>
+<!-- section_12................................................................ --> 
+<!-- <div class="section_12 w-[100%] h-[auto]">
+    <div class="sen1222 w-[95%] h-[200px] ms-[2.5%]">
+<marquee behavior="" direction="">
+
+    <img src="Assets/mar.avif" alt="" class=" h-[70px] w-[100%]">
+    </marquee>
+    </div>
+</div> -->
+
+<!-- ......................................... -->
+
+<!-- section_12................................................................ --> 
+
+<img src="Assets/ft_tex.png" alt="" class="ms-[34%] mb-[-144px]">
+<footer class="w-[100%] ps-[2.5%] pe-[2.5%] h-[auto] bg-[#D9F3F4] mt-[100px]">
+
+    <div class="ft1 w-[100%] h-[540px] flex items-center pt-[100px]">
+        <div class="ft11 w-[20%] h-[100%] flex  flex-col items-start justify-between" >
+            <h4 class=" block w-[80%]" style="border-bottom: 1px solid rgba(128, 128, 128, 0.5);" >CATEGORIES</h4>
+            <hr>
+            <a href="">Clothing & Fashion</a>
+            <a href="">Toys</a>
+            <a href="">Books & CDs</a>
+            <a href="">School Supplies</a>
+            <a href="">Birthday Party Supplies</a>
+            <a href="">Baby Diapering</a>
+            <a href="">Feeding & Nursing</a>
+            <a href="">Bath & Skin Care</a>
+            <a href="">Health & Safety</a>
+            <a href="">Baby Gear</a>
+            <a href="">Nursery</a>
+            <a href="">Moms & Maternity</a>
+            <a href="">Gifts</a>
+            <a href="">Preschool Admissions</a>
+        </div>
+        
+        <div class="ft11 w-[20%]  h-[100%] flex  flex-col items-start justify-between" >
+            <h4 class=" block w-[80%]" style="border-bottom: 1px solid rgba(128, 128, 128, 0.5);">FIRSTCRY PARENTING</h4>
+           
+
+            <a href="">Clothing & Fashion</a>
+            
+            <a href="">Toys</a>
+            <a href="">Books & CDs</a>
+            <a href="">School Supplies</a>
+            <a href="">Birthday Party Supplies</a>
+            <a href="">Baby Diapering</a>
+            <a href="">Feeding & Nursing</a>
+            <a href="">Bath & Skin Care</a>
+            <a href="">Health & Safety</a>
+            <a href="">Baby Gear</a>
+            <a href="">Nursery</a>
+            <a href="">Moms & Maternity</a>
+            <a href="">Gifts</a>
+            <a href="">Preschool Admissions</a>
+        </div>
+    
+
+        <div class="ft11 w-[20%]  h-[100%] flex  flex-col items-start justify-between" >
+            <h4  class=" block w-[80%]" style="border-bottom: 1px solid rgba(128, 128, 128, 0.5);">SHIPPING & POLICIES</h4>
+            <hr>
+            <a href="">Clothing & Fashion
+            </a>
+            <a href="">Toys</a>
+            <a href="">Books & CDs</a>
+            <a href="">School Supplies</a>
+            <a href="">Birthday Party Supplies</a>
+            <a href="">Baby Diapering</a>
+            <a href="">Feeding & Nursing</a>
+            <a href="">Bath & Skin Care</a>
+            <a href="">Health & Safety</a>
+            <a href="">Baby Gear</a>
+            <a href="">Nursery</a>
+            <a href="">Moms & Maternity</a>
+            <a href="">Gifts</a>
+            <a href="">Preschool Admissions</a>
+        </div>
+         <div class="ft11 w-[20%]  h-[100%] flex  flex-col items-start justify-between" >
+            <h4  class=" block w-[80%]" style="border-bottom: 1px solid rgba(128, 128, 128, 0.5);">OUR APPS</h4>
+            <hr>
+            <a href="">Clothing & Fashion
+            </a>
+            <a href="">Toys</a>
+            <a href="">Books & CDs</a>
+            <a href="">School Supplies</a>
+            <a href="">Birthday Party Supplies</a>
+            <a href="">Baby Diapering</a>
+            <a href="">Feeding & Nursing</a>
+            <a href="">Bath & Skin Care</a>
+            <a href="">Health & Safety</a>
+            <a href="">Baby Gear</a>
+            <a href="">Nursery</a>
+            <a href="">Moms & Maternity</a>
+            <a href="">Gifts</a>
+            <a href="">Preschool Admissions</a>
+        </div>
+        
+        <div>
+            <!-- <img src="https://cdn.fcglcdn.com/brainbees/images/fcintellitots_franchise_footer_banner.webp" alt=""> -->
+             <img src="Assets/ft.png" alt="">
+        </div>
+
+
+    </div>
+
+
+
+    <div class="ft2 flex justify-center items-center w-[100%] h-[60px]">
+
+<p class="text-center ">~Create By <span class="text-[#FF8125] text-[20px]"> TUSHAL SHEKH  </span>~</p>
+
+    </div>
+
+
+
+</footer>
+
+<script src="script.js"></script>
+</body>
+<script>
+    $(window).on("load",function(){
+        $(".main").fadeOut(3000)
+    })
+</script>
+
+
+<script>
+    $(document).ready(function(){
+        $("#arrow").click(function(){
+            $("html,body").animate({scrollTop:0})   
+        })
+
+
+        $(window).scroll(function(){
+            if($(this).scrollTop()>20)
+            {
+                $("#arrow").slideDown();
+            }
+            else
+            {
+                $("#arrow").slideUp();
+            }
+        })
+    })
+</script>
+<script src="tolly.js"></script>
+</html>
+
+
+
+
+
+
+

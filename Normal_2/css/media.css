@@ -1,0 +1,148 @@
+@media(max-width:480px){
+    .sub nav{
+        display: none;
+    }
+    header{
+        width: 100%;
+        height: 800px;
+    }
+    .box{
+        width: 100%;
+        height: auto;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+    .section_1{
+        height: auto;
+    }
+    .p1{
+        font-size: 50px;
+    }
+    .sen22,.sen23,.sen24,.sen25{
+        width: 100%;
+        margin-top: 70px;
+    }
+    .section_2,.section_4,.section_5,.section_6{
+        height: auto;
+    }
+    .section_3{
+        height: auto;
+    }
+    .section_5{
+        height: 1500px;
+    }
+    .sen31,.sen32,.sen33{
+        width: 100%;
+    }
+    .sen41,.sen42,.sen43{
+        width: 100%;
+    }
+    .cbox{
+        margin-top: 600px;
+
+    }
+    .ff1{
+        width: 100%;
+        height: 400px;
+        margin-top: 00px;
+    }
+    .ff2{
+        width: 100%;
+        height: 400px;
+        margin-top: 100px;
+    }
+    .ff3,.ff4{
+        height: auto;
+        width: 100%;
+        margin-top: 30px;
+    }
+    .ny,.ny1{
+        color: white;
+    }
+    footer{
+        height: auto;
+        height: 600px;
+        margin-top: 1800px;
+    }
+    .himo1{
+        display: none;
+    }
+    .bt4{
+        margin-top: 30px;
+    }
+}
+
+
+@media(max-width:720px){
+    .sub nav{
+        display: none;
+    }
+    header{
+        width: 100%;
+        height: 800px;
+    }
+    .box{
+        width: 100%;
+        height: auto;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+    .section_1{
+        height: auto;
+    }
+    .p1{
+        font-size: 50px;
+    }
+    .sen22,.sen23,.sen24,.sen25{
+        width: 100%;
+        margin-top: 70px;
+    }
+    .section_2,.section_4,.section_5,.section_6{
+        height: auto;
+    }
+    .section_3{
+        height: auto;
+    }
+    .section_5{
+        height: 1500px;
+    }
+    .sen31,.sen32,.sen33{
+        width: 100%;
+    }
+    .sen41,.sen42,.sen43{
+        width: 100%;
+    }
+    .cbox{
+        margin-top: 600px;
+
+    }
+    .ff1{
+        width: 100%;
+        height: 400px;
+        margin-top: 00px;
+    }
+    .ff2{
+        width: 100%;
+        height: 400px;
+        margin-top: 100px;
+    }
+    .ff3,.ff4{
+        height: auto;
+        width: 100%;
+        margin-top: 30px;
+    }
+    .ny,.ny1{
+        color: white;
+    }
+    footer{
+        height: auto;
+        height: 600px;
+        margin-top: 1800px;
+    }
+    .himo1{
+        display: none;
+    }
+    .bt4{
+        margin-top: 30px;
+    }
+}
