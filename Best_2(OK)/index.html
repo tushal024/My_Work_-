@@ -1,0 +1,1897 @@
+<!-- https://demo.templatemonster.com/demo/316982.html?_gl=1*1cn2ktl*_ga*MzgyMDU1MDQuMTcxNDY0MDc3Ng..*_ga_FTPYEGT5LY*MTcxNDY0MDc3NS4xLjEuMTcxNDY0MTI5MC4yMy4wLjA. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOST MATE</title>
+    <link rel="shortcut icon" href="img/Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- jquery.............................. -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+
+
+    <!-- g_fonts................................. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+
+
+
+    <!-- bootstrap.................... -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+    <!-- owl coro...................... -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- fontawsome........................ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        
+
+
+    <!-- counterup..................................... -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
+        integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+        integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <!-- swiper slider.................................. -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+    <!-- wow.................................................................. -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+
+        .swiper {
+            width: 660px;
+            height: auto;
+
+            /* padding: 20px; */
+            /* padding-left: 100px; */
+
+        }
+
+        .swiper-slide {
+            /* display: flex; */
+            align-items: center;
+            justify-content: center;
+            border-radius: 18px;
+            font-size: 22px;
+            padding: 50px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .swiper-slide:nth-child(1n) {
+            /* background-color: rgb(206, 17, 17); */
+            background-color: #29184A;
+        }
+
+        .swiper-slide:nth-child(2n) {
+            /* background-color: rgb(0, 140, 255); */
+            background-color: #29184A;
+        }
+
+        .swiper-slide:nth-child(3n) {
+            /* background-color: rgb(10, 184, 111); */
+            background-color: #29184A;
+        }
+
+        .swiper-slide:nth-child(4n) {
+            /* background-color: rgb(211, 122, 7); */
+            background-color: #29184A;
+        }
+
+        .swiper-slide:nth-child(5n) {
+            /* background-color: rgb(118, 163, 12); */
+            background-color: #29184A;
+        }
+
+        .swiper-slide:nth-child(6n) {
+            /* background-color: rgb(180, 10, 47); */
+            background-color: #29184A;
+        }
+
+        .swiper-slide:nth-child(7n) {
+            /* background-color: rgb(35, 99, 19); */
+            background-color: #29184A;
+        }
+
+        .swiper-slide:nth-child(8n) {
+            /* background-color: rgb(0, 68, 255); */
+            background-color: #29184A;
+        }
+
+        .swiper-slide:nth-child(9n) {
+            /* background-color: rgb(218, 12, 218); */
+            background-color: #29184A;
+        }
+
+        .swiper-slide:nth-child(10n) {
+            /* background-color: rgb(54, 94, 77); */
+            background-color: #29184A;
+        }
+
+        #arrow{
+            font-size: 50px;
+            cursor: pointer;
+            padding: 5px;
+            position: fixed;
+            right: 0;
+            /* color: orangered; */
+            background: linear-gradient(to right,#e06782,#d84061,#a10023);
+            color: white;
+            bottom: 0;
+            border: 2px solid black;
+        }
+        .loader_1{
+            width: 100%;
+            height: 100vh;
+            /* background-color: #ff0b40; */
+            /* background: linear-gradient(to right,#E74063,#af2a47,#b40128); */
+            /* background-color: white; */
+            background: linear-gradient(to right,white,rgb(243, 223, 223),rgb(248, 174, 238),rgb(229, 177, 240));
+            position: fixed;
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .gudi{
+            width: 100px;
+            height: 100px;
+            border: 5px solid black;
+            border-top: none;
+            animation: fgu;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+            border-radius: 50%;
+
+        }
+        @keyframes fgu{
+            0%{
+                transform: rotate(0deg);
+            }
+            50%{
+                transform: rotate(306deg);
+            }
+            100%{
+                transform: rotate(0deg);
+            }
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="loader_1">
+        <!-- <div class="gudi"> -->
+
+        <!-- </div> -->
+        <!-- <img src="/img/loader.gif" alt=""> -->
+        <!-- <img src="/img/mam.gif" alt=""> -->
+        <!-- <img src="https://media1.giphy.com/media/XDSMr8dDUs04dvz3LV/giphy.gif?cid=6c09b952p27g9563yceaueo44grq2um8tcpfolftsgenrxcw&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=s" alt=""> -->
+        <img src="https://behalacollege.in/display_board/assets/images/ajax-spinner.gif" alt="" style="width: 100px;">
+
+        <!-- <img src="https://i.pinimg.com/originals/ee/7a/ce/ee7acee141cf774b5511f8c3cb0e0016.gif" alt=""> -->
+
+    </div>
+
+    <i class="fa-solid fa-up-long" id="arrow"></i>
+
+    <div class="big_header">
+
+        <div class="container">
+    <header class="navbar navbar-expand-md wow animate__animated animate__bounce">
+        <div class="container wow animate__animated animate__zoomInDown">
+            <div class="logo navbar-brand">
+                <!-- <h3 class="text-light" id="llb"> CRAFT</h3> -->
+                <img src="/img/Logo.png" alt="" id="logi">
+            </div>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#coll">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <nav class="collapse navbar-collapse" id="coll">
+                <ul class="navbar-nav text-center ms-auto m-auto text-light">
+                    <li class="nav-item fs-5  fw-bold"><a href="" class="nav-link text-light" id="link">Home</a></li>
+                    <li class="nav-item fs-5 fw-bold"><a href="" class="nav-link text-light" id="link">About Us</a></li>
+                    <li class="nav-item fs-5 fw-bold"><a href="" class="nav-link text-light" id="link">Hosting</a></li>
+                    <li class="nav-item fs-5 fw-bold"><a href="" class="nav-link text-light" id="link">Domain</a></li>
+                    <li class="nav-item fs-5 fw-bold"><a href="" class="nav-link text-light" id="link">Pages</a></li>
+                    <li class="nav-item fs-5 fw-bold"><a href="" class="nav-link text-light" id="link">Contact</a></li>
+          
+                </ul fw-bold>
+            </nav>
+
+
+            <button class="btn btn-worning" data-bs-toggle="modal" data-bs-target="#jk"> <button type="button"
+                    class="btn btnn text-light fs-5" data-bs-toggle="modal" data-bs-target="#jk" id="log">login</button>
+            </button>
+         
+        </div>
+      
+
+       
+    </header>
+</div>
+    <div class="modal" id="jk">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    Log in
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <input type="email" class="form-control" placeholder="E-mail"> <br>
+                    <input type="password" class="form-control" placeholder="Password">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success">Submit</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container pt-5">
+    <div class="row mt-5">
+        <div class="col text-light wow animate__animated animate__lightSpeedInLeft">
+            <h4 class="display-2 fw-bold">
+                Unlimited <span class="pinkk"> Domain </span>& <span class="bluee">Hosting</span> in Our Platform
+            </h4>
+
+            <p class="fs-4 mt-5">Listed below our awesome hosting packages. You can select any web hosting services below!</p>
+
+          
+            <div class="input-group mb-3 unc mt-5 mb-5">
+                <input type="text" class="form-control unc inppu" placeholder=" Username" aria-label="Username" aria-describedby="basic-addon1">
+                <span class="input-group-text sedd unc" id="basic-addon1">
+                    <select name="" id="select" class="form-control unc nhtt" >
+                        <option value="" class="kkm">.com</option>
+                        <option value="" class="kkm">.store</option>
+                        <option value="" class="kkm">.net</option>
+                        <option value="" class="kkm">.info</option>
+                        
+                    </select>
+                </span>
+                <span class="input-group-text cdvv" id="basic-addon1">Srarch</span>
+              </div>
+
+
+              <div class="row mb-5">
+                <div class="col" id="b_side">
+                    <p class="fs-3"> .com<span class="pinkk"> $4.25</span></p>
+                </div>
+                <div class="col" id="b_side">
+                      <p class="fs-3"> .store<span class="pinkk"> $1.25</span></p>
+                </div>
+                <div class="col" id="b_side">
+                      <p class="fs-3"> .net<span class="pinkk"> $3.75</span></p>
+                </div>
+                <div class="col">
+                      <p class="fs-3"> .info<span class="pinkk"> $2.50</span></p>
+                </div>
+                <!-- <div class="col">
+                      <p class="fs-3"> .com<span class="pinkk"> $4.25</span></p>
+                </div> -->
+              </div>
+              
+
+        </div>
+        <div class="col wow animate__animated animate__lightSpeedInRight">
+            <img src="/img/headerr.png" alt="" class="img-fluid sos ms-5">
+        </div>
+    </div>
+</div>
+</div>
+
+    <div class="section_1 pt-5 pb-5">
+        <div class="container pt-5">
+            <div class="row ">
+                <div class="col text-light text-center wow animate__animated animate__slideInDown">
+                    <h2 class="display-4 fw-bold">Why Choose Us</h2>
+                    <p class="fs-5 mt-4 text-secondary">Listed below our awesome hosting packages. You can select any
+                        web hosting <br>
+                        services below!</p>
+
+                </div>
+            </div>
+            <div class="row mt-4 pt-5">
+                <div class="owl-carousel owl-theme ">
+
+                    <div class="item ">
+                        <div class="card p-3 wow animate__animated animate__zoomIn" id="card_1">
+                            <center>
+                                <img src="/img/i3.png" alt="" class="card-img-top slio" id="c_im">
+                                <div class="card-body text-light">
+                                    <div class="card-title">
+                                        <p class="fs-4 fw-bold">
+                                            10x Faster Features
+                                        </p>
+                                        <p class="fs-5">
+                                            Our free web hosting is powered by top...
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </center>
+                        </div>
+
+
+
+
+
+                    </div>
+                    <div class="item">
+
+
+
+                        <!-- <h4>2</h4> -->
+                        <div class="card p-3 mt-5 wow animate__animated animate__zoomIn" id="card_1">
+                            <center>
+                                <img src="/img/i1.png" alt="" class="card-img-top slio" id="c_im">
+                                <div class="card-body text-light">
+                                    <div class="card-title">
+                                        <p class="fs-4 fw-bold">
+                                            10x Faster Features
+                                        </p>
+                                        <p class="fs-5">
+                                            Our free web hosting is powered by top...
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </center>
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="item">
+
+
+
+                        <!-- <h4>3</h4> -->
+                        <div class="card p-3 wow animate__animated animate__zoomIn " id="card_1">
+                            <center>
+                                <img src="/img/i2.png" alt="" class="card-img-top slio" id="c_im">
+                                <div class="card-body text-light">
+                                    <div class="card-title">
+                                        <p class="fs-4 fw-bold">
+                                            10x Faster Features
+                                        </p>
+                                        <p class="fs-5">
+                                            Our free web hosting is powered by top...
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </center>
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="item">
+
+
+
+                        <!-- <h4>4</h4> -->
+                        <div class="card p-3 mt-5 wow animate__animated animate__zoomIn" id="card_1">
+                            <center>
+                                <img src="/img/i4.png" alt="" class="card-img-top slio" id="c_im">
+                                <div class="card-body text-light">
+                                    <div class="card-title">
+                                        <p class="fs-4 fw-bold">
+                                            10x Faster Features
+                                        </p>
+                                        <p class="fs-5">
+                                            Our free web hosting is powered by top...
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </center>
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="item">
+
+
+
+                        <!-- <h4>5</h4> -->
+                        <div class="card p-3 " id="card_1">
+                            <center>
+                                <img src="/img/i1.png" alt="" class="card-img-top slio" id="c_im">
+                                <div class="card-body text-light">
+                                    <div class="card-title">
+                                        <p class="fs-4 fw-bold">
+                                            10x Faster Features
+                                        </p>
+                                        <p class="fs-5">
+                                            Our free web hosting is powered by top...
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </center>
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="item">
+
+
+
+                        <!-- <h4>6</h4> -->
+                        <div class="card p-3 mt-5" id="card_1">
+                            <center>
+                                <img src="/img/i2.png" alt="" class="card-img-top slio" id="c_im">
+                                <div class="card-body text-light">
+                                    <div class="card-title">
+                                        <p class="fs-4 fw-bold">
+                                            10x Faster Features
+                                        </p>
+                                        <p class="fs-5">
+                                            Our free web hosting is powered by top...
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </center>
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="item">
+
+
+
+                        <!-- <h4>7</h4> -->
+                        <div class="card p-3 " id="card_1">
+                            <center>
+                                <img src="/img/i3.png" alt="" class="card-img-top slio" id="c_im">
+                                <div class="card-body text-light">
+                                    <div class="card-title">
+                                        <p class="fs-4 fw-bold">
+                                            10x Faster Features
+                                        </p>
+                                        <p class="fs-5">
+                                            Our free web hosting is powered by top...
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </center>
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="item">
+
+
+
+                        <!-- <h4>8</h4> -->
+                        <div class="card p-3 mt-5 " id="card_1">
+                            <center>
+                                <img src="/img/i4.png" alt="" class="card-img-top slio" id="c_im">
+                                <div class="card-body text-light">
+                                    <div class="card-title">
+                                        <p class="fs-4 fw-bold">
+                                            10x Faster Features
+                                        </p>
+                                        <p class="fs-5">
+                                            Our free web hosting is powered by top...
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </center>
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="item">
+
+
+
+                        <!-- <h4>9</h4> -->
+                        <div class="card p-3" id="card_1">
+                            <center>
+                                <img src="/img/i1.png" alt="" class="card-img-top slio" id="c_im">
+                                <div class="card-body text-light">
+                                    <div class="card-title">
+                                        <p class="fs-4 fw-bold">
+                                            10x Faster Features
+                                        </p>
+                                        <p class="fs-5">
+                                            Our free web hosting is powered by top...
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </center>
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="item">
+
+
+
+                        <!-- <h4>10</h4 -->
+                        <div class="card p-3 mt-5" id="card_1">
+                            <center>
+                                <img src="/img/i2.png" alt="" class="card-img-top slio" id="c_im">
+                                <div class="card-body text-light">
+                                    <div class="card-title">
+                                        <p class="fs-4 fw-bold">
+                                            10x Faster Features
+                                        </p>
+                                        <p class="fs-5">
+                                            Our free web hosting is powered by top...
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </center>
+                        </div>
+
+
+
+
+                        >
+                    </div>
+                    <div class="item">
+
+
+
+                        <!-- <h4>11</h4 -->
+                        <div class="card p-3" id="card_1">
+                            <center>
+                                <img src="/img/i3.png" alt="" class="card-img-top slio" id="c_im">
+                                <div class="card-body text-light">
+                                    <div class="card-title">
+                                        <p class="fs-4 fw-bold">
+                                            10x Faster Features
+                                        </p>
+                                        <p class="fs-5">
+                                            Our free web hosting is powered by top...
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </center>
+                        </div>
+
+
+
+
+                        >
+                    </div>
+                    <div class="item">
+
+
+
+                        <!-- <h4>12</h4 -->
+                        <div class="card p-3 mt-5" id="card_1">
+                            <center>
+                                <img src="/img/i4.png" alt="" class="card-img-top slio" id="c_im">
+                                <div class="card-body text-light">
+                                    <div class="card-title">
+                                        <p class="fs-4 fw-bold">
+                                            10x Faster Features
+                                        </p>
+                                        <p class="fs-5">
+                                            Our free web hosting is powered by top...
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </center>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="section_2 pt-5 pb-5">
+        <div class="container">
+            <div class="row pt-5 pb-5">
+                <div class="col pt-5 wow animate__animated animate__lightSpeedInLeft" id="hoss">
+                    <img src="img/host-big (1).png" alt="" class="mt-5 pt-5" id="uss">
+                </div>
+                <div class="col mt-5 text-light wow animate__animated animate__lightSpeedInRight" id="cc">
+                    <img src="img/host-small.png" alt="" class="small">
+                    <h2 class="display-4 fw-bold mt-5 pt-5">We Provide Hosting Packages</h2>
+                    <p class="fs-5 mt-4 text-secondary">
+
+
+                        Whether you are looking for a personal website hosting plan or a business website hosting plan,
+                        Hosting is the perfect solution for you. Our powerful website hosting services will not only
+                        help you achieve your overall website goals, but will also provide you with the confidence you
+                        need in knowing that you are partnered with a reliable and secure website hosting platform.
+
+
+                    </p>
+                    <button type="button" class="btn btnn text-light mt-5">Learn More</button>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="section_3">
+        <div class="container pt-5 ">
+            <div class="row jari">
+                <div class="col d-flex wow animate__animated animate__zoomIn">
+                    <div class="g">
+                        <img src="/img/2-Happy.png" alt="" class="happy mt-3">
+
+                    </div>
+                    <div class="g">
+                        <p class="cor display-2 ms-4 "><span class="fw-bold counter">11</span><span
+                                class="fw-bold">K</span></p>
+                        <p class="text-light fs-5 " id="hh">Happy Costomers</p>
+
+                    </div>
+
+
+                </div>
+                <div class="col d-flex wow animate__animated animate__zoomIn">
+                    <div class="g">
+                        <img src="/img/Group.png" alt="" class="happy mt-3">
+
+                    </div>
+                    <div class="g">
+                        <p class="cor display-2 ms-4 "><span class="fw-bold counter">24</span><span
+                                class="fw-bold">K</span></p>
+                        <p class="text-light fs-5 " id="hh">Hosting Servers Sold</p>
+
+                    </div>
+
+                </div>
+                <div class="col d-flex wow animate__animated animate__zoomIn">
+                    <div class="g">
+                        <img src="/img/download.png" alt="" class="happy mt-3">
+
+                    </div>
+                    <div class="g">
+                        <p class="cor display-2 ms-4 "><span class="fw-bold counter">32</span><span
+                                class="fw-bold">K</span></p>
+                        <p class="text-light fs-5 " id="hh">Our Data Center</p>
+
+                    </div>
+
+                </div>
+                <div class="col d-flex wow animate__animated animate__zoomIn">
+                    <div class="g">
+                        <img src="/img/Hand.png" alt="" class="happy mt-3">
+
+                    </div>
+                    <div class="g">
+                        <p class="cor display-2 ms-4 "><span class="fw-bold counter">09</span><span
+                                class="fw-bold">K</span></p>
+                        <p class="text-light fs-5 " id="hh">Team Members</p>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section_4 pb-5">
+
+        <div class="container pb-5">
+            <div class="row" id="fff">
+                <div class="col text-light wow animate__animated animate__zoomIn">
+
+
+
+
+                    <h2 class="display-4 fw-bold mt-5 pt-5" id="zaz">We Provide Hosting Solution</h2>
+                    <p class="fs-5 mt-4 text-secondary">
+
+
+                        WWhether you are looking for a personal website hosting plan or a business website hosting plan,
+                        Hosting is the perfect solution for you. Our powerful website hosting services will not only
+                        help you achieve your overall website goals, but will also provide you with the confidence you
+                        need in knowing that you are partnered with a reliable and secure website hosting platform.
+
+                    </p>
+                    <button type="button" class="btn btnn text-light mt-5">See All Hosting</button>
+
+
+                </div>
+                <div class="col wow animate__animated animate__zoomIn">
+                    <div class="row pt-5">
+                        <div class="col-6">
+
+                            <div class="card p-3 " id="card_r">
+                                <center>
+                                    <img src="/img/i3.png" alt="" class="card-img-top" id="c_im">
+                                    <div class="card-body text-light">
+                                        <div class="card-title">
+                                            <p class="fs-4 fw-bold">
+                                                10x Faster Features
+                                            </p>
+                                            <p class="fs-5">
+                                                Our free web hosting is powered by top...
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </center>
+                            </div>
+
+                        </div>
+                        <div class="col-6">
+
+                            <div class="card p-3 " id="card_r">
+                                <center>
+                                    <img src="/img/i4.png" alt="" class="card-img-top" id="c_im">
+                                    <div class="card-body text-light">
+                                        <div class="card-title">
+                                            <p class="fs-4 fw-bold">
+                                                10x Faster Features
+                                            </p>
+                                            <p class="fs-5">
+                                                Our free web hosting is powered by top...
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </center>
+                            </div>
+                        </div>
+                        <div class="col-6">
+
+                            <div class="card p-3 " id="card_r">
+                                <center>
+                                    <img src="/img/i1.png" alt="" class="card-img-top" id="c_im">
+                                    <div class="card-body text-light">
+                                        <div class="card-title">
+                                            <p class="fs-4 fw-bold">
+                                                10x Faster Features
+                                            </p>
+                                            <p class="fs-5">
+                                                Our free web hosting is powered by top...
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </center>
+                            </div>
+                        </div>
+                        <div class="col-6">
+
+                            <div class="card p-3 " id="card_r">
+                                <center>
+                                    <img src="/img/i2.png" alt="" class="card-img-top" id="c_im">
+                                    <div class="card-body text-light">
+                                        <div class="card-title">
+                                            <p class="fs-4 fw-bold">
+                                                10x Faster Features
+                                            </p>
+                                            <p class="fs-5">
+                                                Our free web hosting is powered by top...
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </center>
+                            </div>
+                        </div>
+                        <div class="col-6">
+
+                            <div class="card p-3 " id="card_r">
+                                <center>
+                                    <img src="/img/pc.png" alt="" class="card-img-top" id="c_im">
+                                    <div class="card-body text-light">
+                                        <div class="card-title">
+                                            <p class="fs-4 fw-bold">
+                                                10x Faster Features
+                                            </p>
+                                            <p class="fs-5">
+                                                Our free web hosting is powered by top...
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </center>
+                            </div>
+                        </div>
+                        <div class="col-6">
+
+                            <div class="card p-3 " id="card_r">
+                                <center>
+                                    <img src="/img/mainpc.png" alt="" class="card-img-top" id="c_im">
+                                    <div class="card-body text-light">
+                                        <div class="card-title">
+                                            <p class="fs-4 fw-bold">
+                                                10x Faster Features
+                                            </p>
+                                            <p class="fs-5">
+                                                Our free web hosting is powered by top...
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </center>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div class="section_5 pt-5 pb-5">
+        <div class="container">
+            <div class="row text-center text-light wow animate__animated animate__zoomIn">
+
+                <h2 class="display-4 fw-bold " id="zaz">Our Hosting Plans</h2>
+                <p class="fs-5 mt-4 text-secondary">
+
+
+                    Listed below our awesome hosting packages.
+                    You can select any web hosting <br> services below!
+                </p>
+
+
+            </div>
+            <div class="row mt-5 mb-5">
+
+                <div class="col wow animate__animated animate__lightSpeedInLeft">
+                    <div class="card" id="big_card_1">
+                        <!-- <img src="" alt="" class="card-img-top"> -->
+                        <div class="card-body">
+                            <div class="card-title">
+                                <center>
+                                    <h5 class="fs-4 fw-bold">Single Shared Hosting</h5>
+                                    <p class="fs-5">Ideal solution for <br> beginners</p>
+                                    <p class="pinkk fs-1 fw-bold">$ 0.99 <span class="text-light"> /mo</span></p>
+                                    <p class="fs-3 mb-4" id="savee">$9.99 <span class="bluee">save 90% </span></p>
+                                </center>
+                                <span class=""><i class="fa-regular fa-hand-point-right"></i>
+                                    <span>1 Website</span>
+                                </span>
+                                <br>
+                                <hr>
+                                <span><i class="fa-regular fa-hand-point-right"></i>
+                                    <span>1 Email</span>
+                                </span>
+                                <br>
+                                <hr>
+                                <span><i class="fa-regular fa-hand-point-right"></i>
+                                    <span>Limited Bandwidth</span>
+                                </span>
+                                <br>
+                                <hr>
+                                <span><i class="fa-regular fa-hand-point-right"></i>
+                                    <span>WordPress Acceleration</span>
+                                </span>
+                                <br>
+                                <hr>
+
+                                <center>
+                                    <button type="button" class="btn btnn text-light mt-4 ">Choice Plan</button>
+                                </center>
+
+                            </div>
+                            <div class="card-text"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col wow animate__animated animate__zoomIn">
+                    <div class="card" id="big_card_1">
+                        <!-- <img src="" alt="" class="card-img-top"> -->
+                        <div class="card-body">
+                            <div class="card-title">
+                                <center>
+                                    <h5 class="fs-4 fw-bold">Premium Hosting</h5>
+                                    <p class="fs-5">Perfect package for <br> websites</p>
+                                    <p class="pinkk fs-1 fw-bold">$ 2.99 <span class="text-light"> /mo</span></p>
+                                    <p class="fs-3 mb-4" id="savee">$9.99 <span class="bluee">save 90% </span></p>
+                                </center>
+                                <span class=""><i class="fa-regular fa-hand-point-right"></i>
+                                    <span>1 Website</span>
+                                </span>
+                                <br>
+                                <hr>
+                                <span><i class="fa-regular fa-hand-point-right"></i>
+                                    <span>1 Email</span>
+                                </span>
+                                <br>
+                                <hr>
+                                <span><i class="fa-regular fa-hand-point-right"></i>
+                                    <span>Limited Bandwidth</span>
+                                </span>
+                                <br>
+                                <hr>
+                                <span><i class="fa-regular fa-hand-point-right"></i>
+                                    <span>WordPress Acceleration</span>
+                                </span>
+                                <br>
+                                <hr>
+
+                                <center>
+                                    <button type="button" class="btn btnn text-light mt-4 ">Choice Plan</button>
+                                </center>
+
+                            </div>
+                            <div class="card-text"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col wow animate__animated animate__zoomIn">
+                    <div class="card" id="big_card_1">
+                        <!-- <img src="" alt="" class="card-img-top"> -->
+                        <div class="card-body">
+                            <div class="card-title">
+                                <center>
+                                    <h5 class="fs-4 fw-bold">Business Hosting</h5>
+                                    <p class="fs-5">Optimized for small <br> businesses</p>
+                                    <p class="pinkk fs-1 fw-bold">$ 3.99 <span class="text-light"> /mo</span></p>
+                                    <p class="fs-3 mb-4" id="savee">$9.99 <span class="bluee">save 90% </span></p>
+                                </center>
+                                <span class=""><i class="fa-regular fa-hand-point-right"></i>
+                                    <span>1 Website</span>
+                                </span>
+                                <br>
+                                <hr>
+                                <span><i class="fa-regular fa-hand-point-right"></i>
+                                    <span>1 Email</span>
+                                </span>
+                                <br>
+                                <hr>
+                                <span><i class="fa-regular fa-hand-point-right"></i>
+                                    <span>Limited Bandwidth</span>
+                                </span>
+                                <br>
+                                <hr>
+                                <span><i class="fa-regular fa-hand-point-right"></i>
+                                    <span>WordPress Acceleration</span>
+                                </span>
+                                <br>
+                                <hr>
+
+                                <center>
+                                    <button type="button" class="btn btnn text-light mt-4 ">Choice Plan</button>
+                                </center>
+
+                            </div>
+                            <div class="card-text"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col wow animate__animated animate__lightSpeedInRight">
+                    <div class="card" id="big_card_1">
+                        <!-- <img src="" alt="" class="card-img-top"> -->
+                        <div class="card-body">
+                            <div class="card-title">
+                                <center>
+                                    <h5 class="fs-4 fw-bold">Cloud Hosting</h5>
+                                    <p class="fs-5">Optimized for Big <br> businesses</p>
+                                    <p class="pinkk fs-1 fw-bold">$ 9.99 <span class="text-light"> /mo</span></p>
+                                    <p class="fs-3 mb-4" id="savee">$9.99 <span class="bluee">save 90% </span></p>
+                                </center>
+                                <span class=""><i class="fa-regular fa-hand-point-right"></i>
+                                    <span>1 Website</span>
+                                </span>
+                                <br>
+                                <hr>
+                                <span><i class="fa-regular fa-hand-point-right"></i>
+                                    <span>1 Email</span>
+                                </span>
+                                <br>
+                                <hr>
+                                <span><i class="fa-regular fa-hand-point-right"></i>
+                                    <span>Limited Bandwidth</span>
+                                </span>
+                                <br>
+                                <hr>
+                                <span><i class="fa-regular fa-hand-point-right"></i>
+                                    <span>WordPress Acceleration</span>
+                                </span>
+                                <br>
+                                <hr>
+
+                                <center>
+                                    <button type="button" class="btn btnn text-light mt-4 ">Choice Plan</button>
+                                </center>
+
+                            </div>
+                            <div class="card-text"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- ........................................................................................... -->
+
+
+    <div class="section_6 pt-5 pb-5 ">
+        <div class="container mt-5 pt-5 pb-5">
+            <div class="row">
+                <div class="col text-light wow animate__animated animate__lightSpeedInLeft">
+
+                    <h2 class="display-4 fw-bold mt-5 pt-5" id="zaz">What Our Customers Say About Us? </h2>
+                    <p class="fs-5 mt-4 text-secondary">
+
+
+                        WWhether you are looking for a personal website hosting plan or a business website hosting plan,
+                        Hosting is the perfect solution for you. Our powerful website hosting services will not only
+                        help you achieve your overall website goals, but will also provide you with the confidence you
+                        need in knowing that you are partnered with a reliable and secure website hosting platform.
+
+                    </p>
+                    <button type="button" class="btn btnn text-light mt-5">Contact Us</button>
+
+
+                </div>
+                <div class="col pt-5 mt-5 wow animate__animated animate__lightSpeedInRight">
+                    <div class="swiper mySwiper ms-5 mt-5 pt-5">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide text-light text-center pt-5">
+
+                                <i class="fa-solid fa-quote-left fs-1"></i>
+                                <p>
+                                    It’s an amazing hosting!. HostHubs is very easy to edit for a beginner
+                                    and the design quality
+                                    excellent.
+                                </p>
+                                <h5 class="mt-5">
+
+                                    Devid Wishan
+                                </h5>
+                                <p class="text-secondary">
+                                    Engineer
+                                </p>
+                            </div>
+                            <div class="swiper-slide text-light text-center pt-5">
+                                <i class="fa-solid fa-quote-left fs-1"></i>
+                                <p>
+                                    It’s an amazing hosting!. HostHubs is very easy to edit for a beginner
+                                    and the design quality
+                                    excellent.
+                                </p>
+                                <h5 class="mt-5">
+
+                                    Devid Wishan
+                                </h5>
+                                <p class="text-secondary">
+                                    Engineer
+                                </p>
+                            </div>
+                            <div class="swiper-slide text-light text-center pt-5">
+                                <i class="fa-solid fa-quote-left fs-1"></i>
+                                <p>
+                                    It’s an amazing hosting!. HostHubs is very easy to edit for a beginner
+                                    and the design quality
+                                    excellent.
+                                </p>
+                                <h5 class="mt-5">
+
+                                    Devid Wishan
+                                </h5>
+                                <p class="text-secondary">
+                                    Engineer
+                                </p>
+                            </div>
+                            <div class="swiper-slide text-light text-center pt-5">
+                                <i class="fa-solid fa-quote-left fs-1"></i>
+                                <p>
+                                    It’s an amazing hosting!. HostHubs is very easy to edit for a beginner
+                                    and the design quality
+                                    excellent.
+                                </p>
+                                <h5 class="mt-5">
+
+                                    Devid Wishan
+                                </h5>
+                                <p class="text-secondary">
+                                    Engineer
+                                </p>
+                            </div>
+                            <div class="swiper-slide text-light text-center pt-5">
+                                <i class="fa-solid fa-quote-left fs-1"></i>
+                                <p>
+                                    It’s an amazing hosting!. HostHubs is very easy to edit for a beginner
+                                    and the design quality
+                                    excellent.
+                                </p>
+                                <h5 class="mt-5">
+
+                                    Devid Wishan
+                                </h5>
+                                <p class="text-secondary">
+                                    Engineer
+                                </p>
+                            </div>
+                            <div class="swiper-slide text-light text-center pt-5">
+                                <i class="fa-solid fa-quote-left fs-1"></i>
+                                <p>
+                                    It’s an amazing hosting!. HostHubs is very easy to edit for a beginner
+                                    and the design quality
+                                    excellent.
+                                </p>
+                                <h5 class="mt-5">
+
+                                    Devid Wishan
+                                </h5>
+                                <p class="text-secondary">
+                                    Engineer
+                                </p>
+                            </div>
+                            <div class="swiper-slide text-light text-center pt-5">
+                                <i class="fa-solid fa-quote-left fs-1"></i>
+                                <p>
+                                    It’s an amazing hosting!. HostHubs is very easy to edit for a beginner
+                                    and the design quality
+                                    excellent.
+                                </p>
+                                <h5 class="mt-5">
+
+                                    Devid Wishan
+                                </h5>
+                                <p class="text-secondary">
+                                    Engineer
+                                </p>
+                            </div>
+                            <div class="swiper-slide text-light text-center pt-5">
+                                <i class="fa-solid fa-quote-left fs-1"></i>
+                                <p>
+                                    It’s an amazing hosting!. HostHubs is very easy to edit for a beginner
+                                    and the design quality
+                                    excellent.
+                                </p>
+                                <h5 class="mt-5">
+
+                                    Devid Wishan
+                                </h5>
+                                <p class="text-secondary">
+                                    Engineer
+                                </p>
+                            </div>
+                            <div class="swiper-slide text-light text-center pt-5">
+                                <i class="fa-solid fa-quote-left fs-1"></i>
+                                <p>
+                                    It’s an amazing hosting!. HostHubs is very easy to edit for a beginner
+                                    and the design quality
+                                    excellent.
+                                </p>
+                                <h5 class="mt-5">
+
+                                    Devid Wishan
+                                </h5>
+                                <p class="text-secondary">
+                                    Engineer
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="section_7 pt-5 pb-5">
+        <div class="container pt-5">
+            <div class="row ">
+                <div class="col text-light text-center wow animate__animated animate__zoomIn">
+                    <h2 class="display-4 fw-bold">Our Working Process</h2>
+                    <p class="fs-5 mt-4 text-secondary">Listed below our awesome hosting packages. You can select any
+                        web hosting <br>
+                        services below!</p>
+
+                </div>
+            </div>
+            <div class="row mt-4 pt-5">
+                <div class="owl-carousel owl-theme">
+
+                    <div class="item wow animate__animated animate__zoomIn">
+                        <div class="card p-3 " id="card_1">
+                            <center>
+                                <img src="/img/i3.png" alt="" class="card-img-top slio" id="c_im">
+                                <div class="card-body text-light">
+                                    <div class="card-title">
+                                        <p class="fs-4 fw-bold">
+                                            10x Faster Features
+                                        </p>
+                                        <p class="fs-5">
+                                            Our free web hosting is powered by top...
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </center>
+                        </div>
+
+
+
+
+
+                    </div>
+                    <div class="item wow animate__animated animate__zoomIn">
+
+
+
+                        <!-- <h4>2</h4> -->
+                        <div class="card p-3 " id="card_1">
+                            <center>
+                                <img src="/img/i1.png" alt="" class="card-img-top slio" id="c_im">
+                                <div class="card-body text-light">
+                                    <div class="card-title">
+                                        <p class="fs-4 fw-bold">
+                                            10x Faster Features
+                                        </p>
+                                        <p class="fs-5">
+                                            Our free web hosting is powered by top...
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </center>
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="item wow animate__animated animate__zoomIn">
+
+
+
+                        <!-- <h4>3</h4> -->
+                        <div class="card p-3 " id="card_1">
+                            <center>
+                                <img src="/img/i2.png" alt="" class="card-img-top slio" id="c_im">
+                                <div class="card-body text-light">
+                                    <div class="card-title">
+                                        <p class="fs-4 fw-bold">
+                                            10x Faster Features
+                                        </p>
+                                        <p class="fs-5">
+                                            Our free web hosting is powered by top...
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </center>
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="item wow animate__animated animate__zoomIn">
+
+
+
+                        <!-- <h4>4</h4> -->
+                        <div class="card p-3" id="card_1">
+                            <center>
+                                <img src="/img/i4.png" alt="" class="card-img-top slio" id="c_im">
+                                <div class="card-body text-light">
+                                    <div class="card-title">
+                                        <p class="fs-4 fw-bold">
+                                            10x Faster Features
+                                        </p>
+                                        <p class="fs-5">
+                                            Our free web hosting is powered by top...
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </center>
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="item wow animate__animated animate__zoomIn">
+
+
+
+                        <!-- <h4>5</h4> -->
+                        <div class="card p-3 " id="card_1">
+                            <center>
+                                <img src="/img/i1.png" alt="" class="card-img-top slio" id="c_im">
+                                <div class="card-body text-light">
+                                    <div class="card-title">
+                                        <p class="fs-4 fw-bold">
+                                            10x Faster Features
+                                        </p>
+                                        <p class="fs-5">
+                                            Our free web hosting is powered by top...
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </center>
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="item wow animate__animated animate__zoomIn">
+
+
+
+                        <!-- <h4>6</h4> -->
+                        <div class="card p-3" id="card_1">
+                            <center>
+                                <img src="/img/i2.png" alt="" class="card-img-top slio" id="c_im">
+                                <div class="card-body text-light">
+                                    <div class="card-title">
+                                        <p class="fs-4 fw-bold">
+                                            10x Faster Features
+                                        </p>
+                                        <p class="fs-5">
+                                            Our free web hosting is powered by top...
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </center>
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="item wow animate__animated animate__zoomIn">
+
+
+
+                        <!-- <h4>7</h4> -->
+                        <div class="card p-3 " id="card_1">
+                            <center>
+                                <img src="/img/i3.png" alt="" class="card-img-top slio" id="c_im">
+                                <div class="card-body text-light">
+                                    <div class="card-title">
+                                        <p class="fs-4 fw-bold">
+                                            10x Faster Features
+                                        </p>
+                                        <p class="fs-5">
+                                            Our free web hosting is powered by top...
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </center>
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="item wow animate__animated animate__zoomIn">
+
+
+
+                        <!-- <h4>8</h4> -->
+                        <div class="card p-3 " id="card_1">
+                            <center>
+                                <img src="/img/i4.png" alt="" class="card-img-top slio" id="c_im">
+                                <div class="card-body text-light">
+                                    <div class="card-title">
+                                        <p class="fs-4 fw-bold">
+                                            10x Faster Features
+                                        </p>
+                                        <p class="fs-5">
+                                            Our free web hosting is powered by top...
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </center>
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="item wow animate__animated animate__zoomIn">
+
+
+
+                        <!-- <h4>9</h4> -->
+                        <div class="card p-3" id="card_1">
+                            <center>
+                                <img src="/img/i1.png" alt="" class="card-img-top slio" id="c_im">
+                                <div class="card-body text-light">
+                                    <div class="card-title">
+                                        <p class="fs-4 fw-bold">
+                                            10x Faster Features
+                                        </p>
+                                        <p class="fs-5">
+                                            Our free web hosting is powered by top...
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </center>
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="item wow animate__animated animate__zoomIn">
+
+
+
+                        <!-- <h4>10</h4 -->
+                        <div class="card p-3 " id="card_1">
+                            <center>
+                                <img src="/img/i2.png" alt="" class="card-img-top slio" id="c_im">
+                                <div class="card-body text-light">
+                                    <div class="card-title">
+                                        <p class="fs-4 fw-bold">
+                                            10x Faster Features
+                                        </p>
+                                        <p class="fs-5">
+                                            Our free web hosting is powered by top...
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </center>
+                        </div>
+
+
+
+
+                        >
+                    </div>
+                    <div class="item wow animate__animated animate__zoomIn">
+
+
+
+                        <!-- <h4>11</h4 -->
+                        <div class="card p-3" id="card_1">
+                            <center>
+                                <img src="/img/i3.png" alt="" class="card-img-top slio" id="c_im">
+                                <div class="card-body text-light">
+                                    <div class="card-title">
+                                        <p class="fs-4 fw-bold">
+                                            10x Faster Features
+                                        </p>
+                                        <p class="fs-5">
+                                            Our free web hosting is powered by top...
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </center>
+                        </div>
+
+
+
+
+                        >
+                    </div>
+                    <div class="item wow animate__animated animate__zoomIn">
+
+
+
+                        <!-- <h4>12</h4 -->
+                        <div class="card p-3" id="card_1">
+                            <center>
+                                <img src="/img/i4.png" alt="" class="card-img-top slio" id="c_im">
+                                <div class="card-body text-light">
+                                    <div class="card-title">
+                                        <p class="fs-4 fw-bold">
+                                            10x Faster Features
+                                        </p>
+                                        <p class="fs-5">
+                                            Our free web hosting is powered by top...
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </center>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="section_8 pt-5  pb-5">
+        <div class="container  pt-5">
+            <div class="row">
+                <div class="col wow animate__animated animate__lightSpeedInLeft">
+                    <img src="/img/security.png" alt="" class="seq">
+                </div>
+                <div class="col text-light wow animate__animated animate__lightSpeedInRight">
+
+                    <h2 class="display-4 fw-bold mt-5 pt-5" id="zaz">We Provide Hosting Solution</h2>
+                    <p class="fs-5 mt-4 text-secondary">
+
+
+                        Your Success is Our Goal.Customer service is paramount, which is why we offer a dedicated
+                        customer service agent to every customer. Your own personal consultant will take the time to get
+                        to know you and your business.
+                    </p>
+
+
+                    <div class="box">
+                        <div class="card pt-4 " id="card_y">
+                            <center>
+                                <img src="/img/i4.png" alt="" class="card-img-top slio" id="c_ima">
+                                <div class="card-body text-light">
+                                    <div class="card-title">
+                                        <p class=" fw-bold">
+                                            Buy A Domain
+                                        </p>
+                                        <p class="ftr text-secondary">
+                                            We stop DNS attacks with extreme
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </center>
+                        </div>
+
+
+
+                        <div class="card pt-4 " id="card_y">
+                            <center>
+                                <img src="/img/i2.png" alt="" class="card-img-top slio" id="c_ima">
+                                <div class="card-body text-light">
+                                    <div class="card-title">
+                                        <p class=" fw-bold">
+                                            Network Security
+                                        </p>
+                                        <p class="ftr text-secondary">
+                                            safe and secure with our best of breed
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </center>
+                        </div>
+
+
+
+                        <div class="card pt-4 " id="card_y">
+                            <center>
+                                <img src="/img/i3.png" alt="" class="card-img-top slio" id="c_ima">
+                                <div class="card-body text-light">
+                                    <div class="card-title">
+                                        <p class=" fw-bold">
+                                            Account Isolation
+                                        </p>
+                                        <p class="ftr text-secondary">
+                                            your account is completely Secure
+
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </center>
+                        </div>
+
+                    </div>
+
+
+
+                    <button type="button" class="btn btnn text-light mt-5">All Web Security</button>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="section_9 pt-5">
+
+        <div class="container text-center text-light mt-5" id="my">
+
+            <h2 class="display-4 fw-bold wow animate__animated animate__zoomIn">We Have Server Worldwide</h2>
+            <p class="fs-5 mt-4 text-secondary wow animate__animated animate__zoomIn">Listed below our awesome hosting <br>
+                packages. You can select any web hosting services below!
+
+            </p>
+
+
+
+
+            <img src="/img/world.png" alt="" class="mt-5">
+
+            <!-- location............................. -->
+
+            <img src="img/loca.png" alt="" id="l1">
+            <img src="img/loca.png" alt="" id="l2">
+
+            <img src="img/loca.png" alt="" id="l3">
+
+            <img src="img/loca.png" alt="" id="l4">
+
+            <img src="img/loca.png" alt="" id="l5">
+
+            <img src="img/loca.png" alt="" id="l6">
+
+
+
+        </div>
+
+    </div>
+
+    <div class="section_10 pt-5 pb-5 ">
+        <div class="container text-center text-light mt-5 wow animate__animated animate__zoomIn">
+            <h2 class="display-4 fw-bold">Sign Up For Web Hosting Today!</h2>
+            <p class="fs-5 mt-4 text-secondary">We’re confident you’ll be 100% satisfied or your money back.
+            </p>
+
+            <p class="pinkk fs-5 fw-bold mb-5">Starting at $0.99/month*</p>
+
+            <button type="button" class="bt_1 btnn btn text-light ">Get Started</button>
+            <button type="button" class="bt_2 btnn btn text-light ms-5">Contact Us</button>
+
+
+        </div>
+    </div>
+
+
+
+
+    <footer class="pt-5 pb-1 ">
+        <div class="container mt-5 mb-4 text-light">
+            <div class="row">
+            <div class="col wow animate__animated animate__lightSpeedInLeft">
+                <img src="/img/Logo.png" alt="" class="mb-5 jai">
+                <p class="text-secondary">Here you’ll find all sorts of super useful information for making the most out of your web hosting
+                    experience as well as countless tips and tricks for small business owners.</p>
+
+            </div>
+            <div class="col wow animate__animated animate__zoomIn">
+                <h4 class="fs-1 ms-4">Office</h4>
+
+                <div class="bbc">
+                    <div class="v">
+                        <div class="v1">
+                            <i class="fa-solid fa-phone fs-3 pinkk p-3"  id="phonn"></i>
+                        </div>
+                        <div class="v2 pe-5">
+                            <p class="fs-5 text-secondary mt-3 me-3 crv" >(024) 444-3245</p>
+                            <p class="fs-5 text-secondary me-3 crv" id="marr" >(087) 521-3255</p>
+                        </div>
+                    </div>
+
+                    <div class="v">
+                        <div class="v1">
+                            <!-- <i class="fa-solid fa-phone fs-3 pinkk p-3"  id="phonn"></i> -->
+                            <i class="fa-regular fa-envelope fs-3 pinkk p-3" id="phonn"></i>
+
+
+                        </div>
+                        <div class="v2">
+                            <p class="fs-5 text-secondary mt-3 crv">example@example.com</p>
+                            <p class="fs-5 text-secondary crv" id="marr">example@example.com</p>
+                        </div>
+                    </div>
+
+                    <div class="v">
+                        <div class="v1">
+                            <!-- <i class="fa-solid fa-phone fs-3 pinkk p-3"  id="phonn"></i> -->
+                            <i class="fa-solid fa-location-dot fs-3 pinkk p-3" id="phonn"></i>
+                        </div>
+                        <div class="v2">
+                            <p class="fs-5 text-secondary mt-3 crv">5 Koh Sek Lim Rd Singapore 486050</p>
+                            <!-- <p class="fs-5 text-secondary" id="marr">(087) 521-3255</p> -->
+                        </div>
+                    </div>
+
+
+                   
+                </div>
+            </div>
+            <div class="col wow animate__animated animate__zoomIn">
+                <h4 class="fs-1 ms-4">Quick Links</h4>
+                <li class="fs-5 mt-4 ms-4 text-secondary kioo">Home</li>
+                <li class="fs-5 mt-4 ms-4 text-secondary kioo">About us</li>
+                <li class="fs-5 mt-4 ms-4 text-secondary kioo">Domain</li>
+                <li class="fs-5 mt-4 ms-4 text-secondary kioo">Testimonial</li>
+                <li class="fs-5 mt-4 ms-4 text-secondary kioo">Hosting</li>
+                <li class="fs-5 mt-4 ms-4 text-secondary kioo">Contact</li>
+            </div>
+            <div class="col wow animate__animated animate__lightSpeedInRight">
+                <h4 class="fs-1 ms-4">Newsletter</h4>
+                <p class="text-secondary fs-5 mt-4">Subscribe our newsletter to get our latest update & news</p>
+
+                <div class="input-group" id="ll_in">
+                    <span class="sspp"><i class="fa-solid fa-paper-plane fs-3"></i></span>
+                    <input type="text" placeholder="Your Mail Address" class="form-control" id="l_in">
+                </div>
+                <!-- <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">@</span>
+                    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                  </div> -->
+                  
+
+            </div>
+            </div>
+            <div class="row">
+                <div class="col text-center text-light mt-5 wow animate__animated animate__zoomInDown" >
+                    <h4 class="htad ms-5"> ~ Create By <span class="st24 bluee"><i class="fa-solid fa-crown king ms-4 me-4 pinkk fs-3"></i> TUSHAL SHEKH ~</span></h4>
+    </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script>
+    $(window).on("load",function(){
+        $(".loader_1").fadeOut(4000)
+    })
+</script>
+
+<!-- owl coro..........................
+    .................... -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<!-- counterup..................... -->
+
+
+<script>
+    $('.counter').counterUp({
+        delay: 10,
+        time: 1000
+    });
+</script>
+
+<script>
+    $(document).ready(function(){
+        $("#arrow").click(function(){
+            $("html,body").animate({scrollTop:0})   
+        })
+
+
+        $(window).scroll(function(){
+            if($(this).scrollTop()>20)
+            {
+                $("#arrow").slideDown();
+            }
+            else
+            {
+                $("#arrow").slideUp();
+            }
+        })
+    })
+</script>
+
+<script>
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1,
+                nav: true
+            },
+            600: {
+                items: 3,
+                nav: false
+            },
+            1000: {
+                items: 3,
+                nav: true,
+                loop: false
+            }
+        }
+    })
+</script>
+
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        effect: "cards",
+        grabCursor: true,
+    });
+</script>
+
+
+<!-- wow...................... -->
+
+<script src="js/wow.min.js"></script>
+<script>
+new WOW().init();
+</script>
+
+
+</html>

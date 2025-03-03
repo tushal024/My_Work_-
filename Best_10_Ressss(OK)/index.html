@@ -1,0 +1,973 @@
+<!-- https://designagency.saaslandwp.net/cyber-security/ -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/logi_1.png" type="image/x-icon">
+    <title>Webpage</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- jquery........... -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+
+
+ <!-- counter.......... -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+    <!-- fontawsome................ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        /* body {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 100vh;
+          background-color: #050828;
+        } */
+        .mainx {
+          height: 500px;
+          width: 50%;
+          /* margin-left: 24%; */
+          /* box-shadow: 0 0 10px 0 rgb(195, 195, 195); */
+          padding: 50px;
+        }
+        .q1,
+        .q2,
+        .q3 {
+          border: 1px solid rgb(152, 152, 152);
+          padding: 10px;
+          border-radius: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          border-left: 8px solid rgb(187, 187, 255);
+        }
+        .au1,
+        .au2,
+        .au3 {
+          display: none;
+          font-size: 18px;
+          padding: 20px;
+          border: 1px solid rgb(232, 232, 232);
+          border-radius: 20px;
+          /* background-color: white; */
+          /* background-color: #05082861; */
+          background-color: rgb(37, 33, 83);
+          /* color: #050828; */
+          color: white;
+        }
+        .m1,
+        .m2,
+        .m3 {
+          display: none;
+          font-weight: bold;
+        }
+      </style>
+
+
+  <!-- swiper........... -->
+  <style>
+    html,
+    body {
+        position: relative;
+        height: 100%;
+    }
+
+    body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+    }
+
+    .swiper {
+        width: 100%;
+        height: 50%;
+        padding-bottom: 50px;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        /* background: #fff; */
+        margin-top: 2vw;
+        display: flex;
+        margin-left: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .swiper-slide img {
+        display: block;
+        /* width: 50%; */
+        height: 80%;
+        /* object-fit: cover; */
+    }
+</style>
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+ <!-- remix....................... -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+
+
+
+</head>
+<body>
+    
+    <header class="w-[100%] xl:h-[90vh] h-[auto] bg-[#021327]">
+        <nav class="xl:w-[70%]  w-[100%] h-[90px] xl:ms-[15%] flex justify-evenly items-center  relative">
+            <div class="logo xl:w-[15%] w-[40%] ms-[1%] xl:ms-[0]   ">
+                <img src="/assets/logo.png" alt="">
+                
+            </div>
+        
+                            <ul class=" xl:flex hidden w-[40%]   justify-between">
+                <li><a href="" class="text-[white]">Home</a></li>
+                <li><a href="" class="text-[white]">Listings   <i class="fa-solid fa-sort-down ms-[5px]"></i></a></li>
+                <li><a href="" class="text-[white]">Pages   <i class="fa-solid fa-sort-down ms-[5px]"></i></a></li>
+                <li><a href="" class="text-[white]">Services   <i class="fa-solid fa-sort-down ms-[5px]"></i></a></li>
+                <li><a href="" class="text-[white]">Contact</a></li>
+               
+            </ul>
+  
+           <div class="btu xl:w-[15%]  sm:me-[30%] xl:me-[0]  md:me-[40%] me-[20%]">
+                <button class="bg-[#54A1B5] w-[100px] h-[40px] rounded-[12px] text-[white]">Sign In </button>
+            </div>
+            <i class="fa-solid fa-bars absolute xl:hidden text-[white] right-[10px] text-[35px]"></i> 
+
+
+
+
+        </nav>
+
+      <div class="box xl:w-[70%] h-[100%] h-[60%] xl:ms-[15%] flex-wrap mt-[5%] flex">
+            <div class="b1 xl:w-[50%]  w-[90%] ms-[5%] xl:ms-[0] h-[100%] pt-[8%] pe-[5%]">
+                <h1 class="  xl:leading-[80px] text-[45px] leading-[45px] font-[600]  xl:text-[85px] text-[white] ">
+                    Make secure assets, & code 2x faster
+
+                </h1>
+
+                <button class="bg-[#54A1B5] w-[auto] ps-[20px] text-[20px] mt-[50px] pe-[20px] h-[50px] rounded-[12px] text-[white]">Get Started Now </button>
+               
+                <div class="in">
+                    <div class="inn"></div>
+                    <div class="inn"></div>
+                    <div class="inn1"></div>
+                </div>
+
+
+            </div>
+            <div class="b2 xl:w-[50%]   w-[90%] ms-[5%] xl:ms-[0]">
+                <img src="/assets/h_hh.png" alt="">
+            </div>
+
+        </div>
+
+
+    </header>
+    <div class="section_w w-[100%] h-[auto] bg-[#04182F] xl:pt-[100px]  pb-[100px]">
+
+        <div class="h1 text-center text-[30px] text-[white] pt-[10px]" >_ABOUT US_</div>
+        <div class="container xl:w-[70%] h-[100%] xl:ms-[15%] flex flex-wrap">
+            <div class="a1  w-[90%] h-[auto] ms-[5%]   xl:ms-[0]  mt-[50px] xl:mt-[0]   xl:w-[50%] h-[100%] xl:pt-[10%] relative order-2">
+                <img src="/assets/opp.png" alt="" class="  xl:ps-[20%]">
+                <!-- <i class="fa-regular fa-circle-play xl:absolute xl:block text-[130px] hidden xl:top-[55%] xl:left-[40%] text-[white]"></i> -->
+            </div>
+            <div class="a2   w-[80%] ms-[10%]     xl:ms-[0] mt-[50px]   xl:w-[45%] xl:me-[2%] h-[100%]">
+                <!-- <button class="w-[150px] h-[40px] bg-[#f694665e] text-[brown] rounded-[7px]">Why Choose Us</button> -->
+                <h1 class="text-[45px] font-[600] text-[white] mt-[20px]">Why Choose Us
+                </h1>
+    
+                <p class="text-[18px] text-[gray] mt-[20px]">
+                    Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
+                    the blind texts
+    
+                </p>
+    
+                <div class="bbb h-[auto] ms-[-10%] w-[100%] h-[400px] mt-[40px]">
+                    <div class="ob w-[90%] ms-[5%] xl:ms-[0] h-[100%] flex flex-wrap ">
+                        <div class="ccc xl:w-[30%] h-[30%]  flex justify-center items-center ">
+                            <img src="/assets/step01-1.png" alt="">
+                        </div>
+                        <div class="ccc1 xl:w-[70%] h-[30%]  flex flex-wrap items-center justify-start">
+                            <h1 class="text-[25px] text-[white] font-[600] text-[#37485C] ">
+                                Find Excellent Deals</h1>
+    
+                            <p class="text-[18px] text-[gray] ">
+                                Lorem ipsum dolor amet potenti simply free esquam zamasit decolerm
+                            </p>
+    
+                        </div>
+    
+    
+    
+    
+                        <div class="ccc xl:w-[30%] h-[30%]  flex justify-center items-center mt-[20px]">
+                            <img src="/assets/step02-1.png" alt="">
+                        </div>
+                        <div class="ccc1 xl:w-[70%] h-[30%] mt-[20px] ">
+                            <h1 class="text-[25px] text-[white] font-[600] text-[#37485C] ">
+                                Find Excellent Deals</h1>
+    
+                            <p class="text-[18px] text-[gray] ">
+                                Lorem ipsum dolor amet potenti simply free esquam zamasit decolerm
+                            </p>
+                        </div>
+                        <div class="ccc xl:w-[30%] h-[30%]  flex justify-center items-center mt-[20px]">
+                            <img src="/assets/step03-1.png" alt="">
+                        </div>
+                        <div class="ccc1 xl:w-[70%] h-[30%]  mt-[20px]">
+                            <h1 class="text-[25px] text-[white] font-[600] text-[#37485C] ">
+                                Find Excellent Deals</h1>
+    
+                            <p class="text-[18px] text-[gray] ">
+                                Lorem ipsum dolor amet potenti simply free esquam zamasit decolerm
+                            </p>
+                        </div>
+                    </div>
+    
+    
+    
+                </div>
+    
+                <!-- <button class="text-[white] bg-[#2646C4] text-[20px]  w-[auto] h-[50px] ms-[50px] ps-[15px] rounded-[15px] pe-[15px]">Sell Your Property</button> -->
+    
+            </div>
+    
+    
+        </div>
+    </div>
+
+    
+    <div class="countt w-[100%] h-[auto] xl:pt-[2%] xl:pb-[2%] pt-[15%] pb-[15%] bg-[#021327]  justify-center items-center">
+        <div class="hh text-center ms-[5%] me-[5%] xl:ms-[0] xl:me-[0]">
+            <h1 class="text-[white] text-[50px] leading-[50px]">The most accurate security <br>
+                you’ll ever find</h1>
+                <p class="text-[20px]  mt-[40px]  text-[white] mt-[20px] xl:ps-[25%] xl:pe-[25%]">Analyze data quickly and encourage collaboration with an easy-to-use interface and 
+                     shareable reports. Process and share huge amounts of data security.</p>
+
+        </div>
+
+      
+        <div class="container  xl:mt-[50px] mt-[50px] xl:w-[70%] xl:ms-[15%]  text-[white] text-center xl:grid xl:grid-cols-4 gap-4">
+            
+
+            
+
+                     
+                        <div class="h-[100%] ">
+                            <center> 
+                            <img src="/assets/c_1.png" alt="">
+                         </center>
+                            <h1 class=" text-[55px] font-[600]"> <span class="counter">     286   </span>+</h1>
+
+                            <p class=" font-[500]">Crafto founded</p>
+                            <p class=" text-[gray]">Founded a company</p>
+                         
+
+                        </div>
+                        <div class="h-[100%] mt-[4vw] xl:mt-[0px]">
+
+                            <center> 
+                                <img src="/assets/c_2.png" alt="">
+                             </center>
+                                <h1 class=" text-[55px] font-[600]">   <span class="counter">  201 </span>+</h1>
+    
+                                <p class=" font-[500]">Expand team</p>
+                                <p class=" text-[gray]">Opportunity to expand</p>
+
+                        </div>
+                        <div class="h-[100%] mt-[4vw] xl:mt-[0px]">
+                            <center> 
+                                <img src="/assets/c_3.png" alt="">
+                             </center>
+                                <h1 class=" text-[55px] font-[600]">    <span class="counter">  250   </span>+</h1>
+    
+                                <p class=" font-[500]">Build new office</p>
+                                <p class=" text-[gray]">Building a new office</p>
+
+                        </div>
+                        <div class="h-[100%] mt-[4vw] xl:mt-[0px]">
+                            <center> 
+                                <img src="/assets/c_4.png" alt="">
+                             </center>
+                                <h1 class=" text-[55px] font-[600]">    <span class="counter">  550   </span>+</h1>
+    
+                                <p class=" font-[500]">Winning award</p>
+                                <p class=" text-[gray]">The power of winning</p>
+
+                        </div>
+
+                     
+
+        </div>
+
+    </div>
+    
+    
+    <div class=" xl:w-[100%]   xl:ms-[0%] h-[auto]  bg-[#021327] pt-[5%] pb-[5%] flex justify-center items-center">
+        <div class="w-[90%]  xl:ms-[0%] bg-[#021327] xl:w-[75%] h-[auto]">
+
+            <div class="w-[100%] h-[auto] text-center">
+                <p class="text-[17px] font-[500] text-[#DD6531]">BLOG AND NEWS</p>
+                <p class="xl:text-[55px] text-[27px] font-[500] text-[#585B62]"> Business news</p>
+            </div>
+            
+            <div class="w-[100%] h-[auto] xl:grid xl:grid-cols-4 xl:gap-5 xl:mt-[2vw] mt-[8vw]">
+                
+                <div class=" xl:h-[380px] rounded-[10px] shadow-xl">
+                    <div><img src="assets/s1.avif" alt="" class="h-[221px] w-[600px] rounded-t-[10px] "></div>
+                    <div class="p-[10px] pb-[18px] xl:pb-[0px] ps-[18px] ">
+                        <p class="text-[dimgray] font-[500] mt-[1vw]">May 25, 2019</p>
+                        
+                        <p class="mt-[1vw] text-[18px] font-[600]  text-[white]">Pike conger alewife sand lance orange roughy danio</p>
+                    </div>
+                </div>
+
+                <div class=" xl:h-[380px] rounded-[10px] shadow-xl mt-[10vw] xl:mt-[0vw]">
+                    <div><img src="assets/s2.avif" alt="" class="h-[221px] w-[600px] rounded-t-[10px] "></div>
+                    <div class="p-[10px] pb-[18px] xl:pb-[0px] ps-[18px]">
+                        <p class="text-[dimgray] font-[500] mt-[1vw]">Jun 30, 2019</p>
+                        
+                        <p class="mt-[1vw] text-[18px] font-[600]  text-[white]">Tripod fish grunt mackerel vendace surfperch</p>
+                    </div>
+                </div>
+
+                <div class=" xl:h-[380px] rounded-[10px] shadow-xl mt-[10vw] xl:mt-[0vw]">
+                    <div><img src="assets/s3.jpg" alt="" class="h-[221px] w-[600px] rounded-t-[10px] "></div>
+                    <div class="p-[10px] pb-[18px] xl:pb-[0px] ps-[18px]">
+                        <p class="text-[dimgray] font-[500] mt-[1vw]">Sept 30, 2020</p>
+                        
+                        <p class="mt-[1vw] text-[18px] font-[600]  text-[white]">Pike conger alewife sand lance orange roughy danio</p>
+                    </div>
+                </div>
+
+                <div class=" xl:h-[380px] rounded-[10px] shadow-xl mt-[10vw] xl:mt-[0vw]">
+                    <div><img src="assets/s4.jpg" alt="" class="h-[221px] w-[600px] rounded-t-[10px] "></div>
+                    <div class="p-[10px] pb-[18px] xl:pb-[0px] ps-[18px]">
+                        <p class="text-[dimgray] font-[500] mt-[1vw]">Dec 02, 2020</p>
+                        
+                        <p class="mt-[1vw] text-[18px] font-[600]  text-[white]">Tripod fish grunt mackerel vendace surfperch</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="a pt-[5vw] bg-[#021327] flex flex-wrap justify-center">
+        <div class="a2 xl:w-[70%] w-[90%]"><h1 class="xl:text-[2vw] text-[6vw] text-[white] font-[600]">Services</h1></div>
+        <div class="a1 xl:mt-[2vw] mt-[5vw] xl:w-[70%] w-[90%] xl:grid xl:grid-cols-3 grid grid-cols-1 gap-12 xl:gap-8">
+            <div class="aa p-[2vw] shadow-md flex justify-between">
+                <div class="img flex justify-start items-start w-[40%] me-[5%]">
+                    <img src="assets/Other-05.png" alt="">
+                </div>
+                <div class="text w-[78%]">
+                    <h2 class="   text-[white]  font-[700]">Air Freight</h2>
+                    <p class="text-[14px] text-[gray] mt-[0.2vw]">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
+                        live the blind texts.</p>
+                    <a href="" class="text-[#081158]  text-[#53E79C] font-[600] text-[12px]">READ MORE</a>
+                </div>
+            </div>
+            <div class="aa p-[2vw] shadow-md flex justify-between">
+                <div class="img flex justify-start items-start w-[40%] me-[5%]">
+                    <img src="assets/Other-07.png" alt="">
+                </div>
+                <div class="text w-[78%]">
+                    <h2 class="   text-[white]  font-[700]">Sea Freight</h2>
+                    <p class="text-[14px] text-[gray] mt-[0.2vw]">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
+                        live the blind texts.</p>
+                    <a href="" class="text-[#081158]  text-[#53E79C] font-[600] text-[12px]">READ MORE</a>
+                </div>
+            </div>
+            <div class="aa p-[2vw] shadow-md flex justify-between">
+                <div class="img flex justify-start items-start w-[40%] me-[5%]">
+                    <img src="assets/Other-10.png" alt="">
+                </div>
+                <div class="text w-[78%]">
+                    <h2 class="   text-[white]  font-[700]">Land Freight</h2>
+                    <p class="text-[14px] text-[gray] mt-[0.2vw]">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
+                        live the blind texts.</p>
+                    <a href="" class="text-[#081158]  text-[#53E79C] font-[600] text-[12px]">READ MORE</a>
+                </div>
+            </div>
+            <div class="aa p-[2vw] shadow-md flex justify-between">
+                <div class="img flex justify-start items-start w-[40%] me-[5%]">
+                    <img src="assets/Other-19.png" alt="">
+                </div>
+                <div class="text w-[78%]">
+                    <h2 class="   text-[white]  font-[700]">Package Delivery</h2>
+                    <p class="text-[14px] text-[gray] mt-[0.2vw]">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
+                        live the blind texts.</p>
+                    <a href="" class="text-[#081158]  text-[#53E79C] font-[600] text-[12px]">READ MORE</a>
+                </div>
+            </div>
+            <div class="aa p-[2vw] shadow-md flex justify-between">
+                <div class="img flex justify-start items-start w-[40%] me-[5%]">
+                    <img src="assets/Other-10.png" alt="">
+                </div>
+                <div class="text w-[78%]">
+                    <h2 class="   text-[white]  font-[700]">Tracking</h2>
+                    <p class="text-[14px] text-[gray] mt-[0.2vw]">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
+                        live the blind texts.</p>
+                    <a href="" class="text-[#081158]  text-[#53E79C] font-[600] text-[12px]">READ MORE</a>
+                </div>
+            </div>
+            <div class="aa p-[2vw] shadow-md flex justify-between">
+                <div class="img flex justify-start items-start w-[40%] me-[5%]">
+                    <img src="assets/Other-07.png" alt="">
+                </div>
+                <div class="text w-[78%]">
+                    <h2 class="   text-[white]  font-[700]">Air Freight</h2>
+                    <p class="text-[14px] text-[gray] mt-[0.2vw]">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
+                        live the blind texts.</p>
+                    <a href="" class="text-[#081158]  text-[#53E79C] font-[600] text-[12px]">READ MORE</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="uu w-[100%] bg-[#0D102E]">
+        <center>
+    <div class="mainx bg-[#0D102E] text-white w-[100%] xl:w-[50%] h-[auto]">
+        <h1 class="font-bold xl:text-[2vw] text-center">
+          _Your Question_
+        </h1>
+        <div class="q1 my-5">
+          <h2>1. What are the NFTs?</h2>
+          <i class="i1 fa-solid fa-plus"></i>
+          <h4 class="m1">_</h4>
+        </div>
+        <div class="au1">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique
+            veniam, ea harum sed ipsam dolorum incidunt laboriosam necessitatibus
+            in placeat corrupti sequi possimus provident accusantium tempore
+            deleniti, eligendi repellat libero! ea harum sed ipsam dolorum
+            incidunt laboriosam necessitatibus in placeat corrupti sequi possimus
+            provident accusantium tempore deleniti, eligendi repellat libero!
+          </p>
+        </div>
+        <div class="q2 my-5">
+          <h2>2. How do i Get NFTs?</h2>
+          <i class="i2 fa-solid fa-plus"></i>
+          <h4 class="m2">_</h4>
+        </div>
+        <div class="au2">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique
+            veniam, ea harum sed ipsam dolorum incidunt laboriosam necessitatibus
+            in placeat corrupti sequi possimus provident accusantium tempore
+            deleniti, eligendi repellat libero! ea harum sed ipsam dolorum
+            incidunt laboriosam necessitatibus in placeat corrupti sequi possimus
+            provident accusantium tempore deleniti, eligendi repellat libero!
+          </p>
+        </div>
+        <div class="q3 my-5">
+          <h2>3. How we can buy and invest NFTs ?</h2>
+          <i class="i3 fa-solid fa-plus"></i>
+          <h4 class="m3">_</h4>
+        </div>
+        <div class="au3">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique
+            veniam, ea harum sed ipsam dolorum incidunt laboriosam necessitatibus
+            in placeat corrupti sequi possimus provident accusantium tempore
+            deleniti, eligendi repellat libero! ea harum sed ipsam dolorum
+            incidunt laboriosam necessitatibus in placeat corrupti sequi possimus
+            provident accusantium tempore deleniti, eligendi repellat libero!
+          </p>
+        </div>
+        <div class="q3 my-5">
+          <h2>4. Who are the team behind the project?</h2>
+          <i class="i3 fa-solid fa-plus"></i>
+          <h4 class="m3">_</h4>
+        </div>
+        <div class="au3">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique
+            veniam, ea harum sed ipsam dolorum incidunt laboriosam necessitatibus
+            in placeat corrupti sequi possimus provident accusantium tempore
+            deleniti, eligendi repellat libero! ea harum sed ipsam dolorum
+            incidunt laboriosam necessitatibus in placeat corrupti sequi possimus
+            provident accusantium tempore deleniti, eligendi repellat libero!
+          </p>
+        </div>
+      </div>
+    </center>
+    </div>
+
+
+    <div class="section_gud  w-[100%] bg-[#04182F] h-[auto] xl:h-[600px] sm:mt-[0] xl:mt-[-210px] pt-[50px] xl:mt-[0px]">
+        <div class="containet w-[100%] xl:h-[auto] ps-[3%] pe-[3%] md:pe-[4%] md:ps-[4%] xl:w-[70%] h-[100%] xl:ms-[15%]">
+
+            <div class="tru w-[100%] text-center xl:mt-[50px] mb-[70px] text-[white]">
+                <p class=" text-[white]">TESTIMONIALS</p>
+                <h1 class="xl:text-[30px]  md:text-[25px] md:mb-[20px] xl:mb-[0px] font-[600] mt-[10px]">
+                    What say our clients about our <br>
+
+                    awesome service
+
+                </h1>
+                <center>
+                    <img src="/assets/decor-1.png" alt="" class="mt-[30px]">
+
+                </center>
+
+            </div>
+
+
+            <div class="swiper mySwiper mt-[-50px]  xl:h-[auto] md:h-[auto] " data-aos="zoom-in-down">
+                <div class="swiper-wrapper  h-[90%] pb-[50px] ">
+                    <div class="swiper-slide  ">
+                        <div
+                            class="di text-start w-[400px] h-[auto] pt-[20px] pb-[20px] ps-[10px] pe-[10px] bg-[#FFFFFF] rounded-[14px] border-2">
+                            <img src="/assets/logi_1.png" alt="">
+                            <img src="/assets/sl_2.png" alt="" class="mt-[10px]">
+                            <p class="font-[600] text-[20px]">Ronak Sami</p>
+                            <p class="mt-[16px]">Blinded by desire that they foresee all pain and trouble blame ...</p>
+                            <i class="ri-star-fill text-[#EDC855] text-[19px]"></i>
+                            <i class="ri-star-fill text-[#EDC855] text-[19px]"></i>
+                            <i class="ri-star-fill text-[#EDC855] text-[19px]"></i>
+                            <i class="ri-star-fill text-[#EDC855] text-[19px]"></i>
+                            <i class="ri-star-line text-[#EDC855] text-[19px]"></i>
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div
+                            class="di text-start w-[400px] h-[auto] pt-[20px] pb-[20px] ps-[10px] pe-[10px] bg-[#FFFFFF] rounded-[14px] border-2">
+                            <img src="/assets/logii.png" alt="">
+                            <img src="/assets/sl_1.png" alt="" class="mt-[10px]">
+                            <p class="font-[600] text-[20px]">Rohini Sharma</p>
+                            <p class="mt-[16px]">Blinded by desire that they foresee all pain and trouble blame ...</p>
+                            <i class="ri-star-fill text-[#EDC855] text-[19px]"></i>
+                            <i class="ri-star-fill text-[#EDC855] text-[19px]"></i>
+                            <i class="ri-star-fill text-[#EDC855] text-[19px]"></i>
+                            <i class="ri-star-fill text-[#EDC855] text-[19px]"></i>
+                            <i class="ri-star-line text-[#EDC855] text-[19px]"></i>
+
+                        </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                        <div
+                            class="di text-start w-[400px] h-[auto] pt-[20px] pb-[20px] ps-[10px] pe-[10px] bg-[#FFFFFF] rounded-[14px] border-2">
+                            <img src="/assets/logi_2.png" alt="">
+                            <img src="/assets/sl_3.png" alt="" class="mt-[10px]">
+                            <p class="font-[600] text-[20px]">Shivani Mori</p>
+                            <p class="mt-[16px]">Blinded by desire that they foresee all pain and trouble blame ...</p>
+                            <i class="ri-star-fill text-[#EDC855] text-[19px]"></i>
+                            <i class="ri-star-fill text-[#EDC855] text-[19px]"></i>
+                            <i class="ri-star-fill text-[#EDC855] text-[19px]"></i>
+                            <i class="ri-star-fill text-[#EDC855] text-[19px]"></i>
+                            <i class="ri-star-line text-[#EDC855] text-[19px]"></i>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="swiper-slide  ">
+                        <div
+                            class="di text-start w-[400px] h-[auto] pt-[20px] pb-[20px] ps-[10px] pe-[10px] bg-[#FFFFFF] rounded-[14px] border-2">
+                            <img src="/assets/logi_1.png" alt="">
+                            <img src="/assets/sl_2.png" alt="" class="mt-[10px]">
+                            <p class="font-[600] text-[20px]">Ronak Sami</p>
+                            <p class="mt-[16px]">Blinded by desire that they foresee all pain and trouble blame ...</p>
+                            <i class="ri-star-fill text-[#EDC855] text-[19px]"></i>
+                            <i class="ri-star-fill text-[#EDC855] text-[19px]"></i>
+                            <i class="ri-star-fill text-[#EDC855] text-[19px]"></i>
+                            <i class="ri-star-fill text-[#EDC855] text-[19px]"></i>
+                            <i class="ri-star-line text-[#EDC855] text-[19px]"></i>
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div
+                            class="di text-start w-[400px] h-[auto] pt-[20px] pb-[20px] ps-[10px] pe-[10px] bg-[#FFFFFF] rounded-[14px] border-2">
+                            <img src="/assets/logii.png" alt="">
+                            <img src="/assets/sl_1.png" alt="" class="mt-[10px]">
+                            <p class="font-[600] text-[20px]">Rohini Sharma</p>
+                            <p class="mt-[16px]">Blinded by desire that they foresee all pain and trouble blame ...</p>
+                            <i class="ri-star-fill text-[#EDC855] text-[19px]"></i>
+                            <i class="ri-star-fill text-[#EDC855] text-[19px]"></i>
+                            <i class="ri-star-fill text-[#EDC855] text-[19px]"></i>
+                            <i class="ri-star-fill text-[#EDC855] text-[19px]"></i>
+                            <i class="ri-star-line text-[#EDC855] text-[19px]"></i>
+
+                        </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                        <div
+                            class="di text-start w-[400px] h-[auto] pt-[20px] pb-[20px] ps-[10px] pe-[10px] bg-[#FFFFFF] rounded-[14px] border-2">
+                            <img src="/assets/logi_2.png" alt="">
+                            <img src="/assets/sl_3.png" alt="" class="mt-[10px]">
+                            <p class="font-[600] text-[20px]">Shivani Mori</p>
+                            <p class="mt-[16px]">Blinded by desire that they foresee all pain and trouble blame ...</p>
+                            <i class="ri-star-fill text-[#EDC855] text-[19px]"></i>
+                            <i class="ri-star-fill text-[#EDC855] text-[19px]"></i>
+                            <i class="ri-star-fill text-[#EDC855] text-[19px]"></i>
+                            <i class="ri-star-fill text-[#EDC855] text-[19px]"></i>
+                            <i class="ri-star-line text-[#EDC855] text-[19px]"></i>
+
+                        </div>
+
+                    </div>
+                    <div class="swiper-slide  ">
+                        <div
+                            class="di text-start w-[400px] h-[auto] pt-[20px] pb-[20px] ps-[10px] pe-[10px] bg-[#FFFFFF] rounded-[14px] border-2">
+                            <img src="/assets/logi_1.png" alt="">
+                            <img src="/assets/sl_2.png" alt="" class="mt-[10px]">
+                            <p class="font-[600] text-[20px]">Ronak Sami</p>
+                            <p class="mt-[16px]">Blinded by desire that they foresee all pain and trouble blame ...</p>
+                            <i class="ri-star-fill text-[#EDC855] text-[19px]"></i>
+                            <i class="ri-star-fill text-[#EDC855] text-[19px]"></i>
+                            <i class="ri-star-fill text-[#EDC855] text-[19px]"></i>
+                            <i class="ri-star-fill text-[#EDC855] text-[19px]"></i>
+                            <i class="ri-star-line text-[#EDC855] text-[19px]"></i>
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div
+                            class="di text-start w-[400px] h-[auto] pt-[20px] pb-[20px] ps-[10px] pe-[10px] bg-[#FFFFFF] rounded-[14px] border-2">
+                            <img src="/assets/logii.png" alt="">
+                            <img src="/assets/sl_1.png" alt="" class="mt-[10px]">
+                            <p class="font-[600] text-[20px]">Rohini Sharma</p>
+                            <p class="mt-[16px]">Blinded by desire that they foresee all pain and trouble blame ...</p>
+                            <i class="ri-star-fill text-[#EDC855] text-[19px]"></i>
+                            <i class="ri-star-fill text-[#EDC855] text-[19px]"></i>
+                            <i class="ri-star-fill text-[#EDC855] text-[19px]"></i>
+                            <i class="ri-star-fill text-[#EDC855] text-[19px]"></i>
+                            <i class="ri-star-line text-[#EDC855] text-[19px]"></i>
+
+                        </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                        <div
+                            class="di text-start w-[400px] h-[auto] pt-[20px] pb-[20px] ps-[10px] pe-[10px] bg-[#FFFFFF] rounded-[14px] border-2">
+                            <img src="/assets/logi_2.png" alt="">
+                            <img src="/assets/sl_3.png" alt="" class="mt-[10px]">
+                            <p class="font-[600] text-[20px]">Shivani Mori</p>
+                            <p class="mt-[16px]">Blinded by desire that they foresee all pain and trouble blame ...</p>
+                            <i class="ri-star-fill text-[#EDC855] text-[19px]"></i>
+                            <i class="ri-star-fill text-[#EDC855] text-[19px]"></i>
+                            <i class="ri-star-fill text-[#EDC855] text-[19px]"></i>
+                            <i class="ri-star-fill text-[#EDC855] text-[19px]"></i>
+                            <i class="ri-star-line text-[#EDC855] text-[19px]"></i>
+
+                        </div>
+
+                    </div>
+                    <div class="swiper-slide  ">
+                        <div
+                            class="di text-start w-[400px] h-[auto] pt-[20px] pb-[20px] ps-[10px] pe-[10px] bg-[#FFFFFF] rounded-[14px] border-2">
+                            <img src="/assets/logi_1.png" alt="">
+                            <img src="/assets/sl_2.png" alt="" class="mt-[10px]">
+                            <p class="font-[600] text-[20px]">Ronak Sami</p>
+                            <p class="mt-[16px]">Blinded by desire that they foresee all pain and trouble blame ...</p>
+                            <i class="ri-star-fill text-[#EDC855] text-[19px]"></i>
+                            <i class="ri-star-fill text-[#EDC855] text-[19px]"></i>
+                            <i class="ri-star-fill text-[#EDC855] text-[19px]"></i>
+                            <i class="ri-star-fill text-[#EDC855] text-[19px]"></i>
+                            <i class="ri-star-line text-[#EDC855] text-[19px]"></i>
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div
+                            class="di text-start w-[400px] h-[auto] pt-[20px] pb-[20px] ps-[10px] pe-[10px] bg-[#FFFFFF] rounded-[14px] border-2">
+                            <img src="/assets/logii.png" alt="">
+                            <img src="/assets/sl_1.png" alt="" class="mt-[10px]">
+                            <p class="font-[600] text-[20px]">Rohini Sharma</p>
+                            <p class="mt-[16px]">Blinded by desire that they foresee all pain and trouble blame ...</p>
+                            <i class="ri-star-fill text-[#EDC855] text-[19px]"></i>
+                            <i class="ri-star-fill text-[#EDC855] text-[19px]"></i>
+                            <i class="ri-star-fill text-[#EDC855] text-[19px]"></i>
+                            <i class="ri-star-fill text-[#EDC855] text-[19px]"></i>
+                            <i class="ri-star-line text-[#EDC855] text-[19px]"></i>
+
+                        </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                        <div
+                            class="di text-start w-[400px] h-[auto] pt-[20px] pb-[20px] ps-[10px] pe-[10px] bg-[#FFFFFF] rounded-[14px] border-2">
+                            <img src="/assets/logi_2.png" alt="">
+                            <img src="/assets/sl_3.png" alt="" class="mt-[10px]">
+                            <p class="font-[600] text-[20px]">Shivani Mori</p>
+                            <p class="mt-[16px]">Blinded by desire that they foresee all pain and trouble blame ...</p>
+                            <i class="ri-star-fill text-[#EDC855] text-[19px]"></i>
+                            <i class="ri-star-fill text-[#EDC855] text-[19px]"></i>
+                            <i class="ri-star-fill text-[#EDC855] text-[19px]"></i>
+                            <i class="ri-star-fill text-[#EDC855] text-[19px]"></i>
+                            <i class="ri-star-line text-[#EDC855] text-[19px]"></i>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+</div>
+
+
+<div class="service-sect bg-[#04182F] xl:w-[100%] w-[100%] pe-[5%] xl:pe-[0] h-[auto] ps-[5%] xl:ps-[0%] xl:h-[700px] flex justify-center items-center">
+    <div class="container xl:w-[80%] w-[100%] h-[100%]">
+
+        <div class="sec-s1 w-[100%] h-[auto] text-center">
+            <p class="text-[18px] mt-[30px] text-[#53E779]">MEET OUR PEOPLE</p>
+                <h1 class="xl:text-[55px] text-[32px] font-[600] text-[white]">Leading experts
+                    </h1>
+        </div>
+
+        <div class="sec-s2 w-[100%] xl:ps-[0] xl:w-[100%] h-[auto] xl:grid xl:grid-cols-4 gap-5 xl:mt-[3.5vw] mt-[10vw]">
+            <div class="">
+                <img src="https://st4.depositphotos.com/16122460/27166/i/450/depositphotos_271666078-stock-photo-handsome-businessman-working-at-table.jpg" alt="" class="rounded-[10px]">
+                
+                <center> <p class="text-[20px] text-[white] font-[500] xl:mt-[1.4vw] mt-[3vw]">Bryan Jonhson</p>
+                    <p class="text-[dimgray] text-[18px]" >Director</p>
+                </center>
+            </div>
+            <div class="">
+                <img src="https://img.freepik.com/premium-photo/close-up-portrait-confident-indian-financial-expert-office-worker-sitting-table-formal-suit_769609-327.jpg" alt="" class="rounded-[10px] mt-[10vw] xl:mt-[0vw]">
+                
+                <center> <p class="text-[20px] text-[white] font-[500] xl:mt-[1.4vw] mt-[3vw]">Jeremy Dupont</p>
+                    <p class="text-[dimgray] text-[18px]" >Specialist</p>
+                </center>
+            </div>
+            <div class="">
+                <img src="https://media.istockphoto.com/id/1307615661/photo/smiling-indian-business-man-working-on-laptop-at-home-office-young-indian-student-or-remote.jpg?s=612x612&w=0&k=20&c=5Urz6DUqrMmg595KZVDXp86GvbRf5U8A55JG4ML4TG0=" alt="" class="rounded-[10px] mt-[10vw] xl:mt-[0vw]">
+                
+                <center> <p class="text-[20px] text-[white] font-[500] xl:mt-[1.4vw] mt-[3vw]">Matthew Taylor</p>
+                    <p class="text-[dimgray] text-[18px]" >Manager</p>
+                </center>
+            </div>
+            <div class="">
+                <img src="https://t4.ftcdn.net/jpg/03/83/30/07/360_F_383300738_hWLn1AksIpVnhy2uHTj90HGp21lYWAV3.jpg" alt="" class="rounded-[10px] mt-[10vw] xl:mt-[0vw]">
+                
+                <center> <p class="text-[20px] text-[white] font-[500] xl:mt-[1.4vw] mt-[3vw]">Johncy Parker</p>
+                    <p class="text-[dimgray] text-[18px]" >Consultant</p>
+                </center>
+            </div>
+        </div>
+
+    </div>
+</div>
+ 
+<div class="section_for xl:pt-[0] pt-[150px] w-[100%] h-[auto] mt-[-150px] bg-[#04182F] xl:h-[900px] ">
+    <div class="container xl:w-[70%] h-[100%] xl:ms-[15%] pt-[4%] pb-[6%] text-center">
+
+        <div class="her text-[white]">
+            <i class="fa-solid fa-circle-play text-[70px] text-[#67C27C]"></i>
+            <p class="text-[18px] mt-[30px]">LET'S TALK</p>
+            <h1 class="text-[35px] font-[600]">Request a Free Quote
+                Name
+                Email
+                </h1>
+
+        </div>
+      
+        <div class="formm w-[90%] ms-[5%] xl:w-[40%] bg-[#1C3988] rounded-[7px] p-[30px] xl:ms-[30%] mt-[50px] xl:h-[60%]">
+            <input type="text" class="w-[45%] h-[40px] bg-[#2C4792]  p-[10px] text-[white] " placeholder="Name">
+            <input type="text" class="w-[45%] ms-[7%] h-[40px] bg-[#2C4792]  p-[10px] text-[white] " placeholder="Email">
+            <input type="text" class="w-[45%]  mt-[30px]  h-[42px] bg-[#2C4792]  p-[10px] text-[white] " placeholder="Phone Number">
+            <input type="text" class="w-[45%]   mt-[30px] ms-[7%] h-[42px] bg-[#2C4792]  p-[10px] text-[white] " placeholder="Your Website">
+
+            <textarea name="" id="" class="w-[100%] h-[35%] bg-[#2C4792] mt-[30px]  p-[10px] text-[white] " placeholder="You Message Here"></textarea>
+
+            <button class="bg-[#04182F] w-[160px] mt-[5%] h-[50px] rounded-[8px] text-[white]">SUBMIT NOW</button>
+            
+
+
+        </div>
+  
+
+    </div>
+</div>
+
+<footer class="w-[100%] bg-[#021327] h-[auto] flex flex-wrap justify-between items-center ">
+    <div class="container w-[70%] ms-[15%] flex flex-wrap justify-between items-center text-[white] ">
+
+    <div data-aos="zoom-in-down" class="ft xl:w-[40%] xl:h-[90%] sm:h-[50%] xl:mt-[-110px]  sm:w-[100%] pt-[6vw] ">
+        <img src="/assets/logo.png" alt="" class=" f_u w-[200px]">
+
+        <p class="text-[gray] text-[16px] mt-[1.3vw] mb-[30px] me-[20%] ">
+            Dictum curae mollis eu lectus leo non integer tempus torquent sociis, sagittis tempor imperdiet luctus.
+        </p>
+
+        <i class="ri-facebook-fill p-[6px] bg-[gray] rounded-[100%] text-[18px]"></i>
+        <i class="ri-instagram-fill p-[6px] bg-[gray] rounded-[100%] text-[18px] ms-[10px]"></i>
+        <i class="ri-twitter-fill p-[6px] bg-[gray] rounded-[100%] text-[18px] ms-[10px]"></i>
+        <i class="ri-linkedin-box-fill p-[6px] bg-[gray] rounded-[100%] text-[18px] ms-[10px]"></i>
+
+    </div>
+    <div class="ft1 xl:w-[60%] flex-col  xl:h-[90%] sm:w-[100%] sm:flex-col xl:flex-row  sm:items-start  sm:h-[65%] pt-[6vw] flex justify-between items-center ">
+        <div data-aos="zoom-in-down" class="ff h-[100%] sm:mt-[-60px] xl:mt-[0] mt-[20px]">
+            <h1 class="font-[600]  mb-[1.5vw] text-[19px]">PRODUCT</h1>
+            <p class="mt-[1vw] text-[gray] text-[16px]"> Homepage 01</p>
+            <p class="mt-[1vw] text-[gray] text-[16px]"> Homepage 02</p>
+            <p class="mt-[1vw] text-[gray] text-[16px]"> Homepage 03</p>
+            <p class="mt-[1vw] text-[gray] text-[16px]"> About us page</p>
+        </div>
+
+        <div data-aos="zoom-in-down" class="ff h-[100%] w-[100%] xl:w-[auto] sm:mt-[50px] xl:mt-[0] mt-[20px] ms-[9%]">
+            <h1 class="font-[600] mb-[1.5vw] text-[19px] ">IT SERVICES</h1>
+            <p class="mt-[1vw] text-[gray] text-[16px]"> Pricing 01</p>
+            <p class="mt-[1vw] text-[gray] text-[16px]">Pricing 02</p>
+            <p class="mt-[1vw] text-[gray] text-[16px]"> Pricing 03</p>
+            <p class="mt-[1vw] text-[gray] text-[16px]"> Pricing</p>
+            <p class="mt-[1vw] text-[gray] text-[16px]"> Contact Us 01</p>
+            <p class="mt-[1vw] text-[gray] text-[16px]"> Contact Us 02</p>
+            <p class="mt-[1vw] text-[gray] text-[16px]"> Contact Us 03</p>
+        </div>
+
+        <div data-aos="zoom-in-down" class="ff h-[100%] sm:mt-[50px] xl:mt-[0] ms-[-20px] mt-[20px]">
+            <h1 class="font-[600] mb-[1.5vw] text-[19px]"> LINKS</h1>
+            <p class="mt-[1vw] text-[gray] text-[16px]"> Blog 01</p>
+            <p class="mt-[1vw] text-[gray] text-[16px]"> Blog 02</p>
+            <p class="mt-[1vw] text-[gray] text-[16px]"> Blog 03</p>
+            <p class="mt-[1vw] text-[gray] text-[16px]"> Blog Singel</p>
+        </div>
+        <div data-aos="zoom-in-down" class="ff h-[100%] sm:mt-[50px] ms-[20px] xl:mt-[0] mt-[20px] me-[20%]">
+            <h1 class="font-[600] mb-[1.5vw] text-[19px]">COMPANY</h1>
+            <p class="mt-[1vw] text-[gray] text-[16px]"> Log in</p>
+            <p class="mt-[1vw] text-[gray] text-[16px]">Sign Up     </p>
+            <p class="mt-[1vw] text-[gray] text-[16px]">Style Guide</p>
+            <p class="mt-[1vw] text-[gray] text-[16px]">Licences</p>
+            <p class="mt-[1vw] text-[gray] text-[16px]">Changelog</p>
+            
+        </div>
+        
+    </div>
+ 
+    <div   class="ft2 w-[100%]  h-[10%] sm:mt-[100%] md:mt-[85%] sm:text-center xl:mt-[100px] pb-[20px]">
+        <p  class="text-[15px] text-[gray] mt-[20px] ms-[20px]">© Creat by   <span class=" me  font-[600] decoration-1 underline text-[#3F4BF7]">TUSHAL SHEKH...</span></p>
+    </div>
+</div>
+   </footer>
+  
+
+    
+</body>
+<script>
+    $('.counter').counterUp({
+       delay: 10,
+       time: 1000
+   });
+   </script>
+    <script>
+        $(document).ready(function () {
+          $(".q1").click(function () {
+            $(".au1").slideToggle(2000);
+            $(".i1").toggle();
+            $(".m1").toggle();
+            $(".au2").slideUp(2000);
+            $(".au3").slideUp(2000);
+            $(".m2").hide();
+            $(".m3").hide();
+            $(".i2").show();
+            $(".i3").show();
+          });
+          $(".q2").click(function () {
+            $(".au2").slideToggle(2000);
+            $(".au1").slideUp(2000);
+            $(".au3").slideUp(2000);
+            $(".i2").toggle();
+            $(".m2").toggle();
+            $(".m1").hide();
+            $(".m3").hide();
+            $(".i1").show();
+            $(".i3").show();
+          });
+          $(".q3").click(function () {
+            $(".au3").slideToggle(2000);
+            $(".au1").slideUp(2000);
+            $(".au2").slideUp(2000);
+            $(".i3").toggle();
+            $(".m3").toggle();
+            $(".m1").hide();
+            $(".m2").hide();
+            $(".i1").show();
+            $(".i2").show();
+          });
+        });
+      </script>
+
+
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 7,
+        spaceBetween: 30,
+        freeMode: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
+</script>
+
+
+
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 5,
+        spaceBetween: 30,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        breakpoints: {
+
+            375: {
+                slidesPerView: 1,
+                // spaceBetween: 20,
+            },
+
+
+            480: {
+                slidesPerView: 1,
+                // spaceBetween: 20,
+            },
+
+            768: {
+                slidesPerView: 2,
+                // spaceBetween: 20,
+            },
+
+            1080: {
+                slidesPerView: 3,
+                // spaceBetween: 20,
+            },
+
+
+
+        }
+    });
+</script>
+
+</html>

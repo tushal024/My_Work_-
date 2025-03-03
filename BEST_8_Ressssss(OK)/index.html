@@ -1,0 +1,1117 @@
+<!-- https://wordpress.themeholy.com/webteck/app-landing/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB_TECK....</title>
+    <link rel="shortcut icon" href="Assets/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- jquery...................... -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+
+
+    <!-- bootstrap..... -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    <!-- tailwind............................................. -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- remix....................... -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- owl................ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- fontawsome................. -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <!-- AOS.............................................................. -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+    <!-- swiper........... -->
+    <style>
+        html,
+        body {
+          position: relative;
+          height: 100%;
+        }
+        body {
+          background: #eee;
+          font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+          font-size: 14px;
+          color: #000;
+          margin: 0;
+          padding: 0;
+        }
+        .swiper {
+          width: 100%;
+          height: 50%;
+          padding-bottom: 50px;
+        }
+        .swiper-slide {
+          text-align: center;
+          font-size: 18px;
+          /* background: #fff; */
+          margin-top: 2vw;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+    
+        .swiper-slide img {
+          display: block;
+          /* width: 50%; */
+          height: 80%;
+          /* object-fit: cover; */
+        }
+      </style>
+
+<style>
+     #arrow{
+            font-size: 40px;
+            cursor: pointer;
+            padding: 5px;
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            color: #5074f4;
+            /* border: 2px solid black; */
+        }
+
+
+
+
+
+        .mainu {
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* background-color: skyblue; */
+            background-color: white;
+            width: 100%;
+
+        }
+        .loader{
+            width: 50px;
+            height: 50px;
+            border: 5px solid black;
+            border-radius: 50%;
+            border-top-color: transparent;
+            animation: lll;
+            animation-duration: 1s;
+            background-color: transparent;
+            animation-direction: normal;
+            animation-iteration-count: infinite;
+        }
+        @keyframes lll{
+            to{
+                transform: rotate(360deg);
+            }
+        }
+
+</style>
+
+
+   
+</head>
+<body>
+
+
+
+    <!-- <i class="fa-solid fa-up-long" id="arrow"></i> -->
+    <i class="fa-solid fa-angles-up " id="arrow"></i>
+
+
+    <div class="mainu">
+        <!-- <div class="loader">
+        </div> -->
+        <!-- <img class=" w-[100%] h-[100vh]"  src="https://cdn.dribbble.com/users/720991/screenshots/4945468/ava1_loader.gif" alt=""> -->
+         <img class="h-[200px] " src="https://cdn.pixabay.com/animation/2023/03/20/02/45/02-45-27-186_512.gif" alt="">
+    </div>
+
+
+   
+    <header class="w-[100%] h-[auto] xl:h-[auto] pb-[2vw]">
+        <div data-aos="zoom-in" class="mini_header w-[80%] ms-[10%] flex items-center justify-between  h-[70px] ">
+            <div class="logo  xl:w-[15%] md:w-[30%]  h-[100%] flex justify-center items-center">
+                <img src="/Assets/logo.svg" alt="" class="w-[70%] h-[70%] sm:w-[100%]">
+            </div>
+            <nav class=" w-[50%] h-[100%]  hidden xl:block">
+                <ul class="flex justify-evenly items-center w-[100%] h-[100%]">
+                    <li><a href="" class="text-[13px]">HOME  <i class="ri-arrow-down-s-line"></i></a></li>                   
+                    <li><a href="" class="text-[13px]">ABOUT US</a></li>
+                    <li><a href="" class="text-[13px]">SERVICES  <i class="ri-arrow-down-s-line"></i></a></li>
+                    <li><a href="" class="text-[13px]">PAGES  <i class="ri-arrow-down-s-line"></i></a></li>
+                    <li><a href="" class="text-[13px]">BLOG  <i class="ri-arrow-down-s-line"></i></a></li>
+                    <li><a href="" class="text-[13px]">CONTACT US</a></li>
+                </ul>
+            </nav>
+            <div class="bt  w-[15%] h-[100%] xl:flex justify-center items-center hidden xl:block">
+                <button class=" cont w-[auto] text-[white] px-[10px] h-[2vw] bg-[#2456FD] rounded-[16px] text-[10px] ">CALL US: +258 6245 7645</button>
+            </div>
+            <i class="ri-menu-line xl:hidden text-[28px] bg-[#2456FD] px-[10px] text-[white] rounded-[5px]"></i>
+        </div>
+
+        <div class="box w-[80%] ms-[10%] h-[auto] flex justify-center flex-wrap">
+            <div  data-aos="fade-left" class="b1 h-[auto] mt-[30px] w-[100%] xl:w-[50%] xl:h-[100%] pt-[10%]   " >
+
+                <p class="text-[#3E66F3] font-[700] text-[]">POWERFUL DIGITAL MOBILE APPS_____</p>
+                <h2 class="text-[4vw]">
+                   <span> <span class="text-[#3E66F3] font-[500]"> Web</span> <span class="text-[#5074F4]">Teck</span> </span>
+                    Where Efficiency Meets Innovation
+                </h2>
+
+                <p class="text-[gray] text-[15px] mt-[1.5vw]">We provide many features that you can use cheaply and easily. Try it now and get an interesting promo</p>
+
+            </div>
+            <div   data-aos="fade-right" class="b2 h-[auto] ms-[10%] mt-[30px] md:ms-[-10%] md:w-[70%] w-[100%] md:w-[50%] xl:w-[50%]  xl:h-[80%]   sm:ms-[13%] lg:ms-[0px]"> 
+                <img src="/Assets/phone.png" alt="" class=" h_ph h-[55vw] xl:h-[35vw]"></div>
+        </div>
+
+    </header>
+
+
+    <div class="section_1 mt-[3vw] h-[auto] hidden xl:block " >
+        <div class="sen1 text-center" data-aos="zoom-in-down">
+            <h2 class=" text-[2.2vw] font-[600]">36k+ Installation And Featured On</h2>
+        </div>
+        <div class="sen2 w-[80%] ms-[10%] h-[auto] mt-[3vw]">
+
+
+            <div class="swiper mySwiper h-[auto] w-[100%]" data-aos="zoom-in-down">
+                <div class="swiper-wrapper h-[100%] w-[100%] py-[10px] ">
+                  <div class="swiper-slide w-[5vwpx] h-[3vw] p-[6px]  sm:mt-[1vw] sm:mb-[3px]">
+                    <img src="/Assets/brand_3_1.svg" alt="" class="w-[100%] h-[80%] ">
+                  </div>
+                  <div class="swiper-slide w-[5vwpx] h-[3vw] p-[3px] sm:mt-[1vw] sm:pb-[3px]">
+                    <img src="/Assets/brand_3_2.svg" alt="" class="w-[100%] h-[30px] ">
+                  </div>
+                  <div class="swiper-slide w-[5vwpx] h-[3vw] p-[3px] sm:mt-[1vw] sm:pb-[3px]">
+                    <img src="/Assets/brand_3_3.svg" alt="" class="w-[100%] h-[30px] ">
+                  </div>
+                  <div class="swiper-slide w-[5vwpx] h-[3vw] p-[3px] sm:mt-[1vw] sm:pb-[3px]">
+                    <img src="/Assets/brand_3_4.svg" alt="" class="w-[100%] h-[30px] ">
+                  </div>
+                  <div class="swiper-slide w-[5vwpx] h-[3vw] p-[3px] sm:mt-[1vw] sm:pb-[3px]">
+                    <img src="/Assets/brand_3_5.svg" alt="" class="w-[100%] h-[30px] ">
+                  </div>
+                  <div class="swiper-slide w-[5vwpx] h-[3vw] p-[3px] sm:mt-[1vw] sm:pb-[3px]">
+                    <img src="/Assets/brand_3_6.svg" alt="" class="w-[100%] h-[30px] ">
+                  </div>
+                 
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+        
+            <hr class="bg-[#c4bfbe]  h-[0.1vw] mt-[20px]">
+        </div>
+    </div>
+   
+
+
+
+  <div class="section_3 xl:w-[90%] xl:h-[600px] h-[auto] ms-[5%] flex flex-wrap mt-[5vw] ">
+    <div data-aos="fade-right"  class="seu1 xl:w-[40%] me-[25%] sm:me-[0] md:me-[0] xl:me-[0] md:w-[100%] md:ms-[16%] xl:ms-[0] md:h-[600px]  xl:h-[100%] relative ">
+        <img src="/Assets/about_8_1.png" alt="" class="h-[90%]  md:ms-[15%]  mt-[10%] rounded-[20px] ms-[30%]" id="op">
+        <!-- <img src="/Assets/about_8_2.png" alt="" class=" sm:hidden  absolute bottom-20 left-60 h-[20%]" id="qq"> -->
+
+    </div>
+    <div data-aos="fade-left"  class="seu2 ps-[18px] pe-[20px] xl:w-[60%] sm:w-[80%] sm:ms-[10%] pt-[5%] xl:ms-[0] xl:ps-[4%] md:ms-[16%]  pb-[5vw]">
+        <p class="text-[#3E66F3] font-[700] text-[]">ABOUT OUR APP_____</p>
+        <h2 class="text-[2.4vw] mt-[10px]">
+           <span> <span class=" font-[600]"> Built For The Next Generation Of Small <br>
+             Business
+        </h2>
+
+        <p class="text-[gray] text-[15px] mt-[15px]">
+            Incorporate visually appealing elements such as high-quality images, videos, or graphics
+             that  resonate with the target audience and complement the  
+             overall design
+              of the  page. Ensure that 
+             the 
+              landing page is optimized for various devices.
+        </p>
+
+        <div class="seu_box flex h-[25%] mt-[20px] items-between flex-wrap ">
+            <div class="sr flex justify-start w-[40%]">
+                <div class="sr1">
+                      <i class="ri-checkbox-circle-fill bg-[#3E66F3] p-[4px] text-[16px] rounded-[100%] text-[white]"></i>
+                </div>
+                <div class="sr2 ms-[2vw]">
+                    <p class="font-[600]">Easy Customize</p>
+                </div>
+            </div>
+
+
+            <div class="sr flex justify-start w-[40%]">
+                <div class="sr1">
+                      <i class="ri-checkbox-circle-fill bg-[#3E66F3] p-[4px] text-[16px]  rounded-[100%] text-[white]"></i>
+                </div>
+                <div class="sr2 ms-[2vw]">
+                    <p class="font-[600]">Fully Responsive</p>
+                </div>
+            </div>
+
+
+            <div class="sr flex justify-start w-[40%]">
+                <div class="sr1">
+                      <i class="ri-checkbox-circle-fill bg-[#3E66F3] p-[4px] text-[16px]  rounded-[100%] text-[white]"></i>
+                </div>
+                <div class="sr2 ms-[2vw]">
+                    <p class="font-[600]">Free updates</p>
+                </div>
+            </div>
+
+            <div class="sr flex justify-start w-[40%]">
+                <div class="sr1">
+                      <i class="ri-checkbox-circle-fill bg-[#3E66F3] p-[4px] text-[16px]  rounded-[100%] text-[white]"></i>
+                </div>
+                <div class="sr2 ms-[2vw]">
+                    <p class="font-[600]">Ultimate support</p>
+                </div>
+            </div>
+        </div>
+
+        <button class=" s_btu hover:bg-[#5074F4] hover:text-[white]   mb-[5vw] p-[10px] rounded-[20px] ps-[20px] pe-[20px] font-[400] mt-[2vw] text-[13px] "> GET STARTED FOR FREE 14 DAYS</button>
+    </div>
+  </div>
+
+
+  <div class="section_2 mt-[5vw] h-[auto] ">
+    <div class="su_1 text-center"  data-aos="zoom-in-down">
+        <p class="text-[#2456FD] font-[700]">AWESOME FEATURE</p>
+        <h2 class=" text-[2.2vw] font-[600]">Our Awesome App Features</h2>
+
+    </div>
+    <div class="su_2 w-[80%] ms-[10%] mt-[3vw]" data-aos="zoom-in-down">
+       
+
+        <div class="owl-carousel owl-theme ">
+            <div class="item mb-[24px]">
+              
+                 <!-- <div class="gud bg-[white] p-[1.5vw] rounded-[12px] ">
+            <img src="/Assets/feature_card_8_1.svg" alt="" class=" ms-[-90px] h-[60px]">
+            <h3 class="font-bold mt-[2vw] text-[18px]">Note Powerful and <br>
+                Security</h3>
+            <p class="mt-[1vw] text-[gray]">Incorporate testimonials customer <br>
+                 reviews, or social media feeds to <br>
+                  build trust and credibility.</p>
+
+        </div> -->
+        <div class="gud bg-[white] p-[1.5vw] rounded-[12px] ">
+            <img src="/Assets/feature_card_8_1.svg" alt="" class=" ms-[-90px] h-[60px]">
+            <h3 class="font-bold mt-[2vw] text-[18px]">
+                Note Powerful and <br>
+                Security
+            </h3>
+            <p class="mt-[1vw] text-[gray]">
+                Incorporate testimonials <br> customer 
+                reviews, or social media feeds   to
+                 build trust and credibility.
+            </p>
+
+        </div>
+
+            </div>
+            <div class="item">
+               
+                 <div class="gud bg-[white] p-[1.5vw] rounded-[12px] ">
+            <img src="/Assets/feature_card_8_2.svg" alt="" class=" ms-[-90px] h-[60px]">
+            <h3 class="font-bold mt-[2vw] text-[18px]">
+                Easy Sort, Classify and <br>
+                 Search
+            </h3>
+            <p class="mt-[1vw] text-[gray]">
+                Testimonials incorporate <br> customer reviews, or social media <br>
+                 feeds to build trust and credibility.
+            </p>
+
+        </div>
+            </div>
+            <div class="item">
+               
+                 <div class="gud bg-[white] p-[1.5vw] rounded-[12px] ">
+            <img src="/Assets/feature_card_8_3.svg" alt="" class=" ms-[-90px] h-[60px]">
+            <h3 class="font-bold mt-[2vw] text-[18px]">
+                Collaboration and <br>
+                 Share
+            </h3>
+            <p class="mt-[1vw] text-[gray]">
+                Customer testimonials incorporate <br>
+                 reviews, or social media feeds to <br>
+                  build trust and credibility.
+            </p>
+
+        </div>
+            </div>
+            <div class="item">
+               
+                 <div class="gud bg-[white] p-[1.5vw] rounded-[12px] ">
+            <img src="/Assets/feature_card_8_4.svg" alt="" class=" ms-[-90px] h-[60px]">
+            <h3 class="font-bold mt-[2vw] text-[18px]">
+                Share your Data to  <br>
+                anyone
+            </h3>
+            <p class="mt-[1vw] text-[gray]">
+                Reviews incorporate testimonials <br>
+                 customer, or social media feeds to <br>
+                  build trust and credibility.
+            </p>
+
+        </div>
+            </div>
+
+            <div class="item">
+              
+                <div class="gud bg-[white] p-[1.5vw] rounded-[12px] ">
+           <img src="/Assets/feature_card_8_1.svg" alt="" class=" ms-[-90px] h-[60px]">
+           <h3 class="font-bold mt-[2vw] text-[18px]">Note Powerful and <br>
+               Security</h3>
+           <p class="mt-[1vw] text-[gray]">Incorporate testimonials customer <br>
+                reviews, or social media feeds to <br>
+                 build trust and credibility.</p>
+
+       </div>
+
+           </div>
+           <div class="item">
+              
+                <div class="gud bg-[white] p-[1.5vw] rounded-[12px] ">
+           <img src="/Assets/feature_card_8_2.svg" alt="" class=" ms-[-90px] h-[60px]">
+           <h3 class="font-bold mt-[2vw] text-[18px]">
+               Easy Sort, Classify and <br>
+                Search
+           </h3>
+           <p class="mt-[1vw] text-[gray]">
+               Testimonials incorporate <br> customer reviews, or social media <br>
+                feeds to build trust and credibility.
+           </p>
+
+       </div>
+           </div>
+           <div class="item">
+              
+                <div class="gud bg-[white] p-[1.5vw] rounded-[12px] ">
+           <img src="/Assets/feature_card_8_3.svg" alt="" class=" ms-[-90px] h-[60px]">
+           <h3 class="font-bold mt-[2vw] text-[18px]">
+               Collaboration and <br>
+                Share
+           </h3>
+           <p class="mt-[1vw] text-[gray]">
+               Customer testimonials incorporate <br>
+                reviews, or social media feeds to <br>
+                 build trust and credibility.
+           </p>
+
+       </div>
+           </div>
+           <div class="item">
+              
+                <div class="gud bg-[white] p-[1.5vw] rounded-[12px] ">
+           <img src="/Assets/feature_card_8_4.svg" alt="" class=" ms-[-90px] h-[60px]">
+           <h3 class="font-bold mt-[2vw] text-[18px]">
+               Share your Data to  <br>
+               anyone
+           </h3>
+           <p class="mt-[1vw] text-[gray]">
+               Reviews incorporate testimonials <br>
+                customer, or social media feeds to <br>
+                 build trust and credibility.
+           </p>
+
+       </div>
+           </div>
+          
+           <div class="item">
+              
+            <div class="gud bg-[white] p-[1.5vw] rounded-[12px] ">
+       <img src="/Assets/feature_card_8_1.svg" alt="" class=" ms-[-90px] h-[60px]">
+       <h3 class="font-bold mt-[2vw] text-[18px]">Note Powerful and <br>
+           Security</h3>
+       <p class="mt-[1vw] text-[gray]">Incorporate testimonials customer <br>
+            reviews, or social media feeds to <br>
+             build trust and credibility.</p>
+
+   </div>
+
+       </div>
+       <div class="item">
+          
+            <div class="gud bg-[white] p-[1.5vw] rounded-[12px] ">
+       <img src="/Assets/feature_card_8_2.svg" alt="" class=" ms-[-90px] h-[60px]">
+       <h3 class="font-bold mt-[2vw] text-[18px]">
+           Easy Sort, Classify and <br>
+            Search
+       </h3>
+       <p class="mt-[1vw] text-[gray]">
+           Testimonials incorporate <br> customer reviews, or social media <br>
+            feeds to build trust and credibility.
+       </p>
+
+   </div>
+       </div>
+       <div class="item">
+          
+            <div class="gud bg-[white] p-[1.5vw] rounded-[12px] ">
+       <img src="/Assets/feature_card_8_3.svg" alt="" class=" ms-[-90px] h-[60px]">
+       <h3 class="font-bold mt-[2vw] text-[18px]">
+           Collaboration and <br>
+            Share
+       </h3>
+       <p class="mt-[1vw] text-[gray]">
+           Customer testimonials incorporate <br>
+            reviews, or social media feeds to <br>
+             build trust and credibility.
+       </p>
+
+   </div>
+       </div>
+       <div class="item">
+          
+            <div class="gud bg-[white] p-[1.5vw] rounded-[12px] ">
+       <img src="/Assets/feature_card_8_4.svg" alt="" class=" ms-[-90px] h-[60px]">
+       <h3 class="font-bold mt-[2vw] text-[18px]">
+           Share your Data to  <br>
+           anyone
+       </h3>
+       <p class="mt-[1vw] text-[gray]">
+           Reviews incorporate testimonials <br>
+            customer, or social media feeds to <br>
+             build trust and credibility.
+       </p>
+
+   </div>
+       </div>
+      
+           
+            
+            
+        </div>
+
+    </div>
+    </div>
+
+  <!-- <div class="section_4 h-[600px] w-[100%] mt-[5vw]">
+
+
+  </div> -->
+
+  <div class="section_5 xl:w-[80%] xl:h-[600px] h-[auto] ms-[5%] flex flex-wrap xl:ms-[10%]  ">
+    <div data-aos="fade-right"  class="seu1 xl:w-[40%] md:w-[100%] w-[55%] ms-[5%] md:ms-[16%] xl:ms-[0] md:h-[600px]  xl:h-[100%] relative order-2 ">
+        <img src="/Assets/download-8-1.png" alt="" class="h-[90%] md:ms-[20%] mt-[10%] rounded-[20px] ms-[40%]" id="op">
+        <img src="/Assets/download-8-1.1.png" alt="" class="absolute bottom-20 left-0 h-[30%] rounded-[20px] " id="qq1">
+
+    </div>
+    <div data-aos="fade-left" class="seu2 xl:w-[60%] sm:w-[80%] sm:ms-[10%] pt-[5%] xl:ms-[0] xl:ps-[4%] md:ms-[16%]  pb-[5vw]">
+        <p class="text-[#3E66F3] font-[700] text-[]">MADE EASY WAY_____</p>
+        <h2 class="text-[2.4vw] mt-[1vw]">
+           <span> <span class=" font-[600]"> Keep Track Of Your Expenses <br>
+            By The App
+        </h2>
+
+        <p class="text-[gray] text-[15px] mt-[1.5vw]">
+            Incorporate visually appealing elements such as high-quality images, videos, or graphics
+             that  resonate with the target audience and complement the  
+             overall design
+              of the  page. Ensure that 
+             the 
+              landing page is optimized for various devices.
+        </p>
+
+        <div class="seu_box mb-[27px] mt-[10px] flex  h-[25%] mt-[3vw] items-between flex-wrap ">
+            <div class="sr flex justify-start w-[40%]">
+                <div class="sr1">
+                      <i class="ri-checkbox-circle-fill bg-[#3E66F3] p-[4px] text-[16px]  rounded-[100%] text-[white]"></i>
+                </div>
+                <div class="sr2 ms-[2vw]">
+                    <p class="font-[600]" id="cor">Customizable App</p>
+                    <p class="text-[gray] mt-[0.5vw]">Ensure that the landing page is 
+                        optimized for various devices.</p>
+
+                </div>
+            </div>
+
+
+            <div class="sr flex justify-start w-[40%]">
+                <div class="sr1">
+                      <i class="ri-checkbox-circle-fill bg-[#3E66F3] p-[4px] text-[16px]  rounded-[100%] text-[white]"></i>
+                </div>
+                <div class="sr2 ms-[2vw]">
+                    <p class="font-[600]" id="cor">Statistic Retroactively</p>
+                    <p class="text-[gray] mt-[0.5vw]">Ensure that the landing page is 
+                        optimized for various devices.</p>
+
+                </div>
+            </div>        
+        </div>
+
+        <button class=" wu   mb-[5vw] p-[10px] rounded-[20px] ps-[20px] pe-[20px] font-[400] mt-[1vw] text-[13px] "> GET STARTED FOR FREE 14 DAYS</button>
+        <button class=" wu   mb-[5vw] p-[5px] rounded-[20px] ps-[20px] pe-[20px] font-[400] mt-[1vw] text-[13px] ms-[3vw]"><i class="ri-download-cloud-2-line text-[18px] me-[0.3vw]"></i> DOWNLOAD APP</button>
+    </div>
+  </div>
+
+
+
+  <div class="section_5 xl:w-[80%] xl:h-[600px] xl:ms-[10%] h-[auto] ms-[5%] flex flex-wrap  ">
+    <div data-aos="fade-right" class="seu1 xl:w-[40%] md:w-[100%] w-[55%] md:ms-[16%] xl:ms-[0] md:h-[600px]  xl:h-[100%] relative  ">
+        <img src="/Assets/m_phone.png" alt="" class="h-[90%] md:ms-[18%] mt-[10%] rounded-[20px] ms-[40%]" id="p">
+        <img src="/Assets/m_phone_mini.png" alt="" class="absolute bottom-20 left-0 h-[30%] rounded-[20px] " id="qq1">
+
+    </div>
+    <div data-aos="fade-left" class="seu2 xl:w-[60%] sm:w-[80%] sm:ms-[10%] pt-[13%] xl:ms-[0] xl:ps-[4%] md:ms-[16%]  pb-[5vw]">
+        <p class="text-[#3E66F3] font-[700] text-[]">EASY USER EXPERIENCE_____</p>
+        <h2 class="text-[2.4vw] mt-[1vw]">
+           <span> <span class=" font-[600]"> Better Cash Control With 
+            Web  <span class="text-[#3E66F3]"> Teck  </span>Flow
+        </h2>
+
+        <p class="text-[gray] text-[15px] mt-[15px]">
+            Incorporate visually appealing elements such as high-quality images, videos, or graphics
+             that  resonate with the target audience and complement the  
+             overall design
+              of the  page. Ensure that 
+             the 
+              landing page is optimized for various devices.
+
+            </p>
+
+            <p class="text-[gray] mt-[2vw] mb-[27px]">
+                Use concise descriptions or bullet points to emphasize what sets your app apart from others in 
+                 the market.
+            </p>
+
+       
+        <button class="  wu  mb-[5vw] p-[10px] rounded-[20px] ps-[20px] pe-[20px] font-[400] mt-[1vw] text-[13px] "> GET STARTED FOR FREE 14 DAYS</button>
+        <button class="  wu  mb-[5vw] p-[5px] rounded-[20px] ps-[20px] pe-[20px] font-[400] mt-[1vw] text-[13px] ms-[3vw]"><i class="ri-download-cloud-2-line text-[18px] me-[0.3vw]"></i> DOWNLOAD APP</button>
+    </div>
+  </div>
+
+
+  <div class="section_7 w-[100%] xl:h-[650px] md:h-[auto] pt-[50px] pb-[-50px]">
+ 
+    <div class="swiper mySwiper xl:h-[600px] md:h-[auto] " data-aos="zoom-in-down">
+        <div class="swiper-wrapper  h-[90%] pb-[50px] ">
+          <div class="swiper-slide  ">
+
+            <img src="/Assets/screenshot-slider_8_2.png" alt="">
+          </div>
+          <div class="swiper-slide">
+
+            <img src="/Assets/screenshot-slider_8_3.png" alt="">
+          </div>
+          <div class="swiper-slide">
+
+            <img src="/Assets/screenshot-slider_8_4.png" alt="">
+          </div>
+          <div class="swiper-slide">
+
+            <img src="/Assets/screenshot-slider_8_5.png" alt="">
+          </div>
+          <div class="swiper-slide">
+
+            <img src="/Assets/screenshot-slider_8_6.png" alt="">
+          </div>
+          <div class="swiper-slide">
+
+            <img src="/Assets/screenshot-slider_8_7.png" alt="">
+          </div>
+          <div class="swiper-slide">
+
+            <img src="/Assets/screenshot-slider_8_1-1.png" alt="">
+          </div>
+          <div class="swiper-slide">
+
+            <img src="/Assets/screenshot-slider_8_2.png" alt="">
+          </div>
+
+
+          <div class="swiper-slide">
+
+            <img src="/Assets/screenshot-slider_8_3.png" alt="">
+          </div>
+          <div class="swiper-slide">
+
+            <img src="/Assets/screenshot-slider_8_4.png" alt="">
+          </div>
+          <div class="swiper-slide">
+
+            <img src="/Assets/screenshot-slider_8_5.png" alt="">
+          </div>
+          <div class="swiper-slide">
+
+            <img src="/Assets/screenshot-slider_8_6.png" alt="">
+          </div>
+          <div class="swiper-slide">
+
+            <img src="/Assets/screenshot-slider_8_7.png" alt="">
+          </div>
+          <div class="swiper-slide">
+
+            <img src="/Assets/screenshot-slider_8_1-1.png" alt="">
+          </div>
+
+          <div class="swiper-slide">
+
+            <img src="/Assets/screenshot-slider_8_3.png" alt="">
+          </div>
+          <div class="swiper-slide">
+
+            <img src="/Assets/screenshot-slider_8_4.png" alt="">
+          </div>
+          <div class="swiper-slide">
+
+            <img src="/Assets/screenshot-slider_8_5.png" alt="">
+          </div>
+          <div class="swiper-slide">
+
+            <img src="/Assets/screenshot-slider_8_6.png" alt="">
+          </div>
+          <div class="swiper-slide">
+
+            <img src="/Assets/screenshot-slider_8_7.png" alt="">
+          </div>
+          <div class="swiper-slide">
+
+            <img src="/Assets/screenshot-slider_8_1-1.png" alt="">
+          </div>
+         
+        </div>
+        <div class="swiper-pagination md:hidden xl:block  ">
+
+        </div>
+       
+      </div>
+    
+ 
+
+  </div>
+
+
+
+
+  <div class="section_8 w-[80%] h-[auto] ms-[10%] flex justify-between  flex-wrap md:mt-[50px]">
+    <div data-aos="zoom-in-down" class="con_1 w-[80%] ms-[10%] mt-[30px] h-[90%] bg-[#EFF1F9] ps-[2%] pt-[20px] pb-[20px]  rounded-[13px] lg:ms-[0px] xl:ms-[0px] md:w-[50%] md:ms-[25%] lg:w-[30%] xl:w-[30%]">
+        <div class="r1 flex">
+            <div class="rr"><img src="/Assets/icon.svg" alt=""></div>
+            <div class="rr1 ms-[1vw]">
+                <p class="text-[#3E66F3]">FREE</p>
+                <p class="font-[600] text-[1.5vw]">Basic Plan</p>
+            </div>
+         
+        </div>
+        <p>Perfect plan to get started</p>
+        <p class="text-[#d2d9d4] mt-[1vw] mb-[1vw]">__________________________________</p>
+
+
+        <span class="">
+          <span class="text-[30px] font-[600]">  $0 </span> <span class="text-[gray]">/month</span>
+        </span>
+        
+        <p class="text-[gray] mt-[0.5vw]">A free plan grants you access to some cool <br>
+             features of Spend.In.</p>
+        
+            
+        <div>
+            <p class="mt-[1.5vw]">
+            <span><i class="ri-checkbox-circle-fill text-[#3E66F3]"></i></span>
+            <span>Sync Accross Device</span>
+        </p>
+           
+            <p class="mt-[7px]">
+            <span class=><i class="ri-checkbox-circle-fill text-[#3E66F3]"></i></span>
+            <span>5 Workspace</span>
+        </p>
+
+        <p class="mt-[7px]">
+            <span class=><i class="ri-checkbox-circle-fill text-[#3E66F3]"></i></span>
+            <span>Collaborate With 5 User</span>
+        </p>
+
+
+        <p class="mt-[7px]">
+            <span class=><i class="fa-solid fa-circle-xmark text-[gray]"></i></span>
+            <span>Sharing Permission</span>
+        </p>
+
+        <p class="mt-[7px]">
+            <span class=><i class="fa-solid fa-circle-xmark text-[gray]"></i></span>
+            <span>Admin Tools</span>
+        </p>
+
+        <p class="mt-[7px]">
+            <span class=><i class="fa-solid fa-circle-xmark text-[gray]"></i></span>
+            <span>100+ Integrations</span>
+        </p>
+
+
+        </div>     
+        <button class= " dh bg-[#3E66F3] rounded-[20px] text-[white] w-[80%] h-[30px] mt-[2vw]">CHOOSE PLAN</button>
+
+
+    </div>
+
+
+    <div data-aos="zoom-in-down" class="con_1 w-[80%] ms-[10%] mt-[30px] h-[90%] bg-[#EFF1F9] ps-[2%] pt-[20px] pb-[20px]  rounded-[13px] lg:ms-[0px] xl:ms-[0px] md:w-[50%] md:ms-[25%] lg:w-[30%] xl:w-[30%]">
+        <div class="r1 flex">
+            <div class="rr"><img src="/Assets/icon.svg" alt=""></div>
+            <div class="rr1 ms-[1vw]">
+                <p class="text-[#3E66F3]">ULTIMATE</p>
+                <p class="font-[600] text-[1.5vw]">Standard Plan</p>
+            </div>
+         
+        </div>
+        <p>Best suits for great company!</p>
+        <p class="text-[#d2d9d4] mt-[1vw] mb-[1vw]">__________________________________</p>
+
+
+        <span class="">
+          <span class="text-[30px] font-[600]">  $36</span> <span class="text-[gray]">/month</span>
+        </span>
+        
+        <p class="text-[gray] mt-[0.5vw]">If you a finance manager at big company, this <br>
+             plan is a perfect match.</p>
+        
+            
+        <div>
+            <p class="mt-[1.5vw]">
+            <span><i class="ri-checkbox-circle-fill text-[#3E66F3]"></i></span>
+            <span>Everything In Free Plan</span>
+        </p>
+           
+            <p class="mt-[7px]">
+            <span class=><i class="ri-checkbox-circle-fill text-[#3E66F3]"></i></span>
+            <span>30 Workspace</span>
+        </p>
+
+        <p class="mt-[7px]">
+            <span class=><i class="ri-checkbox-circle-fill text-[#3E66F3]"></i></span>
+            <span>Collaborative Workspace</span>
+        </p>
+        <p class="mt-[7px]">
+            <span class=><i class="ri-checkbox-circle-fill text-[#3E66F3]"></i></span>
+            <span>Sharing Permission</span>
+        </p>
+
+        
+        <p class="mt-[7px]">
+            <span class=><i class="ri-checkbox-circle-fill text-[#3E66F3]"></i></span>
+            <span>Admin Tools</span>
+        </p>
+        <p class="mt-[7px]">
+            <span class=><i class="ri-checkbox-circle-fill text-[#3E66F3]"></i></span>
+            <span>100+ Integrations</span>
+        </p>
+
+        </div>     
+        <button class=" dh bg-[#3E66F3] rounded-[20px] text-[white] w-[80%] h-[30px] mt-[2vw]">CHOOSE PLAN</button>
+
+
+    </div>
+
+    <div data-aos="zoom-in-down" class="con_1 w-[80%] ms-[10%] mt-[30px] h-[90%] bg-[#EFF1F9] ps-[2%] pt-[20px] pb-[20px]  rounded-[13px] lg:ms-[0px] xl:ms-[0px] md:w-[50%] md:ms-[25%] lg:w-[30%] xl:w-[30%]">
+        <div class="r1 flex">
+            <div class="rr"><img src="/Assets/kingg.svg" alt=""></div>
+            <div class="rr1 ms-[1vw]">
+                <p class="text-[#3E66F3]">PRO</p>
+                <p class="font-[600] text-[1.5vw]">Premium Plan</p>
+            </div>
+         
+        </div>
+        <p>Perfect plan for professionals!</p>
+        <p class="text-[#d2d9d4] mt-[1vw] mb-[1vw]">__________________________________</p>
+
+
+        <span class="">
+          <span class="text-[30px] font-[600]">  $66 </span> <span class="text-[gray]">/month</span>
+        </span>
+        
+        <p class="text-[gray] mt-[0.5vw]">A free plan grants you access to some cool <br>
+             features of Spend.In.</p>
+        
+            
+             <div>
+                <p class="mt-[1.5vw]">
+                <span><i class="ri-checkbox-circle-fill text-[#3E66F3]"></i></span>
+                <span>Everything In Free Plan</span>
+            </p>
+               
+                <p class="mt-[7px]">
+                <span class=><i class="ri-checkbox-circle-fill text-[#3E66F3]"></i></span>
+                <span>30 Workspace</span>
+            </p>
+    
+            <p class="mt-[7px]">
+                <span class=><i class="ri-checkbox-circle-fill text-[#3E66F3]"></i></span>
+                <span>Collaborative Workspace</span>
+            </p>
+            <p class="mt-[7px]">
+                <span class=><i class="ri-checkbox-circle-fill text-[#3E66F3]"></i></span>
+                <span>Sharing Permission</span>
+            </p>
+    
+            
+            <p class="mt-[7px]">
+                <span class=><i class="ri-checkbox-circle-fill text-[#3E66F3]"></i></span>
+                <span>Admin Tools</span>
+            </p>
+            <p class="mt-[7px]">
+                <span class=><i class="ri-checkbox-circle-fill text-[#3E66F3]"></i></span>
+                <span>100+ Integrations</span>
+            </p>
+    
+            </div>     
+        <button class=" dh bg-[#3E66F3] rounded-[20px] text-[white] w-[80%] h-[30px] mt-[2vw]">CHOOSE PLAN</button>
+
+
+    </div>
+  </div>
+
+
+
+
+  <div class="section_5 bg-[#EFF1F9] pb-[20px] h-[auto] mt-[50px] rounded-[17px] md:w-[100%] md:ms-[0] xl:w-[80%] xl:h-[600px] h-[auto] ms-[5%] flex flex-wrap xl:ms-[10%]  ">
+    <div data-aos="fade-right" class="seu1 xl:w-[50%] md:w-[100%] md:ms-[16%] xl:ms-[0] md:h-[600px]  xl:h-[100%] relative order-2 ">
+        <!-- <img src="/Assets/download-8-1.png" alt="" class="h-[90%] mt-[10%] rounded-[20px] ms-[20%]" id="op">
+        <img src="/Assets/download-8-1.1.png" alt="" class="absolute bottom-20 left-0 h-[30%] rounded-[20px] " id="qq1"> -->
+
+        <img src="/Assets/lasttt.png" alt="" class=" jk w-[80%] ms-[10%] md:w-[70%]">
+    </div>
+    <div data-aos="fade-left" class="seu2 w-[100%]  xl:w-[50%] sm:w-[80%] sm:ms-[10%] pt-[5%] xl:ms-[0] xl:ps-[4%] md:ms-[16%]  pb-[5vw]">
+        <p class="text-[#3E66F3] font-[700] mt-[10%]">PROJECT MANAGEMENT APP_____</p>
+        <h2 class="text-[2.4vw] mt-[1vw]">
+           <span> <span class=" font-[600]"> Download Our App And Start Your <br>
+             Free Trail To Get Started Today!
+        </h2>
+
+        <p class="text-[gray] text-[15px] mt-[1.5vw]">
+           
+            Clearly communicate the benefits of using the app. Explain how it solves a problem or improves
+             the user's life in some way. Focus on the value proposition and what makes the app worth 
+             downloading. Include a prominent call-to-action button that encourages visitors to download 
+              the app or sign up for a free trial.
+
+        </p>
+
+        <p class="text-[gray] text-[15px] mt-[1.5vw]">
+        
+            Specify which platforms the app is available on (e.g., iOS, Android) and provide links
+             to download from the respective app stores.
+        </p>
+
+       <div class="ls flex h-[48px] w-[75%] mt-[20px] justify-between">
+        <div class="ls1">
+            <img src="/Assets/play-store-btn.png" alt="" class=" pl h-[100%]">
+        </div>
+        <div class="ls1">
+            <img src="/Assets/play-store-btn.png" alt="" class=" pl h-[100%]">
+        </div>
+       </div>
+
+          </div>
+  </div>
+
+
+  <footer class="w-[70%] ms-[15%] h-[450px] flex flex-wrap justify-between items-center mt-[4vw]">
+
+    <div data-aos="zoom-in-down" class="ft xl:w-[40%] xl:h-[90%] sm:h-[50%] sm:w-[100%] pt-[6vw] sm:border-hidden border-b-2 border-t-2">
+        <img src="/Assets/f_logo.svg" alt="" class=" f_u h-[26px]">
+
+        <p class="text-[gray] text-[13px] mt-[1.3vw] mb-[2vw] me-[20%]">
+            Dictum curae mollis eu lectus leo non integer tempus torquent sociis, sagittis tempor imperdiet luctus.
+        </p>
+
+        <i class="ri-facebook-fill p-[6px] bg-[#F0F0F0] rounded-[100%] text-[18px]"></i>
+        <i class="ri-instagram-fill p-[6px] bg-[#F0F0F0] rounded-[100%] text-[18px] ms-[10px]"></i>
+        <i class="ri-twitter-fill p-[6px] bg-[#F0F0F0] rounded-[100%] text-[18px] ms-[10px]"></i>
+        <i class="ri-linkedin-box-fill p-[6px] bg-[#F0F0F0] rounded-[100%] text-[18px] ms-[10px]"></i>
+
+    </div>
+    <div class="ft1 xl:w-[60%] flex-col  xl:h-[90%] sm:w-[100%] sm:flex-col xl:flex-row  sm:items-start  sm:h-[65%] pt-[6vw] flex justify-between items-center sm:border-hidden border-b-2">
+        <div data-aos="zoom-in-down" class="ff h-[100%] sm:mt-[-60px] xl:mt-[0] mt-[20px]">
+            <h1 class="font-[600] mb-[1.5vw]">PRODUCT</h1>
+            <p class="mt-[1vw] text-[gray] text-[13px]"> Homepage 01</p>
+            <p class="mt-[1vw] text-[gray] text-[13px]"> Homepage 02</p>
+            <p class="mt-[1vw] text-[gray] text-[13px]"> Homepage 03</p>
+            <p class="mt-[1vw] text-[gray] text-[13px]"> About us page</p>
+        </div>
+
+        <div data-aos="zoom-in-down" class="ff h-[100%] sm:mt-[50px] xl:mt-[0] mt-[20px] ms-[9%]">
+            <h1 class="font-[600] mb-[1.5vw] ">IT SERVICES</h1>
+            <p class="mt-[1vw] text-[gray] text-[13px]"> Pricing 01</p>
+            <p class="mt-[1vw] text-[gray] text-[13px]">Pricing 02</p>
+            <p class="mt-[1vw] text-[gray] text-[13px]"> Pricing 03</p>
+            <p class="mt-[1vw] text-[gray] text-[13px]"> Pricing E-commerce</p>
+            <p class="mt-[1vw] text-[gray] text-[13px]"> Contact Us 01</p>
+            <p class="mt-[1vw] text-[gray] text-[13px]"> Contact Us 02</p>
+            <p class="mt-[1vw] text-[gray] text-[13px]"> Contact Us 03</p>
+        </div>
+
+        <div data-aos="zoom-in-down" class="ff h-[100%] sm:mt-[50px] xl:mt-[0] mt-[20px]">
+            <h1 class="font-[600] mb-[1.5vw]">QUICK LINKS</h1>
+            <p class="mt-[1vw] text-[gray] text-[13px]"> Blog 01</p>
+            <p class="mt-[1vw] text-[gray] text-[13px]"> Blog 02</p>
+            <p class="mt-[1vw] text-[gray] text-[13px]"> Blog 03</p>
+            <p class="mt-[1vw] text-[gray] text-[13px]"> Blog Singel</p>
+        </div>
+        <div data-aos="zoom-in-down" class="ff h-[100%] sm:mt-[50px] xl:mt-[0] mt-[20px] me-[20%]">
+            <h1 class="font-[600] mb-[1.5vw]">COMPANY</h1>
+            <p class="mt-[1vw] text-[gray] text-[13px]"> Log in</p>
+            <p class="mt-[1vw] text-[gray] text-[13px]">Sign Up     </p>
+            <p class="mt-[1vw] text-[gray] text-[13px]">Style Guide</p>
+            <p class="mt-[1vw] text-[gray] text-[13px]">Licences</p>
+            <p class="mt-[1vw] text-[gray] text-[13px]">Changelog</p>
+            
+        </div>
+        
+    </div>
+    <hr class="sm:hidden">
+    <div   class="ft2 w-[100%]  h-[10%] sm:mt-[100%] md:mt-[85%] sm:text-center xl:mt-[-100px]">
+        <p  class="text-[15px] text-[gray] mt-[20px] ms-[20px]">© Creat by   <span class=" me  font-[600] decoration-1 underline text-[#3F4BF7]">TUSHAL SHEKH...</span></p>
+    </div>
+   </footer>
+
+
+
+
+</body>
+<script>
+    $(window).on("load",function(){
+        $(".mainu").fadeOut(5000)
+        // $("body").hide(2000)
+    })
+</script>
+
+
+<script>
+    $(document).ready(function() {
+        $("#arrow").click(function(){
+            $("html,body").animate({scrollTop:0})   
+        })
+
+
+        $(window).scroll(function(){
+            if($(this).scrollTop()>20)
+            {
+                $("#arrow").slideDown();
+            }
+            else
+            {
+                $("#arrow").slideUp();
+            }
+        })
+    })
+</script>
+
+
+
+
+
+
+
+ <!-- Swiper JS -->
+ <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+ <!-- Initialize Swiper -->
+ <script>
+   var swiper = new Swiper(".mySwiper", {
+     slidesPerView: 7,
+     spaceBetween: 30,
+     freeMode: true,
+     pagination: {
+       el: ".swiper-pagination",
+       clickable: true,
+     },
+   });
+ </script>
+
+
+
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 5,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        480: {
+            slidesPerView:  1,
+            // spaceBetween: 20,
+        },
+
+        768: {
+            slidesPerView:  3,
+            // spaceBetween: 20,
+        },
+
+        1080: {
+            slidesPerView:  5,
+            // spaceBetween: 20,
+        },
+        
+
+        
+      }
+    });
+  </script>
+
+ <!-- owl............. -->
+  <script>
+    $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:2,
+            nav:false
+           
+        },
+
+        1000:{
+            items:3,
+            nav:true,
+            loop:false
+        },
+
+        1280:{
+            items:4,
+            nav:true,
+            loop:false
+        }
+    }
+})
+  </script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+
+
+</html>
+
+
+
+
+
